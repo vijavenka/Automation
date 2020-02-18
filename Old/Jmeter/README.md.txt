@@ -1,1 +1,0 @@
-All project here are for Jmeter webservices and performance tests
