@@ -1,0 +1,2990 @@
+{
+  "blocks": {
+    "baby-and-child": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Baby+and+Child.jpg",
+          "seeMore": "/rewards/baby-and-child/bottle-feeding"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "baby-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Baby+toiletries_1.jpg",
+                  "label": "Baby Toys section"
+                },
+                {
+                  "id": "bathing",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Bathing_2.jpg",
+                  "label": "Bathing"
+                }
+              ],
+              "id": "baby-and-child",
+              "label": "Baby & Child"
+            },
+            {
+              "categories": [
+                {
+                  "id": "baby-bedding",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Baby+bedding+%26+bibs+%26+soothers_3.jpg",
+                  "label": "Baby Bedding"
+                },
+                {
+                  "id": "bibs-and-soothers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/soother.jpg",
+                  "label": "Bibs & Soothers"
+                }
+              ],
+              "id": "baby-and-child",
+              "label": "Baby & Child"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child/baby-carriers?epoints=5000-8000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C8000,s_categoryFromFeedExtractedSeoSlugs_multiVal:baby-carriers,s_departmentSeoSlug:baby-and-child&page=0&pageSize=4"
+        },
+        "title": "Baby Carriers",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child?pageSize=100",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:baby-and-child&page=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child/high-chairs?epoints=5000-8000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C8000,s_categoryFromFeedExtractedSeoSlugs_multiVal:high-chairs,s_departmentSeoSlug:baby-and-child&page=0&pageSize=4"
+        },
+        "title": "High Chairs",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Britax",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Britax.jpg",
+              "url": "/rewards/baby-and-child?brand=Britax"
+            },
+            {
+              "id": "Baby Jogger",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Baby+Jogger.jpg",
+              "url": "/rewards/list?department=Baby%20%26%20Child&brand=Baby%20Jogger"
+            },
+            {
+              "id": "Chicco",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Chicco.jpg",
+              "url": "/rewards/baby-and-child?brand=Chicco"
+            },
+            {
+              "id": "Tommee Tippee",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Tommee+Tippee.jpg",
+              "url": "/rewards/baby-and-child?brand=Tommee%20Tippee"
+            },
+            {
+              "id": "Maxi-Cosi",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Maxi+Cosi.jpg",
+              "url": "/rewards/baby-and-child?brand=Maxi-Cosi"
+            },
+            {
+              "id": "Avent",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/AVENT_.jpg",
+              "url": "/rewards/baby-and-child?brand=Avent"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "bupa": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/header.jpg",
+          "seeMore": ""
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "beauty",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/beauty.jpg",
+                  "label": "Beauty"
+                },
+                {
+                  "id": "christmas",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/christmas.jpg",
+                  "label": "Christmas"
+                },
+                {
+                  "id": "gift-cards",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/gift+card.jpg",
+                  "label": "Gift Cards"
+                }
+              ],
+              "id": "gifts-and-experiences",
+              "label": "Gifts & Experiences"
+            },
+            {
+              "categories": [
+                {
+                  "id": "christmas-films",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/films.jpg",
+                  "label": "Christmas Films"
+                }
+              ],
+              "id": "film-and-tv",
+              "label": "Film & TV"
+            }
+          ]
+        },
+        "title": "Christmas Gifts",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences/beauty",
+          "url": "/rest/search/redemptionitems?filters=s_feedDefinitionShortName:ALLBOXEDUP&page=0&pageSize=5"
+        },
+        "title": "Beauty Gift Sets",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "books": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Books.jpg",
+          "seeMore": "/rewards/books/detective-novels"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "childrens-books",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Childrens+books_2.jpg",
+                  "label": "Children's Books"
+                },
+                {
+                  "id": "fantasy-and-horror",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Fantasy+%26+horror_2.jpg",
+                  "label": "Fantasy & Horror"
+                }
+              ],
+              "id": "books",
+              "label": "Books"
+            },
+            {
+              "categories": [
+                {
+                  "id": "novels",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Novel_1.jpg",
+                  "label": "Novels"
+                },
+                {
+                  "id": "travel",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Travel_1.jpg",
+                  "label": "Travel"
+                }
+              ],
+              "id": "books",
+              "label": "Books"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/books/food-and-drink",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:food-and-drink,s_departmentSeoSlug:books&page=0&pageSize=4"
+        },
+        "title": "Food & Drink",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/books/history",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:history,s_departmentSeoSlug:books&page=0&pageSize=5"
+        },
+        "title": "History",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/books/graphic-novels",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:graphic-novels,s_departmentSeoSlug:books&page=0&pageSize=4"
+        },
+        "title": "Graphic Novel",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "computing": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Computing.jpg",
+          "seeMore": "/rewards/computing/computers"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "laptops-and-tablets",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Laptops+%26+tablets_1.jpg",
+                  "label": "Laptops and Tablets"
+                },
+                {
+                  "id": "printers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Printer_1.jpg",
+                  "label": "Printers"
+                }
+              ],
+              "id": "computing",
+              "label": "Computing"
+            },
+            {
+              "categories": [
+                {
+                  "id": "mice",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Mouse_1.jpg",
+                  "label": "Mice"
+                },
+                {
+                  "id": "laptop-bags",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Laptop_2.jpg",
+                  "label": "Laptop Bags"
+                }
+              ],
+              "id": "computing",
+              "label": "Computing"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/computing/joysticks-and-gaming",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:joysticks-and-gaming,s_departmentSeoSlug:computing&page=0&pageSize=4"
+        },
+        "title": "Joysticks & Gaming",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/computing/desk-accessories",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:desk-accessories,s_departmentSeoSlug:computing&page=0&pageSize=5"
+        },
+        "title": "Desk Accessories",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/computing/desk-storage",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:desk-storage,s_departmentSeoSlug:computing&page=0&pageSize=4"
+        },
+        "title": "Desk Storage",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Acer",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Acer.jpg",
+              "url": "/rewards/computing?brand=Acer"
+            },
+            {
+              "id": "Apple",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Apple.jpg",
+              "url": "/rewards/computing?brand=Apple"
+            },
+            {
+              "id": "Asus",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Asus.jpg",
+              "url": "/rewards/computing?brand=Asus"
+            },
+            {
+              "id": "HP",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/HP.jpg",
+              "url": "/rewards/computing?brand=HP"
+            },
+            {
+              "id": "Lenovo",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Lenovo.jpg",
+              "url": "/rewards/computing?brand=Lenovo"
+            },
+            {
+              "id": "Microsoft",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Microsoft.jpg",
+              "url": "/rewards/computing?brand=Microsoft"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "electronics": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Electronics.jpg",
+          "seeMore": "/rewards/electronics/televisions"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "cameras",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Camera_2.jpg",
+                  "label": "Cameras"
+                },
+                {
+                  "id": "electric-shavers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Electric+Shavers_2.jpg",
+                  "label": "Electric Shavers"
+                }
+              ],
+              "id": "electronics",
+              "label": "Electronics"
+            },
+            {
+              "categories": [
+                {
+                  "id": "headphones",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Headphones_2.jpg",
+                  "label": "Headphones"
+                },
+                {
+                  "id": "blenders",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Blenders_1.jpg",
+                  "label": "Blenders"
+                }
+              ],
+              "id": "electronics",
+              "label": "Electronics"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/electronics/home-cinema",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:home-cinema,s_departmentSeoSlug:electronics&page=0&pageSize=4"
+        },
+        "title": "Home Cinema",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/electronics?pageSize=100",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:electronics=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/electronics/vacuum-cleaners",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:vacuum-cleaners,s_departmentSeoSlug:electronics&page=0&pageSize=4"
+        },
+        "title": "Spring Clean",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Apple",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Apple.jpg",
+              "url": "/rewards/electronics?brand=Apple"
+            },
+            {
+              "id": "Canon",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Canon.jpg",
+              "url": "/rewards/electronics?keyword=canon"
+            },
+            {
+              "id": "LG",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/LG.jpg",
+              "url": "/rewards/electronics?brand=LG"
+            },
+            {
+              "id": "Panasonic",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Panasonic.jpg",
+              "url": "/rewards/electronics?brand=Panasonic"
+            },
+            {
+              "id": "Samsung",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Samsung.jpg",
+              "url": "/rewards/electronics?brand=Samsung"
+            },
+            {
+              "id": "Sony",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Sony.jpg",
+              "url": "/rewards/electronics?brand=Sony"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "fashion": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Fashion+Option+2.jpg",
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Handbags"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "bags-and-cases",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Bags+%26+Cases_4.jpg",
+                  "label": "Bags & Cases"
+                },
+                {
+                  "id": "mens-watches",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Mens+watches_2.jpg",
+                  "label": "Men's Watches"
+                }
+              ],
+              "id": "fashion",
+              "label": "Fashion"
+            },
+            {
+              "categories": [
+                {
+                  "id": "sunglasses",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Sunglases_1.jpg",
+                  "label": "Sunglasses"
+                },
+                {
+                  "id": "womens-watches",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Womens+watches_3.jpg",
+                  "label": "Womens Watches"
+                }
+              ],
+              "id": "fashion",
+              "label": "Fashion"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Handbags",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:bags-and-cases,s_departmentSeoSlug:fashion,s_type:Handbags&page=0&pageSize=4"
+        },
+        "title": "Handbags",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Purses",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:bags-and-cases,s_departmentSeoSlug:fashion,s_type:Purses&page=0&pageSize=5"
+        },
+        "title": "Purses",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Wallets",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:bags-and-cases,s_departmentSeoSlug:fashion,s_type:Wallets&page=0&pageSize=4"
+        },
+        "title": "Wallets",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "CK",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/CK.jpg",
+              "url": "/rewards/fashion?brand=Calvin%20Klein"
+            },
+            {
+              "id": "DKNY",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/DKNY.jpg",
+              "url": "/rewards/fashion?brand=DKNY"
+            },
+            {
+              "id": "Micheal Kors",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Michael+Kors.jpg",
+              "url": "/rewards/fashion?brand=Michael%20Kors"
+            },
+            {
+              "id": "Prada",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Prada.jpg",
+              "url": "/rewards/fashion?brand=Prada"
+            },
+            {
+              "id": "Ray Ban",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Ray+ban.jpg",
+              "url": "/rewards/fashion?brand=Ray-Ban"
+            },
+            {
+              "id": "Ted Baker",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Ted+Baker.jpg",
+              "url": "/rewards/fashion?keyword=ted%20baker"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "film-and-tv": [
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=film-and-tv"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/TV+and+FILM.jpg",
+          "seeMore": "/rewards/film-and-tv/box-sets"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "drama",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Drama_3.jpg",
+                  "label": "Drama"
+                },
+                {
+                  "id": "action",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Action+%26+Adventure_3.jpg",
+                  "label": "Action & Adventure"
+                }
+              ],
+              "id": "film-and-tv",
+              "label": "Film & TV"
+            },
+            {
+              "categories": [
+                {
+                  "id": "science-fiction",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Science+Fiction_4.jpg",
+                  "label": "Science Fiction"
+                },
+                {
+                  "id": "family",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Family_3.jpg",
+                  "label": "Family"
+                }
+              ],
+              "id": "film-and-tv",
+              "label": "Film & TV"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/film-and-tv/documentaries",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:documentaries,s_departmentSeoSlug:film-and-tv&page=0&pageSize=4"
+        },
+        "title": "Documentaries",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/film-and-tv",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:14000%7C15000,s_departmentSeoSlug:film-and-tv&page=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/film-and-tv/horror?epoints=500-900",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:2000%7C3000,s_departmentSeoSlug:film-and-tv&page=0&pageSize=4"
+        },
+        "title": "Horror",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "gaming": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Gaming.jpg",
+          "seeMore": "/rewards/gaming/games"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gaming?keyword=first%20person",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:gaming&keyword=first+person&page=0&pageSize=4"
+        },
+        "title": "First Person",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gaming?brand=Gioteck",
+          "url": "/rest/search/redemptionitems?filters=s_brandName:Gioteck,s_departmentSeoSlug:gaming&page=0&pageSize=5"
+        },
+        "title": "Gaming With Gioteck",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gaming?sort=i_epointsToPurchase%7Cdesc&brand=Electronic%20Arts",
+          "url": "/rest/search/redemptionitems?filters=s_brandName:Electronic+Arts,s_departmentSeoSlug:gaming&page=0&pageSize=4"
+        },
+        "title": "Recommended Games",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Asus",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/Electronic-Arts.jpg",
+              "url": "/rewards/gaming?brand=Electronic%20Arts"
+            },
+            {
+              "id": "Nintendo",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/Nintendo_logo.jpg",
+              "url": "/rewards/gaming?brand=Nintendo"
+            },
+            {
+              "id": "Playstation",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/PlayStation_4.jpg",
+              "url": "/rewards/gaming?brand=Playstation%204"
+            },
+            {
+              "id": "XBOX",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/Xbox_.jpg",
+              "url": "/rewards/gaming?brand=Xbox"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "gifts-and-experiences": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Gifts+and+Experiences.jpg",
+          "seeMore": "/rewards/gifts-and-experiences/gift-cards"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "greeting-cards",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Greeting+cards_1.jpg",
+                  "label": "Greeting Cards"
+                },
+                {
+                  "id": "lifestyle-experiences",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Lifestyle_1.jpg",
+                  "label": "Lifestyle Experiences"
+                }
+              ],
+              "id": "gifts-and-experiences",
+              "label": "Gifts & Experiences"
+            },
+            {
+              "categories": [
+                {
+                  "id": "driving-experiences",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Driving+exp_2.jpg",
+                  "label": "Driving Experiences"
+                },
+                {
+                  "id": "flying-experiences",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Flying_3.jpg",
+                  "label": "Flying Experiences"
+                }
+              ],
+              "id": "gifts-and-experiences",
+              "label": "Gifts & Experiences"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences/novelty-gifts",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:novelty-gifts,s_departmentSeoSlug:gifts-and-experiences&page=0&pageSize=4"
+        },
+        "title": "Novelty Gifts",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:decorations,s_departmentSeoSlug:gifts-and-experiences&page=0&pageSize=5"
+        },
+        "title": "It's Party Time",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences/wedding-gifts",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:wedding-gifts,s_departmentSeoSlug:gifts-and-experiences&page=0&pageSize=4"
+        },
+        "title": "Wedding Gifts",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Amazon",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Amazon.jpg",
+              "url": "/rewards/gifts-and-experiences?brand=Amazon"
+            },
+            {
+              "id": "Argos",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Argos.jpg",
+              "url": "/rewards/gifts-and-experiences?brand=Argos"
+            },
+            {
+              "id": "Currys PC World",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Curys+PC+World.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?keyword=Currys%20~2F%20PC%20World"
+            },
+            {
+              "id": "House of Fraser",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/House+of+Fraser.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?keyword=House%20of%20Fraser"
+            },
+            {
+              "id": "Pizza Express",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Pizza+Express.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?brand=Pizza%20Express"
+            },
+            {
+              "id": "iTunes",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/iTunes.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?brand=Apple"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "health-and-beauty": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Health+and+Beauty.jpg",
+          "seeMore": "/rewards/health-and-beauty/cosmetics"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "hair-appliances",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Hair+App_2.jpg",
+                  "label": "Hair Appliances"
+                },
+                {
+                  "id": "cosmetics",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Cosmeetics_1.jpg",
+                  "label": "Cosmetics"
+                }
+              ],
+              "id": "health-and-beauty",
+              "label": "Health & Beauty"
+            },
+            {
+              "categories": [
+                {
+                  "id": "fragrance",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Fragrance_3.jpg",
+                  "label": "Fragrance"
+                },
+                {
+                  "id": "skincare",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Skin_2.jpg",
+                  "label": "Skincare"
+                }
+              ],
+              "id": "health-and-beauty",
+              "label": "Health & Beauty"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/health-and-beauty/shaving",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:shaving,s_departmentSeoSlug:health-and-beauty&page=0&pageSize=4"
+        },
+        "title": "Men's Grooming",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/health-and-beauty/skincare?type=Tanning%20%26%20Suncare",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:skincare,s_departmentSeoSlug:health-and-beauty,s_type:Tanning+%26+Suncare&page=0&pageSize=5"
+        },
+        "title": "Don't Get Burnt",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/health-and-beauty?type=Aftershave",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:health-and-beauty,s_type:Aftershave&page=0&pageSize=4"
+        },
+        "title": "Aftershave",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Babyliss",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Babyliss-logo.jpg",
+              "url": "/rewards/health-and-beauty?brand=Babyliss"
+            },
+            {
+              "id": "Clarins",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Clarins.jpg",
+              "url": "/rewards/health-and-beauty?brand=Clarins"
+            },
+            {
+              "id": "Clinique",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Clinique.jpg",
+              "url": "/rewards/health-and-beauty?brand=Clinique"
+            },
+            {
+              "id": "L'Oreal",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/LOreal.jpg",
+              "url": "/rewards/health-and-beauty?brand=L%27Oreal"
+            },
+            {
+              "id": "Maybelline",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Maybeline.jpg",
+              "url": "/rewards/health-and-beauty?brand=Maybelline"
+            },
+            {
+              "id": "Rimmel",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Rimmel.jpg",
+              "url": "/rewards/health-and-beauty?brand=Rimmel"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "home-and-garden": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Home+and+Gardn+copy+2.jpg",
+          "seeMore": "/rewards/home-and-garden/garden-furniture"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "cookware-and-utensils",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Cookware_4.jpg",
+                  "label": "Cookware & Utensils"
+                },
+                {
+                  "id": "home-accessories",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Home+Accessories_4.jpg",
+                  "label": "Home Accessories"
+                }
+              ],
+              "id": "home-and-garden",
+              "label": "Home & Garden"
+            },
+            {
+              "categories": [
+                {
+                  "id": "cutlery",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Cutlery_3.jpg",
+                  "label": "Cutlery"
+                },
+                {
+                  "id": "storage",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Storage+Thumbnail.jpg",
+                  "label": "Storage"
+                }
+              ],
+              "id": "home-and-garden",
+              "label": "Home & Garden"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "rewards/home-and-garden/garden-tools",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:garden-tools,s_departmentSeoSlug:home-and-garden&page=0&pageSize=4"
+        },
+        "title": "Garden Tools",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/home-and-garden/barbecues-and-accessories",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:barbecues-and-accessories,s_departmentSeoSlug:home-and-garden&page=0&pageSize=5"
+        },
+        "title": "Barbecues & Accessories",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/home-and-garden?type=Tool%20Boxes%20%26%20Bags",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:home-and-garden,s_type:Tool+Boxes+%26+Bags&page=0&pageSize=4"
+        },
+        "title": "Tool Boxes & Bags",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Black & Decker",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/Black%2BDecker.jpg",
+              "url": "/rewards/home-and-garden?brand=Black%20%26%20Decker"
+            },
+            {
+              "id": "John Lewis",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/John_Lewis_Logo.jpg",
+              "url": "/rewards/home-and-garden?brand=John%20Lewis"
+            },
+            {
+              "id": "Tefal",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/Tefal.jpg",
+              "url": "/rewards/home-and-garden?brand=Tefal"
+            },
+            {
+              "id": "Bosch",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/bosch.jpg",
+              "url": "/rewards/electronics?brand=Bosch"
+            },
+            {
+              "id": "Silent Night",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/silentnight.jpg",
+              "url": "/rewards/home-and-garden?brand=Silentnight"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "music": [
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=music"
+        },
+        "title": "Recently Redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Music.jpg",
+          "seeMore": "/rewards/music/pop"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "compilations",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Compilations_1.jpg",
+                  "label": "Compilations"
+                },
+                {
+                  "id": "soul",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Soul+Music_3.jpg",
+                  "label": "RnB & Soul"
+                }
+              ],
+              "id": "music",
+              "label": "Music"
+            },
+            {
+              "categories": [
+                {
+                  "id": "pop",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Pop+Music_2.jpg",
+                  "label": "Pop"
+                },
+                {
+                  "id": "rock",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Rock_2.jpg",
+                  "label": "Rock"
+                }
+              ],
+              "id": "music",
+              "label": "Music"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/music/classical",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:classical,s_departmentSeoSlug:music&page=0&pageSize=4"
+        },
+        "title": "Classical",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/music/reggae",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:reggae,s_departmentSeoSlug:music&page=0&pageSize=5"
+        },
+        "title": "Reggae Sunshine",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/music?epoints=1000-2000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:1000%7C2000,s_departmentSeoSlug:music&page=0&pageSize=4"
+        },
+        "title": "Bargain CDs",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "sports-and-outdoors": [
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=sports-and-outdoors"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Sports+and+Outdoors.jpg",
+          "seeMore": "/rewards/sports-and-outdoors/football"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "fitness-equipment",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Fitness+Equipment_1.jpg",
+                  "label": "Fitness Equipment"
+                },
+                {
+                  "id": "golf",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Golf_2.jpg",
+                  "label": "Golf"
+                }
+              ],
+              "id": "sports-and-outdoors",
+              "label": "Sports and Outdoors"
+            },
+            {
+              "categories": [
+                {
+                  "id": "fishing",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Fishing_1.jpg",
+                  "label": "Fishing"
+                },
+                {
+                  "id": "darts",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Darts_1.jpg",
+                  "label": "Darts"
+                }
+              ],
+              "id": "sports-and-outdoors",
+              "label": "Sports & Outdoors"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "https://stag.epoints.com/rewards/sports-and-outdoors/fitness-equipment?keyword=yoga",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:2000%7C5000,s_categoryFromFeedExtractedSeoSlugs_multiVal:fitness-equipment,s_departmentSeoSlug:sports-and-outdoors&keyword=yoga&page=0&pageSize=4"
+        },
+        "title": "Yoga",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/sports-and-outdoors/outdoors",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:outdoors,s_departmentSeoSlug:sports-and-outdoors&page=0&pageSize=5"
+        },
+        "title": "The Great Outdoors",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/sports-and-outdoors/tennis",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:tennis,s_departmentSeoSlug:sports-and-outdoors&page=0&pageSize=4"
+        },
+        "title": "Next Wimbledon Champion",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "toys-and-games": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Toys+and+Games.jpg",
+          "seeMore": "/rewards/toys-and-games/action-figures"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "outdoor-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Outdoor+Toys_2.jpg",
+                  "label": "Outdoor Toys"
+                },
+                {
+                  "id": "creative-and-construction-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Creative+%26+Construction_2.jpg",
+                  "label": "Creative and Construction Toys"
+                }
+              ],
+              "id": "toys-and-games",
+              "label": "Toys, Games & Gadgets"
+            },
+            {
+              "categories": [
+                {
+                  "id": "babies-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Babies_1.jpg",
+                  "label": "Babies Toys"
+                },
+                {
+                  "id": "gadgets",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Babies_2.jpg",
+                  "label": "Gadgets"
+                }
+              ],
+              "id": "toys-and-games",
+              "label": "Toys, Games & Gadgets"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/toys-and-games/dolls",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:dolls,s_departmentSeoSlug:toys-and-games&page=0&pageSize=4"
+        },
+        "title": "Dolls",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/toys-and-games/soft-toys",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:soft-toys,s_departmentSeoSlug:toys-and-games&page=0&pageSize=5"
+        },
+        "title": "Babies Friend For Life",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/toys-and-games/toy-models?type=All%20Hornby",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:toy-models,s_departmentSeoSlug:toys-and-games,s_type:All+Hornby&page=0&pageSize=4"
+        },
+        "title": "Build Your Own Railway",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ]
+  },
+  "blocks/qa": {
+    "baby-and-child": [
+      {
+        "region": "uk",
+        "section": "hero",
+        "content": {
+          "images": [
+            {
+              "imageUrl": "https://dummyimage.com/500x200/000/fff&text=1",
+              "url": "https://www.google.pl/search?q=3"
+            },
+            {
+              "imageUrl": "https://dummyimage.com/500x200/cc2fcc/fff&text=2",
+              "url": "https://www.google.pl/search?q=3"
+            },
+            {
+              "imageUrl": "https://dummyimage.com/500x200/2f5714/fff&text=3",
+              "url": "https://www.google.pl/search?q=3"
+            }
+          ],
+          "autoPlay": 2000
+        },
+        "ui": {
+          "type": "carousel"
+        }
+      },
+      {
+        "device": "mobile",
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Baby+and+Child.jpg",
+          "seeMore": "/rewards/baby-and-child/bottle-feeding"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "baby-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Baby+toiletries_1.jpg",
+                  "label": "Baby Toys"
+                },
+                {
+                  "id": "bathing",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Bathing_2.jpg",
+                  "label": "Bathing"
+                }
+              ],
+              "id": "baby-and-child",
+              "label": "Baby & Child"
+            },
+            {
+              "categories": [
+                {
+                  "id": "baby-bedding",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Baby+bedding+%26+bibs+%26+soothers_3.jpg",
+                  "label": "Baby Bedding"
+                },
+                {
+                  "id": "bibs-and-soothers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/soother.jpg",
+                  "label": "Bibs & Soothers"
+                }
+              ],
+              "id": "baby-and-child",
+              "label": "Baby & Child"
+            }
+          ]
+        },
+        "title": "Popular Categorie",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child/baby-carriers?epoints=5000-8000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C8000,s_categoryFromFeedExtractedSeoSlugs_multiVal:baby-carriers,s_departmentSeoSlug:baby-and-child&page=0&pageSize=4"
+        },
+        "title": "Baby Carriers",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child?pageSize=100",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:baby-and-child&page=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child/high-chairs?epoints=5000-8000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C8000,s_categoryFromFeedExtractedSeoSlugs_multiVal:high-chairs,s_departmentSeoSlug:baby-and-child&page=0&pageSize=4"
+        },
+        "title": "High Chairs",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Britax",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Britax.jpg",
+              "url": "/rewards/baby-and-child?brand=Britax"
+            },
+            {
+              "id": "Baby Jogger",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Baby+Jogger.jpg",
+              "url": "/rewards/list?department=Baby%20%26%20Child&brand=Baby%20Jogger"
+            },
+            {
+              "id": "Chicco",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Chicco.jpg",
+              "url": "/rewards/baby-and-child?brand=Chicco"
+            },
+            {
+              "id": "Tommee Tippee",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Tommee+Tippee.jpg",
+              "url": "/rewards/baby-and-child?brand=Tommee%20Tippee"
+            },
+            {
+              "id": "Maxi-Cosi",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Maxi+Cosi.jpg",
+              "url": "/rewards/baby-and-child?brand=Maxi-Cosi"
+            },
+            {
+              "id": "Avent",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/AVENT_.jpg",
+              "url": "/rewards/baby-and-child?brand=Avent"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "bupa": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/header.jpg",
+          "seeMore": ""
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "region": "uk",
+        "content": {
+          "brands": [
+            {
+              "id": "Samsung",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Samsung.jpg",
+              "url": "/rewards/electronics?brand=Samsung"
+            },
+            {
+              "id": "Amazon",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+2+-+Amazon.png",
+              "url": "/rewards/computing?keyword=amazon&brand=Amazon"
+            },
+            {
+              "id": "Gift-Card",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+3+-+Gift+Cards.png",
+              "url": "/rewards/gifts-and-experiences/gift-cards"
+            },
+            {
+              "id": "Laptops-and-Tablets",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+4+-+Laptops.png",
+              "url": "/rewards/computing/laptops-and-tablets"
+            },
+            {
+              "id": "Apple",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+7+-+Apple.png",
+              "url": "/rewards/gifts-and-experiences/gift-cards?brand=Apple"
+            },
+            {
+              "id": "Playstation",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+6+-+Playstation.png",
+              "url": "/rewards/gaming/consoles?brand=Playstation%204"
+            }
+          ]
+        },
+        "title": "Popular brands",
+        "ui": {
+          "type": "brands"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "beauty",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/beauty.jpg",
+                  "label": "Beauty"
+                },
+                {
+                  "id": "christmas",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/christmas.jpg",
+                  "label": "Christmas"
+                },
+                {
+                  "id": "gift-cards",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/gift+card.jpg",
+                  "label": "Gift Cards"
+                }
+              ],
+              "id": "gifts-and-experiences",
+              "label": "Gifts & Experiences"
+            },
+            {
+              "categories": [
+                {
+                  "id": "christmas-films",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/epoints-prod/films.jpg",
+                  "label": "Christmas Films"
+                }
+              ],
+              "id": "film-and-tv",
+              "label": "Film & TV"
+            }
+          ]
+        },
+        "title": "Christmas Gifts",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences/beauty",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:outdoor-toys,s_departmentSeoSlug:toys-and-games&page=0&pageSize=5&userSearch=true"
+        },
+        "title": "Special offers",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "books": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Books.jpg",
+          "seeMore": "/rewards/books/detective-novels"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "childrens-books",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Childrens+books_2.jpg",
+                  "label": "Children's Books"
+                },
+                {
+                  "id": "fantasy-and-horror",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Fantasy+%26+horror_2.jpg",
+                  "label": "Fantasy & Horror"
+                }
+              ],
+              "id": "books",
+              "label": "Books"
+            },
+            {
+              "categories": [
+                {
+                  "id": "novels",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Novel_1.jpg",
+                  "label": "Novels"
+                },
+                {
+                  "id": "travel",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Travel_1.jpg",
+                  "label": "Travel"
+                }
+              ],
+              "id": "books",
+              "label": "Books"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/books/food-and-drink",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:food-and-drink,s_departmentSeoSlug:books&page=0&pageSize=4"
+        },
+        "title": "Food & Drink",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/books/history",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:history,s_departmentSeoSlug:books&page=0&pageSize=5"
+        },
+        "title": "History",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/books/graphic-novels",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:graphic-novels,s_departmentSeoSlug:books&page=0&pageSize=4"
+        },
+        "title": "Graphic Novel",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "computing": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Computing.jpg",
+          "seeMore": "/rewards/computing/computers"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "laptops-and-tablets",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Laptops+%26+tablets_1.jpg",
+                  "label": "Laptops and Tablets"
+                },
+                {
+                  "id": "printers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Printer_1.jpg",
+                  "label": "Printers"
+                }
+              ],
+              "id": "computing",
+              "label": "Computing"
+            },
+            {
+              "categories": [
+                {
+                  "id": "mice",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Mouse_1.jpg",
+                  "label": "Mice"
+                },
+                {
+                  "id": "laptop-bags",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Laptop_2.jpg",
+                  "label": "Laptop Bags"
+                }
+              ],
+              "id": "computing",
+              "label": "Computing"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/computing/joysticks-and-gaming",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:joysticks-and-gaming,s_departmentSeoSlug:computing&page=0&pageSize=4"
+        },
+        "title": "Joysticks & Gaming",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/computing/desk-accessories",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:desk-accessories,s_departmentSeoSlug:computing&page=0&pageSize=5"
+        },
+        "title": "Desk Accessories",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/computing/desk-storage",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:desk-storage,s_departmentSeoSlug:computing&page=0&pageSize=4"
+        },
+        "title": "Desk Storage",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Acer",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Acer.jpg",
+              "url": "/rewards/computing?brand=Acer"
+            },
+            {
+              "id": "Apple",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Apple.jpg",
+              "url": "/rewards/computing?brand=Apple"
+            },
+            {
+              "id": "Asus",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Asus.jpg",
+              "url": "/rewards/computing?brand=Asus"
+            },
+            {
+              "id": "HP",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/HP.jpg",
+              "url": "/rewards/computing?brand=HP"
+            },
+            {
+              "id": "Lenovo",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Lenovo.jpg",
+              "url": "/rewards/computing?brand=Lenovo"
+            },
+            {
+              "id": "Microsoft",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/computing+%26+Office/Microsoft.jpg",
+              "url": "/rewards/computing?brand=Microsoft"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "electronics": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Electronics.jpg",
+          "seeMore": "/rewards/electronics/televisions"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "cameras",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Camera_2.jpg",
+                  "label": "Cameras"
+                },
+                {
+                  "id": "electric-shavers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Electric+Shavers_2.jpg",
+                  "label": "Electric Shavers"
+                }
+              ],
+              "id": "electronics",
+              "label": "Electronics"
+            },
+            {
+              "categories": [
+                {
+                  "id": "headphones",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Headphones_2.jpg",
+                  "label": "Headphones"
+                },
+                {
+                  "id": "blenders",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Blenders_1.jpg",
+                  "label": "Blenders"
+                }
+              ],
+              "id": "electronics",
+              "label": "Electronics"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/electronics/home-cinema",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:home-cinema,s_departmentSeoSlug:electronics&page=0&pageSize=4"
+        },
+        "title": "Home Cinema",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/electronics?pageSize=100",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:electronics=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/electronics/vacuum-cleaners",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:vacuum-cleaners,s_departmentSeoSlug:electronics&page=0&pageSize=4"
+        },
+        "title": "Spring Clean",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Apple",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Apple.jpg",
+              "url": "/rewards/electronics?brand=Apple"
+            },
+            {
+              "id": "Canon",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Canon.jpg",
+              "url": "/rewards/electronics?keyword=canon"
+            },
+            {
+              "id": "LG",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/LG.jpg",
+              "url": "/rewards/electronics?brand=LG"
+            },
+            {
+              "id": "Panasonic",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Panasonic.jpg",
+              "url": "/rewards/electronics?brand=Panasonic"
+            },
+            {
+              "id": "Samsung",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Samsung.jpg",
+              "url": "/rewards/electronics?brand=Samsung"
+            },
+            {
+              "id": "Sony",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Sony.jpg",
+              "url": "/rewards/electronics?brand=Sony"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "fashion": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Fashion+Option+2.jpg",
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Handbags"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "bags-and-cases",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Bags+%26+Cases_4.jpg",
+                  "label": "Bags & Cases"
+                },
+                {
+                  "id": "mens-watches",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Mens+watches_2.jpg",
+                  "label": "Men's Watches"
+                }
+              ],
+              "id": "fashion",
+              "label": "Fashion"
+            },
+            {
+              "categories": [
+                {
+                  "id": "sunglasses",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Sunglases_1.jpg",
+                  "label": "Sunglasses"
+                },
+                {
+                  "id": "womens-watches",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Womens+watches_3.jpg",
+                  "label": "Womens Watches"
+                }
+              ],
+              "id": "fashion",
+              "label": "Fashion"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Handbags",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:bags-and-cases,s_departmentSeoSlug:fashion,s_type:Handbags&page=0&pageSize=4"
+        },
+        "title": "Handbags",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Purses",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:bags-and-cases,s_departmentSeoSlug:fashion,s_type:Purses&page=0&pageSize=5"
+        },
+        "title": "Purses",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/fashion/bags-and-cases?type=Wallets",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:bags-and-cases,s_departmentSeoSlug:fashion,s_type:Wallets&page=0&pageSize=4"
+        },
+        "title": "Wallets",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "CK",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/CK.jpg",
+              "url": "/rewards/fashion?brand=Calvin%20Klein"
+            },
+            {
+              "id": "DKNY",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/DKNY.jpg",
+              "url": "/rewards/fashion?brand=DKNY"
+            },
+            {
+              "id": "Micheal Kors",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Michael+Kors.jpg",
+              "url": "/rewards/fashion?brand=Michael%20Kors"
+            },
+            {
+              "id": "Prada",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Prada.jpg",
+              "url": "/rewards/fashion?brand=Prada"
+            },
+            {
+              "id": "Ray Ban",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Ray+ban.jpg",
+              "url": "/rewards/fashion?brand=Ray-Ban"
+            },
+            {
+              "id": "Ted Baker",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Fashion/Ted+Baker.jpg",
+              "url": "/rewards/fashion?keyword=ted%20baker"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "film-and-tv": [
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=film-and-tv"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/TV+and+FILM.jpg",
+          "seeMore": "/rewards/film-and-tv/box-sets"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "drama",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Drama_3.jpg",
+                  "label": "Drama"
+                },
+                {
+                  "id": "action",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Action+%26+Adventure_3.jpg",
+                  "label": "Action & Adventure"
+                }
+              ],
+              "id": "film-and-tv",
+              "label": "Film & TV"
+            },
+            {
+              "categories": [
+                {
+                  "id": "science-fiction",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Science+Fiction_4.jpg",
+                  "label": "Science Fiction"
+                },
+                {
+                  "id": "family",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Family_3.jpg",
+                  "label": "Family"
+                }
+              ],
+              "id": "film-and-tv",
+              "label": "Film & TV"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/film-and-tv/documentaries",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:documentaries,s_departmentSeoSlug:film-and-tv&page=0&pageSize=4"
+        },
+        "title": "Documentaries",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/film-and-tv",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:14000%7C15000,s_departmentSeoSlug:film-and-tv&page=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/film-and-tv/horror?epoints=500-900",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:2000%7C3000,s_departmentSeoSlug:film-and-tv&page=0&pageSize=4"
+        },
+        "title": "Horror",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "gaming": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Gaming.jpg",
+          "seeMore": "/rewards/gaming/games"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gaming?keyword=first%20person",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:gaming&keyword=first+person&page=0&pageSize=4"
+        },
+        "title": "First Person",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gaming?brand=Gioteck",
+          "url": "/rest/search/redemptionitems?filters=s_brandName:Gioteck,s_departmentSeoSlug:gaming&page=0&pageSize=5"
+        },
+        "title": "Gaming With Gioteck",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gaming?sort=i_epointsToPurchase%7Cdesc&brand=Electronic%20Arts",
+          "url": "/rest/search/redemptionitems?filters=s_brandName:Electronic+Arts,s_departmentSeoSlug:gaming&page=0&pageSize=4"
+        },
+        "title": "Recommended Games",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Asus",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/Electronic-Arts.jpg",
+              "url": "/rewards/gaming?brand=Electronic%20Arts"
+            },
+            {
+              "id": "Nintendo",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/Nintendo_logo.jpg",
+              "url": "/rewards/gaming?brand=Nintendo"
+            },
+            {
+              "id": "Playstation",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/PlayStation_4.jpg",
+              "url": "/rewards/gaming?brand=Playstation%204"
+            },
+            {
+              "id": "XBOX",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gaming/Xbox_.jpg",
+              "url": "/rewards/gaming?brand=Xbox"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "gifts-and-experiences": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Gifts+and+Experiences.jpg",
+          "seeMore": "/rewards/gifts-and-experiences/gift-cards"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "greeting-cards",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Greeting+cards_1.jpg",
+                  "label": "Greeting Cards"
+                },
+                {
+                  "id": "lifestyle-experiences",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Lifestyle_1.jpg",
+                  "label": "Lifestyle Experiences"
+                }
+              ],
+              "id": "gifts-and-experiences",
+              "label": "Gifts & Experiences"
+            },
+            {
+              "categories": [
+                {
+                  "id": "driving-experiences",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Driving+exp_2.jpg",
+                  "label": "Driving Experiences"
+                },
+                {
+                  "id": "flying-experiences",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Flying_3.jpg",
+                  "label": "Flying Experiences"
+                }
+              ],
+              "id": "gifts-and-experiences",
+              "label": "Gifts & Experiences"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences/novelty-gifts",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:novelty-gifts,s_departmentSeoSlug:gifts-and-experiences&page=0&pageSize=4"
+        },
+        "title": "Novelty Gifts",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:decorations,s_departmentSeoSlug:gifts-and-experiences&page=0&pageSize=5"
+        },
+        "title": "It's Party Time",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/gifts-and-experiences/wedding-gifts",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:wedding-gifts,s_departmentSeoSlug:gifts-and-experiences&page=0&pageSize=4"
+        },
+        "title": "Wedding Gifts",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Amazon",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Amazon.jpg",
+              "url": "/rewards/gifts-and-experiences?brand=Amazon"
+            },
+            {
+              "id": "Argos",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Argos.jpg",
+              "url": "/rewards/gifts-and-experiences?brand=Argos"
+            },
+            {
+              "id": "Currys PC World",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Curys+PC+World.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?keyword=Currys%20~2F%20PC%20World"
+            },
+            {
+              "id": "House of Fraser",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/House+of+Fraser.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?keyword=House%20of%20Fraser"
+            },
+            {
+              "id": "Pizza Express",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/Pizza+Express.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?brand=Pizza%20Express"
+            },
+            {
+              "id": "iTunes",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Gifts+%26+Experiences/iTunes.jpg",
+              "url": "/rewards/gifts-and-experiences/gift-cards?brand=Apple"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "health-and-beauty": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Health+and+Beauty.jpg",
+          "seeMore": "/rewards/health-and-beauty/cosmetics"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "hair-appliances",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Hair+App_2.jpg",
+                  "label": "Hair Appliances"
+                },
+                {
+                  "id": "cosmetics",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Cosmeetics_1.jpg",
+                  "label": "Cosmetics"
+                }
+              ],
+              "id": "health-and-beauty",
+              "label": "Health & Beauty"
+            },
+            {
+              "categories": [
+                {
+                  "id": "fragrance",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Fragrance_3.jpg",
+                  "label": "Fragrance"
+                },
+                {
+                  "id": "skincare",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Skin_2.jpg",
+                  "label": "Skincare"
+                }
+              ],
+              "id": "health-and-beauty",
+              "label": "Health & Beauty"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/health-and-beauty/shaving",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:shaving,s_departmentSeoSlug:health-and-beauty&page=0&pageSize=4"
+        },
+        "title": "Men's Grooming",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/health-and-beauty/skincare?type=Tanning%20%26%20Suncare",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:skincare,s_departmentSeoSlug:health-and-beauty,s_type:Tanning+%26+Suncare&page=0&pageSize=5"
+        },
+        "title": "Don't Get Burnt",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/health-and-beauty?type=Aftershave",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:health-and-beauty,s_type:Aftershave&page=0&pageSize=4"
+        },
+        "title": "Aftershave",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Babyliss",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Babyliss-logo.jpg",
+              "url": "/rewards/health-and-beauty?brand=Babyliss"
+            },
+            {
+              "id": "Clarins",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Clarins.jpg",
+              "url": "/rewards/health-and-beauty?brand=Clarins"
+            },
+            {
+              "id": "Clinique",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Clinique.jpg",
+              "url": "/rewards/health-and-beauty?brand=Clinique"
+            },
+            {
+              "id": "L'Oreal",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/LOreal.jpg",
+              "url": "/rewards/health-and-beauty?brand=L%27Oreal"
+            },
+            {
+              "id": "Maybelline",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Maybeline.jpg",
+              "url": "/rewards/health-and-beauty?brand=Maybelline"
+            },
+            {
+              "id": "Rimmel",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Health+%26+Beauty/Rimmel.jpg",
+              "url": "/rewards/health-and-beauty?brand=Rimmel"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "home-and-garden": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Home+and+Gardn+copy+2.jpg",
+          "seeMore": "/rewards/home-and-garden/garden-furniture"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "cookware-and-utensils",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Cookware_4.jpg",
+                  "label": "Cookware & Utensils"
+                },
+                {
+                  "id": "home-accessories",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Home+Accessories_4.jpg",
+                  "label": "Home Accessories"
+                }
+              ],
+              "id": "home-and-garden",
+              "label": "Home & Garden"
+            },
+            {
+              "categories": [
+                {
+                  "id": "cutlery",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Cutlery_3.jpg",
+                  "label": "Cutlery"
+                },
+                {
+                  "id": "storage",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Storage+Thumbnail.jpg",
+                  "label": "Storage"
+                }
+              ],
+              "id": "home-and-garden",
+              "label": "Home & Garden"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "rewards/home-and-garden/garden-tools",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:garden-tools,s_departmentSeoSlug:home-and-garden&page=0&pageSize=4"
+        },
+        "title": "Garden Tools",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/home-and-garden/barbecues-and-accessories",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:barbecues-and-accessories,s_departmentSeoSlug:home-and-garden&page=0&pageSize=5"
+        },
+        "title": "Barbecues & Accessories",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/home-and-garden?type=Tool%20Boxes%20%26%20Bags",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:home-and-garden,s_type:Tool+Boxes+%26+Bags&page=0&pageSize=4"
+        },
+        "title": "Tool Boxes & Bags",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Black & Decker",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/Black%2BDecker.jpg",
+              "url": "/rewards/home-and-garden?brand=Black%20%26%20Decker"
+            },
+            {
+              "id": "John Lewis",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/John_Lewis_Logo.jpg",
+              "url": "/rewards/home-and-garden?brand=John%20Lewis"
+            },
+            {
+              "id": "Tefal",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/Tefal.jpg",
+              "url": "/rewards/home-and-garden?brand=Tefal"
+            },
+            {
+              "id": "Bosch",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/bosch.jpg",
+              "url": "/rewards/electronics?brand=Bosch"
+            },
+            {
+              "id": "Silent Night",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Home+%26+Garden/silentnight.jpg",
+              "url": "/rewards/home-and-garden?brand=Silentnight"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ],
+    "music": [
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=music"
+        },
+        "title": "Recently Redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Music.jpg",
+          "seeMore": "/rewards/music/pop"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "compilations",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Compilations_1.jpg",
+                  "label": "Compilations"
+                },
+                {
+                  "id": "soul",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Soul+Music_3.jpg",
+                  "label": "RnB & Soul"
+                }
+              ],
+              "id": "music",
+              "label": "Music"
+            },
+            {
+              "categories": [
+                {
+                  "id": "pop",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Pop+Music_2.jpg",
+                  "label": "Pop"
+                },
+                {
+                  "id": "rock",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Rock_2.jpg",
+                  "label": "Rock"
+                }
+              ],
+              "id": "music",
+              "label": "Music"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/music/classical",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:classical,s_departmentSeoSlug:music&page=0&pageSize=4"
+        },
+        "title": "Classical",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/music/reggae",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:reggae,s_departmentSeoSlug:music&page=0&pageSize=5"
+        },
+        "title": "Reggae Sunshine",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/music?epoints=1000-2000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:1000%7C2000,s_departmentSeoSlug:music&page=0&pageSize=4"
+        },
+        "title": "Bargain CDs",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "sports-and-outdoors": [
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=sports-and-outdoors"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Sports+and+Outdoors.jpg",
+          "seeMore": "/rewards/sports-and-outdoors/football"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "fitness-equipment",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Fitness+Equipment_1.jpg",
+                  "label": "Fitness Equipment"
+                },
+                {
+                  "id": "golf",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Golf_2.jpg",
+                  "label": "Golf"
+                }
+              ],
+              "id": "sports-and-outdoors",
+              "label": "Sports and Outdoors"
+            },
+            {
+              "categories": [
+                {
+                  "id": "fishing",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Fishing_1.jpg",
+                  "label": "Fishing"
+                },
+                {
+                  "id": "darts",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Darts_1.jpg",
+                  "label": "Darts"
+                }
+              ],
+              "id": "sports-and-outdoors",
+              "label": "Sports & Outdoors"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "https://stag.epoints.com/rewards/sports-and-outdoors/fitness-equipment?keyword=yoga",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:2000%7C5000,s_categoryFromFeedExtractedSeoSlugs_multiVal:fitness-equipment,s_departmentSeoSlug:sports-and-outdoors&keyword=yoga&page=0&pageSize=4"
+        },
+        "title": "Yoga",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/sports-and-outdoors/outdoors",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:outdoors,s_departmentSeoSlug:sports-and-outdoors&page=0&pageSize=5"
+        },
+        "title": "The Great Outdoors",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/sports-and-outdoors/tennis",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:tennis,s_departmentSeoSlug:sports-and-outdoors&page=0&pageSize=4"
+        },
+        "title": "Next Wimbledon Champion",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ],
+    "toys-and-games": [
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Toys+and+Games.jpg",
+          "seeMore": "/rewards/toys-and-games/action-figures"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "outdoor-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Outdoor+Toys_2.jpg",
+                  "label": "Outdoor Toys"
+                },
+                {
+                  "id": "creative-and-construction-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Creative+%26+Construction_2.jpg",
+                  "label": "Creative and Construction Toys"
+                }
+              ],
+              "id": "toys-and-games",
+              "label": "Toys, Games & Gadgets"
+            },
+            {
+              "categories": [
+                {
+                  "id": "babies-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Babies_1.jpg",
+                  "label": "Babies Toys"
+                },
+                {
+                  "id": "gadgets",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Babies_2.jpg",
+                  "label": "Gadgets"
+                }
+              ],
+              "id": "toys-and-games",
+              "label": "Toys, Games & Gadgets"
+            }
+          ]
+        },
+        "title": "Popular Categories",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/toys-and-games/dolls",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:dolls,s_departmentSeoSlug:toys-and-games&page=0&pageSize=4"
+        },
+        "title": "Dolls",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "min": 3,
+          "url": "/rest/search/recently-redeemed?page=0&pageSize=4&s_departmentSeoSlug=toys-and-games"
+        },
+        "title": "Recently redeemed",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/toys-and-games/toy-models?type=All%20Hornby",
+          "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:toy-models,s_departmentSeoSlug:toys-and-games,s_type:All+Hornby&page=0&pageSize=4"
+        },
+        "title": "Build Your Own Railway",
+        "ui": {
+          "type": "list"
+        }
+      }
+    ]
+  }
+}

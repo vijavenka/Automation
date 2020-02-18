@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "statisticId": {
+      "id": "statisticId",
+      "type": "string"
+    },
+    "statisticLabel": {
+      "id": "statisticLabel",
+      "type": "string"
+    },
+    "totalCount": {
+      "id": "totalCount",
+      "type": "integer"
+    },
+    "previousTotalCount": {
+      "id": "previousTotalCount",
+      "type": "null"
+    },
+    "from": {
+      "id": "from",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "to": {
+      "id": "to",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "groupedBy": {
+      "id": "groupedBy",
+      "type": "string"
+    },
+    "domainType": {
+      "id": "domainType",
+      "type": "string"
+    },
+    "items": {
+      "id": "items",
+      "type": "array",
+      "items": {
+        "id": "items",
+        "type": "object",
+        "properties": {
+          "key": {
+            "id": "key",
+            "type": "string"
+          },
+          "label": {
+            "id": "label",
+            "type": "string"
+          },
+          "value": {
+            "id": "value",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "itemCount": {
+      "id": "itemCount",
+      "type": "integer"
+    },
+    "truncated": {
+      "id": "truncated",
+      "type": "boolean"
+    },
+    "header": {
+      "id": "header",
+      "type": "array",
+      "items": {
+        "id": "items",
+        "type": "object",
+        "properties": {
+          "key": {
+            "id": "key",
+            "type": "string"
+          },
+          "type": {
+            "id": "type",
+            "type": "string"
+          },
+          "id": {
+            "id": "id",
+            "type": "boolean"
+          },
+          "label": {
+            "id": "label",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "statisticId",
+    "statisticLabel",
+    "totalCount",
+    "previousTotalCount",
+    "from",
+    "to",
+    "groupedBy",
+    "domainType",
+    "items",
+    "itemCount",
+    "truncated",
+    "header"
+  ]
+}

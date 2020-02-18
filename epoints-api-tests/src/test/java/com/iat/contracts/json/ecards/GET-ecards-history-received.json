@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "ecards": {
+      "id": "ecards",
+      "type": "array",
+      "items": {
+        "id": "1",
+        "type": "object",
+        "properties": {
+          "from": {
+            "id": "from",
+            "type": "object",
+            "properties": {
+              "firstName": {
+                "id": "firstName",
+                "type": "string"
+              },
+              "email": {
+                "id": "email",
+                "type": "string"
+              }
+            }
+          },
+          "receiver": {
+            "id": "receiver",
+            "type": "object",
+            "properties": {
+              "email": {
+                "id": "email",
+                "type": "string"
+              }
+            }
+          },
+          "createdAt": {
+            "id": "createdAt",
+            "type": "integer"
+          },
+          "pointsValue": {
+            "id": "pointsValue",
+            "type": "integer"
+          },
+          "reasonId": {
+            "id": "reasonId",
+            "type": "string"
+          },
+          "message": {
+            "id": "message",
+            "type": "string"
+          },
+          "id": {
+            "id": "id",
+            "type": "integer"
+          },
+          "templateUrl": {
+            "id": "templateUrl",
+            "type": "string"
+          },
+          "to": {
+            "id": "to",
+            "type": "array",
+            "items": {
+              "id": "7",
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "id": "firstName",
+                  "type": "string"
+                },
+                "email": {
+                  "id": "email",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "from",
+          "receiver",
+          "createdAt",
+          "pointsValue",
+          "reasonId",
+          "message",
+          "id",
+          "templateUrl",
+          "to"
+        ]
+      },
+      "required": [
+        "1"
+      ]
+    }
+  },
+  "required": [
+    "ecards"
+  ]
+}

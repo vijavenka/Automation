@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "User Details after Registration",
+  "description": "Object returned after registration by email on epoints - defaults included",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "id": "uuid",
+      "type": "string"
+    },
+    "verified": {
+      "id": "verified",
+      "type": "boolean",
+      "default": false
+    },
+    "registrationAt": {
+      "id": "registrationAt",
+      "type": "integer"
+    },
+    "epointsContact": {
+      "id": "epointsContact",
+      "type": "boolean",
+      "default": false
+    },
+    "emailVerified": {
+      "id": "emailVerified",
+      "type": "boolean",
+      "default": false
+    },
+    "updatedAt": {
+      "id": "updatedAt",
+      "type": "integer",
+      "default": 0
+    },
+    "registrationSiteId": {
+      "id": "registrationSiteId",
+      "type": "integer",
+      "default": 2
+    },
+    "registrationSiteUrl": {
+      "id": "registrationSiteUrl",
+      "type": "string"
+    },
+    "unsubscribed": {
+      "id": "unsubscribed",
+      "type": "boolean",
+      "default": false
+    },
+    "revokedDate": {
+      "id": "revokedDate",
+      "type": "integer",
+      "default": 0
+    },
+    "userGroups": {
+      "id": "userGroups",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "object",
+        "properties": {
+          "groupId": {
+            "id": "groupId",
+            "type": "integer"
+          },
+          "status": {
+            "id": "status",
+            "type": "string",
+            "default": "active"
+          },
+          "email": {
+            "id": "email",
+            "type": "string"
+          },
+          "partnerId": {
+            "id": "partnerId",
+            "type": "integer"
+          },
+          "createDate": {
+            "id": "createDate",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "foreignUser": {
+      "id": "foreignUser",
+      "type": "boolean",
+      "default": false
+    },
+    "hardBounced": {
+      "id": "hardBounced",
+      "type": "boolean",
+      "default": false
+    },
+    "revoked": {
+      "id": "revoked",
+      "type": "boolean",
+      "default": false
+    },
+    "birthDate": {
+      "id": "birthDate",
+      "type": "integer",
+      "default": 0
+    },
+    "active": {
+      "id": "active",
+      "type": "boolean",
+      "default": true,
+      "enum": [
+        true
+      ]
+    },
+    "email": {
+      "id": "email",
+      "type": "string"
+    },
+    "verificationCounter": {
+      "id": "verificationCounter",
+      "type": "integer",
+      "default": 0
+    },
+    "lastVerificationSentDate": {
+      "id": "lastVerificationSentDate",
+      "type": "integer",
+      "default": 0
+    },
+    "registrationSiteShortName": {
+      "id": "registrationSiteShortName",
+      "type": "string",
+      "default": "ePoints.com"
+    },
+    "spam": {
+      "id": "spam",
+      "type": "boolean",
+      "default": false
+    },
+    "passwordChangedAt": {
+      "id": "passwordChangedAt",
+      "type": "integer",
+      "default": 0
+    },
+    "thirdPartyContact": {
+      "id": "thirdPartyContact",
+      "type": "boolean",
+      "default": false
+    },
+    "lastLoginAt": {
+      "id": "lastLoginAt",
+      "type": "integer",
+      "default": 0
+    },
+    "registrationSiteName": {
+      "id": "registrationSiteName",
+      "type": "string",
+      "default": "ePoints"
+    }
+  },
+  "required": [
+    "uuid",
+    "verified",
+    "registrationAt",
+    "epointsContact",
+    "emailVerified",
+    "updatedAt",
+    "registrationSiteId",
+    "registrationSiteUrl",
+    "unsubscribed",
+    "revokedDate",
+    "userGroups",
+    "foreignUser",
+    "hardBounced",
+    "revoked",
+    "birthDate",
+    "active",
+    "email",
+    "verificationCounter",
+    "lastVerificationSentDate",
+    "registrationSiteShortName",
+    "spam",
+    "passwordChangedAt",
+    "thirdPartyContact",
+    "lastLoginAt",
+    "registrationSiteName"
+  ]
+}

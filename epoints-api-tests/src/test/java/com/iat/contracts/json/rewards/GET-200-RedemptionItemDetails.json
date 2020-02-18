@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "seoSlug": {
+      "type": "string"
+    },
+    "epoints": {
+      "type": "object",
+      "properties": {
+        "UK": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "IE": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "originalEpoints": {
+      "type": "object",
+      "properties": {
+        "UK": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "IE": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "retailer": {
+      "type": "null"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "thumbnailUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "additionalImageUrls": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "department": {
+      "type": "string"
+    },
+    "departmentSeoSlug": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "categoriesSeoSlugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exclusive": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "merchantName": {
+      "type": "string"
+    },
+    "merchantId": {
+      "type": "string"
+    },
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "localCurrencyValue": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "conversionRate": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "seoSlug",
+    "epoints",
+    "originalEpoints",
+    "imageUrl",
+    "thumbnailUrl",
+    "additionalImageUrls",
+    "active",
+    "department",
+    "departmentSeoSlug",
+    "categories",
+    "categoriesSeoSlugs",
+    "exclusive",
+    "description",
+    "merchantName",
+    "merchantId",
+    "brand",
+    "localCurrencyValue",
+    "currency",
+    "conversionRate"
+  ]
+}

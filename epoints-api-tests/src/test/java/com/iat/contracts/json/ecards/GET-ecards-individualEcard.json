@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "from": {
+      "id": "http://jsonschema.net/from",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "id": "http://jsonschema.net/from/firstName",
+          "type": "string"
+        }
+      },
+      "required": [
+        "firstName"
+      ]
+    },
+    "receiver": {
+      "id": "http://jsonschema.net/receiver",
+      "type": "object",
+      "properties": {
+        "email": {
+          "id": "http://jsonschema.net/receiver/email",
+          "type": "string"
+        }
+      }
+    },
+    "createdAt": {
+      "id": "http://jsonschema.net/createdAt",
+      "type": "integer"
+    },
+    "pointsValue": {
+      "id": "http://jsonschema.net/pointsValue",
+      "type": "integer"
+    },
+    "reasonId": {
+      "id": "http://jsonschema.net/reasonId",
+      "type": "string"
+    },
+    "message": {
+      "id": "http://jsonschema.net/message",
+      "type": "string"
+    },
+    "id": {
+      "id": "http://jsonschema.net/id",
+      "type": "integer"
+    },
+    "templateUrl": {
+      "id": "http://jsonschema.net/templateUrl",
+      "type": "string"
+    }
+  },
+  "required": [
+    "from",
+    "receiver",
+    "createdAt",
+    "pointsValue",
+    "reasonId",
+    "message",
+    "id",
+    "templateUrl"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Group partners",
+  "description": "Object returned for get Group Partners List",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "shortName": {
+        "type": "string"
+      },
+      "ecardsEnabled": {
+        "type": "boolean"
+      },
+      "groupEpointsInEcards": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "shortName",
+      "ecardsEnabled",
+      "groupEpointsInEcards"
+    ]
+  },
+  "required": [
+    "0"
+  ]
+}

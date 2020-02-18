@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "merchants": {
+      "items": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "imageUrl": {
+            "type": "string"
+          },
+          "leadGenerator": {
+            "type": "boolean"
+          },
+          "maximumCommission": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "seoTitle": {
+            "type": "string"
+          },
+          "siteUrl": {
+            "type": "string"
+          },
+          "zone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "siteUrl",
+          "name",
+          "zone",
+          "imageUrl",
+          "leadGenerator",
+          "seoTitle",
+          "maximumCommission",
+          "id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "merchants"
+  ],
+  "type": "object"
+}

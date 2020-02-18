@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "partnerShortName": {
+      "type": "string"
+    },
+    "customerId": {
+      "type": "string"
+    },
+    "amount_due": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "partnerShortName",
+    "customerId",
+    "amount_due"
+  ]
+}

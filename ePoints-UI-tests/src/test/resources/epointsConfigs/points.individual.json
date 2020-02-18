@@ -1,0 +1,148 @@
+{
+  "online": {
+    "promotedSpecials": {
+      "merchantsIds": [
+        "04539c8f-cbdd-491e-b8ff-81de9a8d550a",
+        "a31f1429-380f-4cd4-ae82-f98f11251e76"
+      ],
+      "merchantsIds/qa": [
+        "f9a359fa-61f8-4e1f-bb81-07c7e7467e84",
+        "20ba67b0-fe79-42c0-ae78-9a537b735044"
+      ],
+      "buttonUrl": "/points/online/specials"
+    }
+  },
+  "vouchers": {
+    "popularRetailers": [
+      "Currys PC World Rewards",
+      "Marks and Spencer Reward Points",
+      "New Look Rewards"
+    ],
+    "popularRetailers/qa": [
+      "Groupon Rewards",
+      "Marks and Spencer Reward Points",
+      "Thompson and Morgan Rewards"
+    ]
+  },
+  "blocks": [
+    {
+      "content": {
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/3radical/banner-roulette.png",
+        "isBorder": false,
+        "seeMore": "/prizes"
+      },
+      "ui": {
+        "type": "banner"
+      }
+    }
+  ],
+  "blocks/qa": [
+    {
+      "device": "desktop",
+      "section": "hero",
+      "content": {
+        "images": [
+          {
+            "imageUrl": "https://dummyimage.com/500x200/000/fff&text=1",
+            "url": "https://www.google.pl/search?q=1"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/cc2fcc/fff&text=2",
+            "url": "https://www.google.pl/search?q=2"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/2f5714/fff&text=3"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/bfba1c/fff&text=4",
+            "url": "https://www.google.pl/search?q=4"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/000/fff&text=1",
+            "url": "https://www.google.pl/search?q=1"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/cc2fcc/fff&text=2",
+            "url": "https://www.google.pl/search?q=2"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/2f5714/fff&text=3",
+            "url": "https://www.google.pl/search?q=3"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/bfba1c/fff&text=4",
+            "url": "https://www.google.pl/search?q=4"
+          }
+        ],
+        "autoPlay": 2000
+      },
+      "ui": {
+        "type": "carousel"
+      }
+    },
+    {
+      "device": "mobile",
+      "section": "hero",
+      "content": {
+        "images": [
+          {
+            "imageUrl": "https://dummyimage.com/500x200/000/fff&text=5",
+            "url": "https://www.google.pl/search?q=5"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/cc2fcc/fff&text=6",
+            "url": "https://www.google.pl/search?q=6"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/2f5714/fff&text=7"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/bfba1c/fff&text=8",
+            "url": "https://www.google.pl/search?q=8"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/000/fff&text=5",
+            "url": "https://www.google.pl/search?q=5"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/cc2fcc/fff&text=6",
+            "url": "https://www.google.pl/search?q=6"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/2f5714/fff&text=7",
+            "url": "https://www.google.pl/search?q=7"
+          },
+          {
+            "imageUrl": "https://dummyimage.com/500x200/bfba1c/fff&text=8",
+            "url": "https://www.google.pl/search?q=8"
+          }
+        ],
+        "autoPlay": 2000
+      },
+      "ui": {
+        "type": "carousel"
+      }
+    },
+    {
+      "content": {
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/3radical/banner-roulette.png",
+        "isBorder": false,
+        "seeMore": "/prizes"
+      },
+      "ui": {
+        "type": "banner"
+      }
+    },
+    {
+      "device": "desktop",
+      "request": {
+        "min": 3,
+        "url": "/rest/search/recently-redeemed?page=0&pageSize=8"
+      },
+      "title": "Recently redeemed",
+      "ui": {
+        "type": "list"
+      }
+    }
+  ]
+}

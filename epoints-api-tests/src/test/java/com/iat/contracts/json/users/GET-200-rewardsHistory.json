@@ -1,0 +1,230 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalItems": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "items": {
+    "additionalProperties": false,
+    "id": "/items",
+    "properties": {
+      "date": {
+        "id": "/items/properties/date",
+        "type": "integer"
+      },
+      "deliveryAddress": {
+        "additionalProperties": false,
+        "id": "/items/properties/deliveryAddress",
+        "properties": {
+          "address1": {
+            "id": "/items/properties/deliveryAddress/properties/address1",
+            "type": "string"
+          },
+          "address2": {
+            "id": "/items/properties/deliveryAddress/properties/address2",
+            "type": "string"
+          },
+          "city": {
+            "id": "/items/properties/deliveryAddress/properties/city",
+            "type": "string"
+          },
+          "country": {
+            "id": "/items/properties/deliveryAddress/properties/country",
+            "type": "string"
+          },
+          "county": {
+            "id": "/items/properties/deliveryAddress/properties/county",
+            "type": "string"
+          },
+          "name": {
+            "id": "/items/properties/deliveryAddress/properties/name",
+            "type": "string"
+          },
+          "phoneNo": {
+            "id": "/items/properties/deliveryAddress/properties/phoneNo",
+            "type": "string"
+          },
+          "postCode": {
+            "id": "/items/properties/deliveryAddress/properties/postCode",
+            "type": "string"
+          }
+        },
+        "required": [
+          "city",
+          "name",
+          "country",
+          "address2",
+          "county",
+          "postCode",
+          "address1",
+          "phoneNo"
+        ],
+        "type": "object"
+      },
+      "epointsSpentForOneProduct": {
+        "id": "/items/properties/epointsSpentForOneProduct",
+        "type": "integer"
+      },
+      "quantity": {
+        "id": "/items/properties/quantity",
+        "type": "integer"
+      },
+      "redemptionItemInfo": {
+        "additionalProperties": false,
+        "id": "/items/properties/redemptionItemInfo",
+        "properties": {
+          "active": {
+            "id": "/items/properties/redemptionItemInfo/properties/active",
+            "type": "boolean"
+          },
+          "additionalImageUrls": {
+            "id": "/items/properties/redemptionItemInfo/properties/additionalImageUrls",
+            "type": "null"
+          },
+          "brand": {
+            "id": "/items/properties/redemptionItemInfo/properties/brand",
+            "type": "null"
+          },
+          "businessId": {
+            "id": "/items/properties/redemptionItemInfo/properties/businessId",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "categories": {
+            "additionalItems": false,
+            "id": "/items/properties/redemptionItemInfo/properties/categories",
+            "items": {},
+            "type": "array"
+          },
+          "categoriesSeoSlugs": {
+            "additionalItems": false,
+            "id": "/items/properties/redemptionItemInfo/properties/categoriesSeoSlugs",
+            "items": {},
+            "type": "array"
+          },
+          "conversionRate": {
+            "id": "/items/properties/redemptionItemInfo/properties/conversionRate",
+            "type": "null"
+          },
+          "currency": {
+            "id": "/items/properties/redemptionItemInfo/properties/currency",
+            "type": "null"
+          },
+          "department": {
+            "id": "/items/properties/redemptionItemInfo/properties/department",
+            "type": "null"
+          },
+          "departmentSeoSlug": {
+            "id": "/items/properties/redemptionItemInfo/properties/departmentSeoSlug",
+            "type": "null"
+          },
+          "description": {
+            "id": "/items/properties/redemptionItemInfo/properties/description",
+            "type": "null"
+          },
+          "epoints": {
+            "additionalProperties": false,
+            "id": "/items/properties/redemptionItemInfo/properties/epoints",
+            "properties": {
+              "UK": {
+                "id": "/items/properties/redemptionItemInfo/properties/epoints/properties/UK",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "UK"
+            ],
+            "type": "object"
+          },
+          "exclusive": {
+            "id": "/items/properties/redemptionItemInfo/properties/exclusive",
+            "type": "boolean"
+          },
+          "id": {
+            "id": "/items/properties/redemptionItemInfo/properties/id",
+            "type": "string"
+          },
+          "imageUrl": {
+            "id": "/items/properties/redemptionItemInfo/properties/imageUrl",
+            "type": "string"
+          },
+          "localCurrencyValue": {
+            "id": "/items/properties/redemptionItemInfo/properties/localCurrencyValue",
+            "type": "null"
+          },
+          "merchantId": {
+            "id": "/items/properties/redemptionItemInfo/properties/merchantId",
+            "type": "null"
+          },
+          "merchantName": {
+            "id": "/items/properties/redemptionItemInfo/properties/merchantName",
+            "type": "null"
+          },
+          "originalEpoints": {
+            "additionalProperties": false,
+            "id": "/items/properties/redemptionItemInfo/properties/originalEpoints",
+            "properties": {},
+            "type": "object"
+          },
+          "promoted": {
+            "id": "/items/properties/redemptionItemInfo/properties/promoted",
+            "type": "boolean"
+          },
+          "retailer": {
+            "id": "/items/properties/redemptionItemInfo/properties/retailer",
+            "type": "null"
+          },
+          "seoSlug": {
+            "id": "/items/properties/redemptionItemInfo/properties/seoSlug",
+            "type": "null"
+          },
+          "thumbnailUrl": {
+            "id": "/items/properties/redemptionItemInfo/properties/thumbnailUrl",
+            "type": "string"
+          },
+          "title": {
+            "id": "/items/properties/redemptionItemInfo/properties/title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "seoSlug",
+          "departmentSeoSlug",
+          "exclusive",
+          "retailer",
+          "conversionRate",
+          "currency",
+          "epoints",
+          "id",
+          "thumbnailUrl",
+          "merchantId",
+          "localCurrencyValue",
+          "merchantName",
+          "title",
+          "originalEpoints",
+          "categoriesSeoSlugs",
+          "department",
+          "description",
+          "businessId",
+          "brand",
+          "active",
+          "categories",
+          "imageUrl",
+          "additionalImageUrls",
+          "promoted"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "date",
+      "redemptionItemInfo",
+      "deliveryAddress",
+      "epointsSpentForOneProduct",
+      "quantity"
+    ],
+    "type": "object"
+  },
+  "type": "array"
+}

@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "accountDetails": {
+      "type": "object",
+      "properties": {
+        "pointsAccounted": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "null"
+        },
+        "existingPassword": {
+          "type": "null"
+        },
+        "passwordChangeDate": {
+          "type": "integer"
+        },
+        "emailVerified": {
+          "type": "boolean"
+        },
+        "registrationDate": {
+          "type": "integer"
+        },
+        "referrerLink": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "partnersGroupName": {
+          "type": "string"
+        },
+        "partnersGroupShortName": {
+          "type": "string"
+        },
+        "businessIds": {
+          "type": "array",
+          "items": {}
+        },
+        "passwordSet": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "pointsAccounted",
+        "id",
+        "email",
+        "newPassword",
+        "existingPassword",
+        "passwordChangeDate",
+        "emailVerified",
+        "registrationDate",
+        "referrerLink",
+        "verified",
+        "partnersGroupName",
+        "partnersGroupShortName",
+        "businessIds",
+        "passwordSet"
+      ]
+    },
+    "personalDetails": {
+      "type": "object",
+      "properties": {
+        "pointsAccounted": {
+          "type": "boolean"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "title": {
+          "type": "null"
+        },
+        "gender": {
+          "type": "null"
+        },
+        "dob": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "pointsAccounted",
+        "firstName",
+        "lastName",
+        "title",
+        "gender",
+        "dob"
+      ]
+    },
+    "contactDetails": {
+      "type": "object",
+      "properties": {
+        "pointsAccounted": {
+          "type": "boolean"
+        },
+        "phoneNo": {
+          "type": "null"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "pointsAccounted": {
+              "type": "boolean"
+            },
+            "house": {
+              "type": "null"
+            },
+            "street": {
+              "type": "null"
+            },
+            "city": {
+              "type": "null"
+            },
+            "county": {
+              "type": "null"
+            },
+            "country": {
+              "type": "null"
+            },
+            "postcode": {
+              "type": "null"
+            },
+            "firstName": {
+              "type": "null"
+            },
+            "lastName": {
+              "type": "null"
+            },
+            "phoneNo": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "pointsAccounted",
+            "house",
+            "street",
+            "city",
+            "county",
+            "country",
+            "postcode",
+            "firstName",
+            "lastName",
+            "phoneNo"
+          ]
+        }
+      },
+      "required": [
+        "pointsAccounted",
+        "phoneNo",
+        "address"
+      ]
+    },
+    "consentDetails": {
+      "type": "object",
+      "properties": {
+        "subscribedToMarketingEmails": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "subscribedToMarketingEmails"
+      ]
+    },
+    "ecardsVisible": {
+      "type": "boolean"
+    },
+    "epointsReceiverScope": {
+      "type": "null"
+    },
+    "couponUsageVisible": {
+      "type": "boolean"
+    },
+    "userSubscriptionDetails": {
+      "type": ["object","null"],
+      "properties": {
+        "membershipType": {
+          "type": "string"
+        },
+        "expireAt": {
+          "type": ["string", "null"]
+        },
+        "couponApplied": {
+          "type": "boolean"
+        },
+        "eligibleForBusinessSubscription": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "membershipType",
+        "couponApplied",
+        "eligibleForBusinessSubscription"
+      ]
+    }
+  },
+  "required": [
+    "accountDetails",
+    "personalDetails",
+    "contactDetails",
+    "consentDetails",
+    "ecardsVisible",
+    "epointsReceiverScope",
+    "couponUsageVisible",
+    "userSubscriptionDetails"
+  ]
+}

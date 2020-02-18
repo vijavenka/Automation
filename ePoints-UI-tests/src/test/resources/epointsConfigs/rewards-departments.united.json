@@ -1,0 +1,152 @@
+{
+  "blocks/qa": {
+    "shopfitting": [
+      {
+        "region": "uk",
+        "section": "hero",
+        "content": {
+          "images": [
+            {
+              "imageUrl": "https://dummyimage.com/500x200/000/fff&text=1",
+              "url": "http://disco.fleo.se/1"
+            },
+            {
+              "imageUrl": "https://dummyimage.com/500x200/cc2fcc/fff&text=2",
+              "url": "http://disco.fleo.se/2"
+            },
+            {
+              "imageUrl": "https://dummyimage.com/500x200/2f5714/fff&text=3",
+              "url": "http://disco.fleo.se/3"
+            }
+          ],
+          "autoPlay": 200
+        },
+        "ui": {
+          "type": "carousel"
+        }
+      },
+      {
+        "content": {
+          "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Baby+and+Child.jpg",
+          "seeMore": "/rewards/baby-and-child/bottle-feeding"
+        },
+        "title": "Banner - hidden title",
+        "ui": {
+          "type": "banner"
+        }
+      },
+      {
+        "content": {
+          "departments": [
+            {
+              "categories": [
+                {
+                  "id": "baby-toys",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Baby+toiletries_1.jpg",
+                  "label": "Baby Toys"
+                },
+                {
+                  "id": "bathing",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Bathing_2.jpg",
+                  "label": "Bathing"
+                }
+              ],
+              "id": "baby-and-child",
+              "label": "Baby & Child"
+            },
+            {
+              "categories": [
+                {
+                  "id": "baby-bedding",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/_Baby+bedding+%26+bibs+%26+soothers_3.jpg",
+                  "label": "Baby Bedding"
+                },
+                {
+                  "id": "bibs-and-soothers",
+                  "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/soother.jpg",
+                  "label": "Bibs & Soothers"
+                }
+              ],
+              "id": "baby-and-child",
+              "label": "Baby & Child"
+            }
+          ]
+        },
+        "title": "Popular Categorie",
+        "ui": {
+          "type": "categories"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child/baby-carriers?epoints=5000-8000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C8000,s_categoryFromFeedExtractedSeoSlugs_multiVal:baby-carriers,s_departmentSeoSlug:baby-and-child&page=0&pageSize=4"
+        },
+        "title": "Baby Carriers",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child?pageSize=100",
+          "url": "/rest/search/redemptionitems?filters=s_departmentSeoSlug:baby-and-child&page=0&pageSize=5"
+        },
+        "title": "Our Pick",
+        "ui": {
+          "type": "special-offers"
+        }
+      },
+      {
+        "request": {
+          "seeMore": "/rewards/baby-and-child/high-chairs?epoints=5000-8000",
+          "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C8000,s_categoryFromFeedExtractedSeoSlugs_multiVal:high-chairs,s_departmentSeoSlug:baby-and-child&page=0&pageSize=4"
+        },
+        "title": "High Chairs",
+        "ui": {
+          "type": "list"
+        }
+      },
+      {
+        "content": {
+          "brands": [
+            {
+              "id": "Britax",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Britax.jpg",
+              "url": "/rewards/baby-and-child?brand=Britax"
+            },
+            {
+              "id": "Baby Jogger",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Baby+Jogger.jpg",
+              "url": "/rewards/list?department=Baby%20%26%20Child&brand=Baby%20Jogger"
+            },
+            {
+              "id": "Chicco",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Chicco.jpg",
+              "url": "/rewards/baby-and-child?brand=Chicco"
+            },
+            {
+              "id": "Tommee Tippee",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Tommee+Tippee.jpg",
+              "url": "/rewards/baby-and-child?brand=Tommee%20Tippee"
+            },
+            {
+              "id": "Maxi-Cosi",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Maxi+Cosi.jpg",
+              "url": "/rewards/baby-and-child?brand=Maxi-Cosi"
+            },
+            {
+              "id": "Avent",
+              "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/AVENT_.jpg",
+              "url": "/rewards/baby-and-child?brand=Avent"
+            }
+          ]
+        },
+        "title": "Popular Brands",
+        "ui": {
+          "type": "brands"
+        }
+      }
+    ]
+  }
+}

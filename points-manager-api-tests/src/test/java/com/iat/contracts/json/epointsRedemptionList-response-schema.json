@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "seoSlug": {
+            "type": "string"
+          },
+          "epoints": {
+            "type": "object",
+            "properties": {
+              "UK": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "UK"
+            ]
+          },
+          "retailer": {
+            "type": "null"
+          },
+          "imageUrl": {
+            "type": "string"
+          },
+          "thumbnailUrl": {
+            "type": "null"
+          },
+          "promoted": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "seoSlug",
+          "epoints",
+          "retailer",
+          "imageUrl",
+          "thumbnailUrl",
+          "promoted"
+        ]
+      }
+    },
+    "filters": {
+      "type": "null"
+    },
+    "pageSize": {
+      "type": "integer"
+    },
+    "allCount": {
+      "type": "integer"
+    },
+    "pagesCount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "filters",
+    "pageSize",
+    "allCount",
+    "pagesCount"
+  ]
+}

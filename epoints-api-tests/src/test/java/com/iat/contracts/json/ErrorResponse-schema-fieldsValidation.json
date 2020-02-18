@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "id": "timestamp",
+      "type": "string"
+    },
+    "errors": {
+      "id": "errors",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "fieldName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "message",
+          "fieldName"
+        ]
+      }
+    }
+  },
+  "required": [
+    "timestamp",
+    "errors"
+  ]
+}

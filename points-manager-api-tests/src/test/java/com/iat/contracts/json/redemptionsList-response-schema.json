@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get redemption order history",
+  "description": "Object returned user redemption order history",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "createdDate": {
+            "type": "integer"
+          },
+          "refundDate": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "redemptionId": {
+            "type": "integer"
+          },
+          "orderId": {
+            "type": "integer"
+          },
+          "merchantName": {
+            "type": "string"
+          },
+          "productUrl": {
+            "type": "string"
+          },
+          "productName": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "epoints": {
+            "type": "integer"
+          },
+          "userEmail": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "activityInfo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "createdDate",
+          "refundDate",
+          "redemptionId",
+          "orderId",
+          "merchantName",
+          "productUrl",
+          "productName",
+          "quantity",
+          "epoints",
+          "userEmail",
+          "status",
+          "activityInfo"
+        ]
+      }
+    },
+    "totalResults": {
+      "type": "integer"
+    },
+    "searchResultsCount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "totalResults",
+    "searchResultsCount"
+  ]
+}

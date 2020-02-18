@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get redeemed points for given partner",
+  "description": "Object returned redeemed points for partner",
+  "type": "object",
+  "properties": {
+    "allCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pageSize": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pagesCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "integer"
+          },
+          "value": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "spentBy": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "email": {
+                "type": "string"
+              },
+              "firstName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lastName": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "email"
+            ]
+          },
+          "redemptionItem": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "seoSlug": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "title"
+            ]
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "date",
+          "amount",
+          "value",
+          "currency",
+          "spentBy",
+          "redemptionItem",
+          "quantity"
+        ]
+      }
+    },
+    "totals": {
+      "id": "totals",
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "integer"
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "allCount",
+    "pageSize",
+    "pagesCount",
+    "results",
+    "totals"
+  ]
+}

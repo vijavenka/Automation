@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "results": {
+      "id": "results",
+      "type": "array",
+      "items": {
+        "id": "1",
+        "type": "object",
+        "properties": {
+          "id": {
+            "id": "id",
+            "type": "integer"
+          },
+          "createdAt": {
+            "id": "createdAt",
+            "type": "string"
+          },
+          "sentFrom": {
+            "id": "sentFrom",
+            "type": "object",
+            "properties": {
+              "email": {
+                "id": "email",
+                "type": "string"
+              },
+              "adminId": {
+                "id": "adminId",
+                "type": "integer"
+              },
+              "name": {
+                "id": "name",
+                "type": "string"
+              },
+              "departmentName": {
+                "id": "departmentName",
+                "type": "string"
+              }
+            }
+          },
+          "sentTo": {
+            "id": "sentTo",
+            "type": "object",
+            "properties": {
+              "email": {
+                "id": "email",
+                "type": "string"
+              },
+              "name": {
+                "id": "name",
+                "type": "string"
+              },
+              "departmentName": {
+                "id": "departmentName",
+                "type": "string"
+              }
+            }
+          },
+          "reason": {
+            "id": "reason",
+            "type": "string"
+          },
+          "eCardPreviewLink": {
+            "id": "eCardPreviewLink",
+            "type": "string"
+          },
+          "points": {
+            "id": "points",
+            "type": "integer"
+          },
+          "amount": {
+            "id": "amount",
+            "type": "number"
+          },
+          "managerToUser": {
+            "id": "managerToUser",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "createdAt",
+          "sentFrom",
+          "sentTo",
+          "reason",
+          "eCardPreviewLink",
+          "points",
+          "amount",
+          "managerToUser"
+        ]
+      },
+      "required": [
+        "1"
+      ]
+    },
+    "searchResultsCount": {
+      "id": "searchResultsCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "searchResultsCount"
+  ]
+}
