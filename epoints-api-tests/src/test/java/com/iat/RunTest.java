@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(monochrome = true,
         features = "src/test/resources",
         format = {"pretty", "json:build/reports/tests/cucumber/cucumber.json", "html:build/reports/tests/cucumber/html"}
-        ,tags = {"@vijaytest"}
+        //,tags = {"@vijaytest"}
 )
 public class RunTest {
 
