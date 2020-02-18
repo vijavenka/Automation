@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "name": {
+      "id": "name",
+      "type": "string"
+    },
+    "managerToUserReasonRange": {
+      "id": "managerToUserReasonRange",
+      "enum": [
+        "DEFINE",
+        "GLOBAL"
+      ]
+    },
+    "managerToUserMin": {
+      "id": "managerToUserMin",
+      "type": "integer"
+    },
+    "managerToUserMax": {
+      "id": "managerToUserMax",
+      "type": "integer"
+    },
+    "userToUserReasonRange": {
+      "id": "userToUserReasonRange",
+      "enum": [
+        "DEFINE",
+        "GLOBAL"
+      ]
+    },
+    "userToUserMin": {
+      "id": "userToUserMin",
+      "type": "integer"
+    },
+    "userToUserMax": {
+      "id": "userToUserMax",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "name",
+    "managerToUserReasonRange",
+    "userToUserReasonRange"
+  ]
+}

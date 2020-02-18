@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UserInterests",
+  "description": "Object returned when /users/{userId}/interests used",
+  "type": "object",
+  "properties": {
+    "merchants": {
+      "type": "array",
+      "items": {
+        "id": "merchants",
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "merchants"
+  ]
+}

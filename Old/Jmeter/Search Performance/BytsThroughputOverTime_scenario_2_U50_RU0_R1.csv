@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2209" lt="2201" ts="1373818080874" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-21" by="3586" ng="50" na="50"/>
+<httpSample t="2201" lt="2188" ts="1373818080898" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-38" by="3586" ng="50" na="50"/>
+<httpSample t="2194" lt="2182" ts="1373818080920" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-44" by="3587" ng="50" na="50"/>
+<httpSample t="2191" lt="2183" ts="1373818080931" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-49" by="3586" ng="50" na="50"/>
+<httpSample t="2265" lt="2235" ts="1373818080922" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-43" by="3586" ng="50" na="50"/>
+<httpSample t="2318" lt="2307" ts="1373818080882" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-28" by="3587" ng="50" na="50"/>
+<httpSample t="2609" lt="2600" ts="1373818080896" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-33" by="3587" ng="50" na="50"/>
+<httpSample t="2754" lt="2713" ts="1373818080831" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-3" by="3586" ng="50" na="50"/>
+<httpSample t="3311" lt="3301" ts="1373818080892" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-34" by="3586" ng="50" na="50"/>
+<httpSample t="3356" lt="3339" ts="1373818080926" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-46" by="3586" ng="50" na="50"/>
+<httpSample t="1074" lt="1063" ts="1373818083590" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-3" by="3486" ng="50" na="50"/>
+<httpSample t="4142" lt="4135" ts="1373818083125" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-49" by="3486" ng="50" na="50"/>
+<httpSample t="6726" lt="6715" ts="1373818080864" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-20" by="3586" ng="50" na="50"/>
+<httpSample t="4506" lt="4498" ts="1373818083098" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-21" by="3486" ng="50" na="50"/>
+<httpSample t="4586" lt="4571" ts="1373818083116" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-38" by="3486" ng="50" na="50"/>
+<httpSample t="4600" lt="4595" ts="1373818083118" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-44" by="3486" ng="50" na="50"/>
+<httpSample t="6902" lt="6876" ts="1373818080827" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-1" by="3587" ng="50" na="50"/>
+<httpSample t="4497" lt="4475" ts="1373818083511" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-33" by="3486" ng="50" na="50"/>
+<httpSample t="1116" lt="1100" ts="1373818087136" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-49" by="3486" ng="50" na="50"/>
+<httpSample t="7581" lt="7562" ts="1373818080828" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-4" by="3586" ng="50" na="50"/>
+<httpSample t="7579" lt="7559" ts="1373818080841" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-12" by="3586" ng="50" na="50"/>
+<httpSample t="7843" lt="7830" ts="1373818080858" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-11" by="3585" ng="50" na="50"/>
+<httpSample t="1099" lt="1071" ts="1373818087473" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-21" by="3486" ng="50" na="50"/>
+<httpSample t="1002" lt="987" ts="1373818087586" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-44" by="3486" ng="50" na="50"/>
+<httpSample t="7884" lt="7875" ts="1373818080854" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-7" by="3586" ng="50" na="50"/>
+<httpSample t="1044" lt="1036" ts="1373818087570" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-38" by="3486" ng="50" na="50"/>
+<httpSample t="1167" lt="1167" ts="1373818087461" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-20" by="3486" ng="50" na="50"/>
+<httpSample t="1048" lt="1041" ts="1373818087595" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-1" by="3486" ng="50" na="50"/>
+<httpSample t="7961" lt="7948" ts="1373818080852" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-16" by="3585" ng="50" na="50"/>
+<httpSample t="251" lt="230" ts="1373818088592" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-44" by="3486" ng="50" na="50"/>
+<httpSample t="269" lt="255" ts="1373818088582" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-11" by="3486" ng="50" na="50"/>
+<httpSample t="248" lt="239" ts="1373818088617" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-38" by="3486" ng="50" na="50"/>
+<httpSample t="677" lt="640" ts="1373818088582" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-21" by="3486" ng="50" na="50"/>
+<httpSample t="717" lt="692" ts="1373818088604" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-7" by="3486" ng="50" na="50"/>
+<httpSample t="668" lt="660" ts="1373818088679" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-16" by="3486" ng="50" na="50"/>
+<httpSample t="500" lt="489" ts="1373818088861" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-11" by="3486" ng="50" na="50"/>
+<httpSample t="808" lt="796" ts="1373818088631" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-20" by="3486" ng="50" na="50"/>
+<httpSample t="594" lt="527" ts="1373818088859" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-44" by="3486" ng="50" na="50"/>
+<httpSample t="813" lt="798" ts="1373818088646" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-1" by="3486" ng="50" na="50"/>
+<httpSample t="599" lt="591" ts="1373818088869" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-38" by="3486" ng="50" na="50"/>
+<httpSample t="9207" lt="7561" ts="1373818080863" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-14" by="3586" ng="50" na="50"/>
+<httpSample t="559" lt="547" ts="1373818089467" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-1" by="3486" ng="50" na="50"/>
+<httpSample t="693" lt="671" ts="1373818089356" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-16" by="3486" ng="50" na="50"/>
+<httpSample t="582" lt="576" ts="1373818089472" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-38" by="3486" ng="50" na="50"/>
+<httpSample t="608" lt="593" ts="1373818089465" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-44" by="3486" ng="50" na="50"/>
+<httpSample t="714" lt="707" ts="1373818089367" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-11" by="3486" ng="50" na="50"/>
+<httpSample t="680" lt="670" ts="1373818089449" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-20" by="3486" ng="50" na="50"/>
+<httpSample t="879" lt="864" ts="1373818089267" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-21" by="3486" ng="50" na="50"/>
+<httpSample t="2271" lt="2038" ts="1373818087878" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-33" by="3486" ng="50" na="50"/>
+<httpSample t="856" lt="823" ts="1373818089328" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-7" by="3486" ng="50" na="50"/>
+<httpSample t="214" lt="201" ts="1373818090059" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-16" by="3486" ng="50" na="50"/>
+<httpSample t="226" lt="216" ts="1373818090063" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-38" by="3486" ng="50" na="50"/>
+<httpSample t="266" lt="256" ts="1373818090035" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-1" by="3486" ng="49" na="49"/>
+<httpSample t="9602" lt="7950" ts="1373818080864" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-18" by="3586" ng="49" na="49"/>
+<httpSample t="465" lt="298" ts="1373818089941" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-14" by="3486" ng="49" na="49"/>
+<httpSample t="517" lt="502" ts="1373818090155" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-21" by="3486" ng="49" na="49"/>
+<httpSample t="573" lt="565" ts="1373818090138" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-20" by="3486" ng="49" na="49"/>
+<httpSample t="648" lt="640" ts="1373818090078" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-44" by="3486" ng="49" na="49"/>
+<httpSample t="584" lt="577" ts="1373818090156" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-33" by="3486" ng="48" na="48"/>
+<httpSample t="701" lt="690" ts="1373818090084" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-11" by="3486" ng="48" na="48"/>
+<httpSample t="626" lt="620" ts="1373818090187" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-7" by="3486" ng="48" na="48"/>
+<httpSample t="539" lt="516" ts="1373818090283" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-16" by="3486" ng="48" na="48"/>
+<httpSample t="537" lt="524" ts="1373818090306" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-1" by="3486" ng="48" na="48"/>
+<httpSample t="443" lt="437" ts="1373818090414" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-14" by="3486" ng="48" na="48"/>
+<httpSample t="656" lt="502" ts="1373818090333" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-18" by="3486" ng="48" na="48"/>
+<httpSample t="318" lt="290" ts="1373818090744" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-33" by="3486" ng="48" na="48"/>
+<httpSample t="329" lt="312" ts="1373818090793" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-11" by="3486" ng="48" na="48"/>
+<httpSample t="459" lt="437" ts="1373818090681" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-21" by="3486" ng="48" na="48"/>
+<httpSample t="433" lt="426" ts="1373818090716" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-20" by="3486" ng="47" na="47"/>
+<httpSample t="331" lt="302" ts="1373818090826" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-16" by="3486" ng="47" na="47"/>
+<httpSample t="326" lt="319" ts="1373818090847" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-1" by="3486" ng="47" na="47"/>
+<httpSample t="376" lt="368" ts="1373818090818" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-7" by="3486" ng="46" na="46"/>
+<httpSample t="367" lt="352" ts="1373818090861" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-14" by="3486" ng="46" na="46"/>
+<httpSample t="248" lt="240" ts="1373818090996" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-18" by="3486" ng="46" na="46"/>
+<httpSample t="244" lt="225" ts="1373818091070" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-33" by="3486" ng="46" na="46"/>
+<httpSample t="202" lt="189" ts="1373818091129" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-11" by="3486" ng="46" na="46"/>
+<httpSample t="194" lt="179" ts="1373818091152" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-20" by="3486" ng="45" na="45"/>
+<httpSample t="199" lt="191" ts="1373818091160" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-16" by="3486" ng="44" na="44"/>
+<httpSample t="216" lt="209" ts="1373818091198" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-7" by="3486" ng="43" na="43"/>
+<httpSample t="842" lt="832" ts="1373818091248" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-18" by="3486" ng="43" na="43"/>
+<httpSample t="694" lt="677" ts="1373818091417" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-7" by="3486" ng="43" na="43"/>
+<httpSample t="903" lt="903" ts="1373818091232" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-14" by="3486" ng="42" na="42"/>
+<httpSample t="838" lt="838" ts="1373818091324" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-33" by="3486" ng="42" na="42"/>
+<httpSample t="209" lt="175" ts="1373818092140" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-14" by="3486" ng="41" na="41"/>
+<httpSample t="264" lt="252" ts="1373818092100" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-18" by="3486" ng="41" na="41"/>
+<httpSample t="4323" lt="4317" ts="1373818088288" s="true" lb="5. Return facets for given keyword" rm="OK" tn="Virtual Users 1-12" by="2896" ng="41" na="41"/>
+<httpSample t="299" lt="246" ts="1373818092620" s="true" lb="6. Return products for given keyword" rm="OK" tn="Virtual Users 1-12" by="5097" ng="41" na="41"/>
+<httpSample t="638" lt="628" ts="1373818092368" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-18" by="3486" ng="41" na="41"/>
+<httpSample t="335" lt="328" ts="1373818092928" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-12" by="2897" ng="41" na="41"/>
+<httpSample t="152" lt="152" ts="1373818093272" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-12" by="282" ng="41" na="41"/>
+<httpSample t="449" lt="439" ts="1373818093016" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-18" by="3486" ng="41" na="41"/>
+<httpSample t="154" lt="154" ts="1373818093432" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-12" by="282" ng="40" na="40"/>
+<httpSample t="203" lt="203" ts="1373818093595" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-12" by="1212" ng="40" na="40"/>
+<httpSample t="27996" lt="27988" ts="1373818080926" s="true" lb="4. Call for search page" rm="OK" tn="Virtual Users 1-48" by="11184" ng="39" na="39"/>
+<httpSample t="238" lt="235" ts="1373818108795" s="true" lb="5. Return facets for given keyword" rm="OK" tn="Virtual Users 1-48" by="2896" ng="39" na="39"/>
+<httpSample t="143" lt="137" ts="1373818109041" s="true" lb="6. Return products for given keyword" rm="OK" tn="Virtual Users 1-48" by="5097" ng="39" na="39"/>
+<httpSample t="239" lt="238" ts="1373818109194" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-48" by="2897" ng="39" na="39"/>
+<httpSample t="63" lt="63" ts="1373818109443" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-48" by="282" ng="39" na="39"/>
+<httpSample t="90" lt="90" ts="1373818109514" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-48" by="282" ng="39" na="39"/>
+<httpSample t="95" lt="95" ts="1373818109612" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-48" by="1212" ng="39" na="39"/>
+<httpSample t="33847" lt="33839" ts="1373818080915" s="true" lb="4. Call for search page" rm="OK" tn="Virtual Users 1-41" by="11185" ng="38" na="38"/>
+<httpSample t="233" lt="233" ts="1373818114503" s="true" lb="5. Return facets for given keyword" rm="OK" tn="Virtual Users 1-41" by="2896" ng="38" na="38"/>
+<httpSample t="34272" lt="34266" ts="1373818080837" s="true" lb="4. Call for search page" rm="OK" tn="Virtual Users 1-5" by="11185" ng="38" na="38"/>
+<httpSample t="166" lt="154" ts="1373818114745" s="true" lb="6. Return products for given keyword" rm="OK" tn="Virtual Users 1-41" by="5097" ng="38" na="38"/>
+<httpSample t="237" lt="237" ts="1373818114845" s="true" lb="5. Return facets for given keyword" rm="OK" tn="Virtual Users 1-5" by="2896" ng="38" na="38"/>
+<httpSample t="237" lt="235" ts="1373818114920" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-41" by="2897" ng="38" na="38"/>
+<httpSample t="145" lt="141" ts="1373818115091" s="true" lb="6. Return products for given keyword" rm="OK" tn="Virtual Users 1-5" by="5097" ng="38" na="38"/>
+<httpSample t="75" lt="75" ts="1373818115163" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-41" by="282" ng="38" na="38"/>
+<httpSample t="61" lt="61" ts="1373818115251" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-41" by="282" ng="38" na="38"/>
+<httpSample t="91" lt="91" ts="1373818115315" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-41" by="1212" ng="38" na="38"/>
+<httpSample t="236" lt="235" ts="1373818115245" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-5" by="2897" ng="37" na="37"/>
+<httpSample t="59" lt="59" ts="1373818115484" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-5" by="282" ng="37" na="37"/>
+<httpSample t="58" lt="58" ts="1373818115545" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-5" by="282" ng="37" na="37"/>
+<httpSample t="113" lt="113" ts="1373818115606" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-5" by="1212" ng="37" na="37"/>
+<httpSample t="36350" lt="36346" ts="1373818080918" s="true" lb="4. Call for search page" rm="OK" tn="Virtual Users 1-42" by="11183" ng="36" na="36"/>
+<httpSample t="237" lt="235" ts="1373818117003" s="true" lb="5. Return facets for given keyword" rm="OK" tn="Virtual Users 1-42" by="2896" ng="36" na="36"/>
+<httpSample t="150" lt="143" ts="1373818117242" s="true" lb="6. Return products for given keyword" rm="OK" tn="Virtual Users 1-42" by="5097" ng="36" na="36"/>
+<httpSample t="237" lt="233" ts="1373818117395" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-42" by="2897" ng="36" na="36"/>
+<httpSample t="63" lt="63" ts="1373818117635" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-42" by="282" ng="36" na="36"/>
+<httpSample t="64" lt="64" ts="1373818117701" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-42" by="282" ng="36" na="36"/>
+<httpSample t="119" lt="118" ts="1373818117768" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-42" by="1212" ng="36" na="36"/>
+<httpSample t="61890" lt="61882" ts="1373818080870" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-24" by="3586" ng="35" na="35"/>
+<httpSample t="61898" lt="61880" ts="1373818080887" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-32" by="3586" ng="35" na="35"/>
+<httpSample t="61906" lt="61890" ts="1373818080884" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-26" by="3585" ng="35" na="35"/>
+<httpSample t="61887" lt="61880" ts="1373818080917" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-35" by="3586" ng="35" na="35"/>
+<httpSample t="61992" lt="61984" ts="1373818080827" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-2" by="3586" ng="35" na="35"/>
+<httpSample t="62025" lt="62017" ts="1373818080882" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-50" by="3587" ng="35" na="35"/>
+<httpSample t="62371" lt="62132" ts="1373818080920" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-40" by="3586" ng="35" na="35"/>
+<httpSample t="477" lt="469" ts="1373818142639" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-50" by="3486" ng="35" na="35"/>
+<httpSample t="62587" lt="62571" ts="1373818080852" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-6" by="3586" ng="35" na="35"/>
+<httpSample t="62542" lt="62394" ts="1373818080900" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-37" by="3584" ng="35" na="35"/>
+<httpSample t="62752" lt="62732" ts="1373818080858" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-10" by="3586" ng="35" na="35"/>
+<httpSample t="288" lt="273" ts="1373818143117" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-50" by="3486" ng="35" na="35"/>
+<httpSample t="62769" lt="62096" ts="1373818080907" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-19" by="3586" ng="35" na="35"/>
+<httpSample t="499" lt="274" ts="1373818143024" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-40" by="3486" ng="35" na="35"/>
+<httpSample t="363" lt="356" ts="1373818143174" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-6" by="3486" ng="35" na="35"/>
+<httpSample t="60625" lt="60618" ts="1373818083196" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-43" by="3486" ng="35" na="35"/>
+<httpSample t="60645" lt="60623" ts="1373818083205" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-28" by="3486" ng="35" na="35"/>
+<httpSample t="405" lt="405" ts="1373818143174" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-37" by="3486" ng="35" na="35"/>
+<httpSample t="302" lt="294" ts="1373818143342" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-10" by="3486" ng="35" na="35"/>
+<httpSample t="302" lt="298" ts="1373818143408" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-50" by="3486" ng="35" na="35"/>
+<httpSample t="297" lt="289" ts="1373818143538" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-6" by="3486" ng="35" na="35"/>
+<httpSample t="332" lt="318" ts="1373818143524" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-40" by="3486" ng="35" na="35"/>
+<httpSample t="329" lt="300" ts="1373818143554" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-43" by="3486" ng="35" na="35"/>
+<httpSample t="314" lt="307" ts="1373818143583" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-37" by="3486" ng="35" na="35"/>
+<httpSample t="330" lt="317" ts="1373818143582" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-28" by="3486" ng="35" na="35"/>
+<httpSample t="282" lt="269" ts="1373818143645" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-10" by="3486" ng="35" na="35"/>
+<httpSample t="556" lt="306" ts="1373818143408" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-19" by="3486" ng="35" na="35"/>
+<httpSample t="59631" lt="0" ts="1373818084534" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-3" by="1845" ng="35" na="35"/>
+<httpSample t="251" lt="241" ts="1373818143857" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-40" by="3486" ng="35" na="35"/>
+<httpSample t="296" lt="285" ts="1373818143836" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-6" by="3486" ng="35" na="35"/>
+<httpSample t="298" lt="285" ts="1373818143885" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-43" by="3486" ng="35" na="35"/>
+<httpSample t="280" lt="275" ts="1373818143928" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-10" by="3486" ng="35" na="35"/>
+<httpSample t="317" lt="302" ts="1373818143913" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-28" by="3486" ng="35" na="35"/>
+<httpSample t="338" lt="334" ts="1373818143899" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-37" by="3486" ng="35" na="35"/>
+<httpSample t="63623" lt="63623" ts="1373818080914" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-39" by="3586" ng="35" na="35"/>
+<httpSample t="63645" lt="63645" ts="1373818080899" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-22" by="3585" ng="35" na="35"/>
+<httpSample t="63652" lt="63507" ts="1373818080903" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-15" by="3586" ng="35" na="35"/>
+<httpSample t="191" lt="177" ts="1373818144109" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-40" by="3486" ng="35" na="35"/>
+<httpSample t="182" lt="174" ts="1373818144133" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-6" by="3486" ng="35" na="35"/>
+<httpSample t="372" lt="275" ts="1373818143966" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-19" by="3486" ng="35" na="35"/>
+<httpSample t="150" lt="137" ts="1373818144185" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-43" by="3486" ng="35" na="35"/>
+<httpSample t="272" lt="264" ts="1373818144231" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-28" by="3486" ng="35" na="35"/>
+<httpSample t="308" lt="299" ts="1373818144210" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-10" by="3486" ng="35" na="35"/>
+<httpSample t="499" lt="491" ts="1373818144035" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-3" by="3486" ng="35" na="35"/>
+<httpSample t="345" lt="335" ts="1373818144238" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-37" by="3486" ng="35" na="35"/>
+<httpSample t="64043" lt="64036" ts="1373818080836" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-8" by="3586" ng="35" na="35"/>
+<httpSample t="64026" lt="63954" ts="1373818080926" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-45" by="3586" ng="35" na="35"/>
+<httpSample t="60745" lt="60731" ts="1373818084288" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-46" by="3486" ng="35" na="35"/>
+<httpSample t="64144" lt="63904" ts="1373818080910" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-31" by="3584" ng="35" na="35"/>
+<httpSample t="64152" lt="63898" ts="1373818080906" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-27" by="3586" ng="35" na="35"/>
+<httpSample t="64184" lt="62165" ts="1373818080876" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-47" by="3586" ng="35" na="35"/>
+<httpSample t="516" lt="284" ts="1373818144277" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-22" by="3486" ng="35" na="35"/>
+<httpSample t="527" lt="315" ts="1373818144270" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-39" by="3486" ng="35" na="35"/>
+<httpSample t="64311" lt="62640" ts="1373818080877" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-25" by="3586" ng="35" na="35"/>
+<httpSample t="64539" lt="62640" ts="1373818080886" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-30" by="3587" ng="35" na="35"/>
+<httpSample t="1756" lt="295" ts="1373818143712" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-50" by="3486" ng="35" na="35"/>
+<httpSample t="62679" lt="60830" ts="1373818084209" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-34" by="3486" ng="35" na="35"/>
+<httpSample t="59812" lt="0" ts="1373818088266" s="false" lb="7. Return facet values for products" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-49" by="1845" ng="35" na="35"/>
+<httpSample t="59583" lt="0" ts="1373818092358" s="false" lb="10. Return vouchers for given product IDs" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-14" by="1845" ng="35" na="35"/>
+<httpSample t="35363" lt="35348" ts="1373818144301" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-40" by="3486" ng="34" na="34"/>
+<httpSample t="99118" lt="99096" ts="1373818080846" s="false" lb="4. Call for search page" rm="Server Error" tn="Virtual Users 1-9" by="3586" ng="34" na="34"/>
+<httpSample t="35189" lt="35177" ts="1373818144374" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-10" by="3486" ng="34" na="34"/>
+<httpSample t="35464" lt="35455" ts="1373818144171" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-6" by="3486" ng="34" na="34"/>
+<httpSample t="35293" lt="35282" ts="1373818144359" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-28" by="3486" ng="34" na="34"/>
+<httpSample t="34759" lt="34516" ts="1373818145012" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-30" by="3486" ng="34" na="34"/>
+<httpSample t="35659" lt="35469" ts="1373818144288" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-15" by="3486" ng="34" na="34"/>
+<httpSample t="389" lt="386" ts="1373818179512" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-28" by="3486" ng="34" na="34"/>
+<httpSample t="292" lt="271" ts="1373818179633" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-30" by="3486" ng="33" na="33"/>
+<httpSample t="35478" lt="35478" ts="1373818144641" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-31" by="3486" ng="33" na="33"/>
+<httpSample t="324" lt="310" ts="1373818179663" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-15" by="3486" ng="33" na="33"/>
+<httpSample t="149" lt="143" ts="1373818179927" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-30" by="3486" ng="33" na="33"/>
+<httpSample t="184" lt="163" ts="1373818179989" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-15" by="3486" ng="33" na="33"/>
+<httpSample t="365" lt="170" ts="1373818179979" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-31" by="3486" ng="33" na="33"/>
+<httpSample t="423" lt="383" ts="1373818180078" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-30" by="3486" ng="33" na="33"/>
+<httpSample t="36506" lt="36494" ts="1373818144194" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-19" by="3486" ng="33" na="33"/>
+<httpSample t="316" lt="200" ts="1373818180346" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-31" by="3486" ng="33" na="33"/>
+<httpSample t="164" lt="153" ts="1373818180504" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-30" by="3486" ng="33" na="33"/>
+<httpSample t="136" lt="122" ts="1373818180664" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-31" by="3486" ng="33" na="33"/>
+<httpSample t="138" lt="127" ts="1373818180671" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-30" by="3486" ng="33" na="33"/>
+<httpSample t="329" lt="181" ts="1373818180560" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-19" by="3486" ng="32" na="32"/>
+<httpSample t="35800" lt="34893" ts="1373818145324" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-50" by="3486" ng="32" na="32"/>
+<httpSample t="36500" lt="36411" ts="1373818144621" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-46" by="3486" ng="32" na="32"/>
+<httpSample t="182" lt="119" ts="1373818180803" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-31" by="3486" ng="32" na="32"/>
+<httpSample t="36689" lt="35249" ts="1373818144440" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-37" by="3486" ng="32" na="32"/>
+<httpSample t="36995" lt="35485" ts="1373818144196" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-43" by="3486" ng="32" na="32"/>
+<httpSample t="173" lt="160" ts="1373818180989" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-31" by="3486" ng="32" na="32"/>
+<httpSample t="333" lt="121" ts="1373818180891" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-19" by="3486" ng="31" na="31"/>
+<httpSample t="36978" lt="36801" ts="1373818144390" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-3" by="3486" ng="31" na="31"/>
+<httpSample t="323" lt="104" ts="1373818180986" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-50" by="3486" ng="31" na="31"/>
+<httpSample t="320" lt="112" ts="1373818180986" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-46" by="3486" ng="31" na="31"/>
+<httpSample t="36813" lt="35496" ts="1373818144653" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-47" by="3486" ng="30" na="30"/>
+<httpSample t="340" lt="220" ts="1373818180989" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-37" by="3486" ng="30" na="30"/>
+<httpSample t="388" lt="239" ts="1373818181050" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-43" by="3486" ng="29" na="29"/>
+<httpSample t="210" lt="183" ts="1373818181311" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-46" by="3486" ng="28" na="28"/>
+<httpSample t="93659" lt="93652" ts="1373818088289" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-4" by="3486" ng="28" na="28"/>
+<httpSample t="307" lt="172" ts="1373818181225" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-19" by="3486" ng="28" na="28"/>
+<httpSample t="307" lt="216" ts="1373818181228" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-3" by="3486" ng="27" na="27"/>
+<httpSample t="127" lt="120" ts="1373818181524" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-46" by="3486" ng="27" na="27"/>
+<httpSample t="388" lt="218" ts="1373818181326" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-47" by="3486" ng="27" na="27"/>
+<httpSample t="184" lt="97" ts="1373818181533" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-4" by="3486" ng="27" na="27"/>
+<httpSample t="37395" lt="35825" ts="1373818144466" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-8" by="3486" ng="27" na="27"/>
+<httpSample t="201" lt="195" ts="1373818181539" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-3" by="3486" ng="27" na="27"/>
+<httpSample t="98" lt="93" ts="1373818181654" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-46" by="3486" ng="26" na="26"/>
+<httpSample t="1650" lt="826" ts="1373818180176" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-15" by="3486" ng="25" na="25"/>
+<httpSample t="175" lt="164" ts="1373818181721" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-4" by="3486" ng="25" na="25"/>
+<httpSample t="245" lt="120" ts="1373818181720" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-47" by="3486" ng="25" na="25"/>
+<httpSample t="285" lt="179" ts="1373818181721" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-8" by="3486" ng="25" na="25"/>
+<httpSample t="175" lt="164" ts="1373818181898" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-4" by="3486" ng="25" na="25"/>
+<httpSample t="267" lt="168" ts="1373818181828" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-15" by="3486" ng="25" na="25"/>
+<httpSample t="166" lt="143" ts="1373818182009" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-8" by="3486" ng="25" na="25"/>
+<httpSample t="233" lt="129" ts="1373818181969" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-47" by="3486" ng="25" na="25"/>
+<httpSample t="143" lt="130" ts="1373818182075" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-4" by="3486" ng="25" na="25"/>
+<httpSample t="143" lt="129" ts="1373818182180" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-8" by="3486" ng="25" na="25"/>
+<httpSample t="136" lt="126" ts="1373818182205" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-47" by="3486" ng="25" na="25"/>
+<httpSample t="139" lt="124" ts="1373818182222" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-4" by="3486" ng="25" na="25"/>
+<httpSample t="284" lt="162" ts="1373818182097" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-15" by="3486" ng="24" na="24"/>
+<httpSample t="109" lt="101" ts="1373818182325" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-8" by="3486" ng="23" na="23"/>
+<httpSample t="226" lt="220" ts="1373818182344" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-47" by="3486" ng="23" na="23"/>
+<httpSample t="185" lt="182" ts="1373818182443" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-8" by="3486" ng="22" na="22"/>
+<httpSample t="38271" lt="38268" ts="1373818144539" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-45" by="3486" ng="21" na="21"/>
+<httpSample t="36297" lt="36297" ts="1373818146552" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-34" by="3486" ng="21" na="21"/>
+<httpSample t="109" lt="108" ts="1373818182676" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-45" by="3486" ng="21" na="21"/>
+<httpSample t="212" lt="126" ts="1373818182710" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-34" by="3486" ng="21" na="21"/>
+<httpSample t="181" lt="111" ts="1373818182787" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-45" by="3486" ng="21" na="21"/>
+<httpSample t="135" lt="127" ts="1373818182970" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-45" by="3486" ng="21" na="21"/>
+<httpSample t="205" lt="123" ts="1373818182926" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-34" by="3486" ng="21" na="21"/>
+<httpSample t="242" lt="204" ts="1373818183106" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-45" by="3486" ng="21" na="21"/>
+<httpSample t="109" lt="103" ts="1373818183350" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-45" by="3486" ng="21" na="21"/>
+<httpSample t="120185" lt="0" ts="1373818080886" s="false" lb="4. Call for search page" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-29" by="1845" ng="20" na="20"/>
+<httpSample t="120163" lt="0" ts="1373818080908" s="false" lb="4. Call for search page" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-23" by="1845" ng="20" na="20"/>
+<httpSample t="121203" lt="0" ts="1373818080868" s="false" lb="4. Call for search page" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-13" by="1845" ng="20" na="20"/>
+<httpSample t="121179" lt="0" ts="1373818080894" s="false" lb="4. Call for search page" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-36" by="1845" ng="20" na="20"/>
+<httpSample t="121200" lt="0" ts="1373818080873" s="false" lb="4. Call for search page" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-17" by="1845" ng="20" na="20"/>
+<httpSample t="59670" lt="59667" ts="1373818142522" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-26" by="3486" ng="20" na="20"/>
+<httpSample t="387" lt="385" ts="1373818201523" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-36" by="3585" ng="20" na="20"/>
+<httpSample t="59799" lt="59791" ts="1373818142537" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-35" by="3486" ng="20" na="20"/>
+<httpSample t="59888" lt="59856" ts="1373818142493" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-24" by="3486" ng="20" na="20"/>
+<httpSample t="677" lt="652" ts="1373818201522" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-13" by="3587" ng="20" na="20"/>
+<httpSample t="705" lt="698" ts="1373818201524" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-17" by="3587" ng="20" na="20"/>
+<httpSample t="352" lt="346" ts="1373818201912" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-36" by="3486" ng="20" na="20"/>
+<httpSample t="60128" lt="60094" ts="1373818142551" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-2" by="3486" ng="20" na="20"/>
+<httpSample t="366" lt="360" ts="1373818202096" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-24" by="3486" ng="20" na="20"/>
+<httpSample t="570" lt="563" ts="1373818201908" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-26" by="3486" ng="20" na="20"/>
+<httpSample t="296" lt="284" ts="1373818202231" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-17" by="3486" ng="20" na="20"/>
+<httpSample t="303" lt="296" ts="1373818202265" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-36" by="3486" ng="20" na="20"/>
+<httpSample t="401" lt="393" ts="1373818202201" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-13" by="3486" ng="20" na="20"/>
+<httpSample t="298" lt="290" ts="1373818202464" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-24" by="3486" ng="20" na="20"/>
+<httpSample t="300" lt="292" ts="1373818202479" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-26" by="3486" ng="20" na="20"/>
+<httpSample t="291" lt="276" ts="1373818202570" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-36" by="3486" ng="20" na="20"/>
+<httpSample t="394" lt="383" ts="1373818202532" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-17" by="3486" ng="20" na="20"/>
+<httpSample t="361" lt="356" ts="1373818202603" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-13" by="3486" ng="20" na="20"/>
+<httpSample t="226" lt="212" ts="1373818202764" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-24" by="3486" ng="20" na="20"/>
+<httpSample t="216" lt="193" ts="1373818202781" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-26" by="3486" ng="20" na="20"/>
+<httpSample t="258" lt="245" ts="1373818202862" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-36" by="3486" ng="20" na="20"/>
+<httpSample t="302" lt="293" ts="1373818202927" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-17" by="3486" ng="20" na="20"/>
+<httpSample t="310" lt="281" ts="1373818202995" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-24" by="3486" ng="20" na="20"/>
+<httpSample t="322" lt="308" ts="1373818202998" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-26" by="3486" ng="20" na="20"/>
+<httpSample t="362" lt="353" ts="1373818202965" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-13" by="3486" ng="20" na="20"/>
+<httpSample t="280" lt="268" ts="1373818203122" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-36" by="3486" ng="20" na="20"/>
+<httpSample t="280" lt="271" ts="1373818203231" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-17" by="3486" ng="19" na="19"/>
+<httpSample t="60160" lt="0" ts="1373818144657" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-39" by="1845" ng="19" na="19"/>
+<httpSample t="60162" lt="0" ts="1373818144655" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-22" by="1845" ng="19" na="19"/>
+<httpSample t="2455" lt="812" ts="1373818202394" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-2" by="3486" ng="19" na="19"/>
+<httpSample t="59854" lt="0" ts="1373818147803" s="false" lb="8. Call for vouchers" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-49" by="1845" ng="19" na="19"/>
+<httpSample t="22196" lt="22190" ts="1373818203325" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-26" by="3486" ng="19" na="19"/>
+<httpSample t="20862" lt="20849" ts="1373818204541" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-39" by="3486" ng="18" na="18"/>
+<httpSample t="22220" lt="22204" ts="1373818203329" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-13" by="3486" ng="18" na="18"/>
+<httpSample t="18045" lt="18038" ts="1373818207381" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-49" by="3486" ng="18" na="18"/>
+<httpSample t="22371" lt="22356" ts="1373818203307" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-24" by="3486" ng="18" na="18"/>
+<httpSample t="20833" lt="20826" ts="1373818204716" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-2" by="3486" ng="17" na="17"/>
+<httpSample t="249" lt="238" ts="1373818225407" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-39" by="3486" ng="17" na="17"/>
+<httpSample t="255" lt="246" ts="1373818225414" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-13" by="3486" ng="17" na="17"/>
+<httpSample t="254" lt="241" ts="1373818225429" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-49" by="3486" ng="16" na="16"/>
+<httpSample t="322" lt="307" ts="1373818225552" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-2" by="3486" ng="15" na="15"/>
+<httpSample t="261" lt="247" ts="1373818225659" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-39" by="3486" ng="15" na="15"/>
+<httpSample t="190" lt="172" ts="1373818225877" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-2" by="3486" ng="15" na="15"/>
+<httpSample t="186" lt="172" ts="1373818225922" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-39" by="3486" ng="15" na="15"/>
+<httpSample t="82383" lt="82382" ts="1373818144775" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-25" by="3486" ng="14" na="14"/>
+<httpSample t="22584" lt="22574" ts="1373818204541" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-22" by="3486" ng="14" na="14"/>
+<httpSample t="23821" lt="22710" ts="1373818203512" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-17" by="3486" ng="14" na="14"/>
+<httpSample t="375" lt="194" ts="1373818226885" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-25" by="3486" ng="13" na="13"/>
+<httpSample t="82940" lt="82753" ts="1373818144649" s="false" lb="5. Return facets for given keyword" rm="Server Error" tn="Virtual Users 1-27" by="3486" ng="13" na="13"/>
+<httpSample t="226" lt="218" ts="1373818227261" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-25" by="3486" ng="13" na="13"/>
+<httpSample t="410" lt="213" ts="1373818227129" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-22" by="3486" ng="13" na="13"/>
+<httpSample t="240" lt="232" ts="1373818227315" s="false" lb="6. Return products for given keyword" rm="Server Error" tn="Virtual Users 1-27" by="3486" ng="13" na="13"/>
+<httpSample t="235" lt="227" ts="1373818227489" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-25" by="3486" ng="13" na="13"/>
+<httpSample t="242" lt="234" ts="1373818227541" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-22" by="3486" ng="13" na="13"/>
+<httpSample t="265" lt="250" ts="1373818227557" s="false" lb="7. Return facet values for products" rm="Server Error" tn="Virtual Users 1-27" by="3486" ng="13" na="13"/>
+<httpSample t="239" lt="224" ts="1373818227726" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-25" by="3486" ng="13" na="13"/>
+<httpSample t="221" lt="215" ts="1373818227784" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-22" by="3486" ng="13" na="13"/>
+<httpSample t="265" lt="243" ts="1373818227824" s="false" lb="8. Call for vouchers" rm="Server Error" tn="Virtual Users 1-27" by="3486" ng="12" na="12"/>
+<httpSample t="225" lt="217" ts="1373818227967" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-25" by="3486" ng="12" na="12"/>
+<httpSample t="262" lt="231" ts="1373818228090" s="false" lb="9. Call for daily deals" rm="Server Error" tn="Virtual Users 1-27" by="3486" ng="11" na="11"/>
+<httpSample t="219" lt="211" ts="1373818228353" s="false" lb="10. Return vouchers for given product IDs" rm="Server Error" tn="Virtual Users 1-27" by="3486" ng="11" na="11"/>
+<httpSample t="59135" lt="0" ts="1373818179380" s="false" lb="10. Return vouchers for given product IDs" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-40" by="1845" ng="10" na="10"/>
+<httpSample t="59097" lt="0" ts="1373818179423" s="false" lb="10. Return vouchers for given product IDs" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-10" by="1845" ng="9" na="9"/>
+<httpSample t="60016" lt="0" ts="1373818179497" s="false" lb="10. Return vouchers for given product IDs" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-6" by="1845" ng="8" na="8"/>
+<httpSample t="59371" lt="0" ts="1373818183145" s="false" lb="9. Call for daily deals" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-34" by="1845" ng="7" na="7"/>
+<httpSample t="119308" lt="0" ts="1373818142517" s="false" lb="5. Return facets for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-32" by="1845" ng="7" na="7"/>
+<httpSample t="59487" lt="0" ts="1373818202053" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-35" by="1845" ng="7" na="7"/>
+<httpSample t="59316" lt="0" ts="1373818226070" s="false" lb="10. Return vouchers for given product IDs" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-2" by="1845" ng="7" na="7"/>
+<httpSample t="119102" lt="0" ts="1373818179411" s="false" lb="5. Return facets for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-9" by="1845" ng="6" na="6"/>
+<httpSample t="59996" lt="0" ts="1373818242245" s="false" lb="10. Return vouchers for given product IDs" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-34" by="1845" ng="6" na="6"/>
+<httpSample t="119992" lt="0" ts="1373818200520" s="false" lb="5. Return facets for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-23" by="1845" ng="5" na="5"/>
+<httpSample t="119993" lt="0" ts="1373818200520" s="false" lb="5. Return facets for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-29" by="1845" ng="5" na="5"/>
+<httpSample t="59981" lt="0" ts="1373818261271" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-32" by="1845" ng="5" na="5"/>
+<httpSample t="59985" lt="0" ts="1373818261271" s="false" lb="7. Return facet values for products" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-35" by="1845" ng="5" na="5"/>
+<httpSample t="59991" lt="0" ts="1373818297964" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-9" by="1845" ng="5" na="5"/>
+<httpSample t="453" lt="451" ts="1373818357688" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-9" by="2897" ng="5" na="5"/>
+<httpSample t="66" lt="66" ts="1373818358143" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-9" by="282" ng="5" na="5"/>
+<httpSample t="61" lt="61" ts="1373818358211" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-9" by="282" ng="5" na="5"/>
+<httpSample t="127" lt="127" ts="1373818358275" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-9" by="1212" ng="5" na="5"/>
+<httpSample t="59995" lt="0" ts="1373818319959" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-29" by="1845" ng="4" na="4"/>
+<httpSample t="59997" lt="0" ts="1373818319959" s="false" lb="6. Return products for given keyword" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-23" by="1845" ng="4" na="4"/>
+<httpSample t="59977" lt="0" ts="1373818320973" s="false" lb="7. Return facet values for products" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-32" by="1845" ng="4" na="4"/>
+<httpSample t="59978" lt="0" ts="1373818320976" s="false" lb="8. Call for vouchers" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-35" by="1845" ng="4" na="4"/>
+<httpSample t="34735" lt="34735" ts="1373818380681" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-32" by="282" ng="4" na="4"/>
+<httpSample t="62" lt="62" ts="1373818415156" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-32" by="282" ng="4" na="4"/>
+<httpSample t="96" lt="96" ts="1373818415221" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-32" by="1212" ng="4" na="4"/>
+<httpSample t="36308" lt="36308" ts="1373818380685" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-35" by="282" ng="3" na="3"/>
+<httpSample t="116" lt="116" ts="1373818416728" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-35" by="1212" ng="3" na="3"/>
+<httpSample t="38173" lt="38172" ts="1373818379686" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-23" by="2998" ng="2" na="2"/>
+<httpSample t="66" lt="66" ts="1373818417594" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-23" by="282" ng="2" na="2"/>
+<httpSample t="71" lt="71" ts="1373818417666" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-23" by="282" ng="2" na="2"/>
+<httpSample t="98" lt="98" ts="1373818417740" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-23" by="1212" ng="2" na="2"/>
+<httpSample t="46026" lt="46024" ts="1373818379684" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-29" by="2997" ng="1" na="1"/>
+<httpSample t="64" lt="64" ts="1373818425447" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-29" by="282" ng="1" na="1"/>
+<httpSample t="62" lt="62" ts="1373818425513" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-29" by="282" ng="1" na="1"/>
+<httpSample t="98" lt="98" ts="1373818425576" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-29" by="1212" ng="1" na="1"/>
+
+</testResults>

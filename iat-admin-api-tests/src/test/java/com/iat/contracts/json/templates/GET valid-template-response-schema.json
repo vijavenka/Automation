@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GET all templates",
+  "description": "Object returned with /templates GET request",
+  "type": "object",
+  "properties": {
+    "ecardTemplates": {
+      "id": "ecardTemplates",
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "id",
+              "type": "integer"
+            },
+            "createdAt": {
+              "id": "createdAt",
+              "type": "string"
+            },
+            "name": {
+              "id": "name",
+              "type": "string"
+            },
+            "imageUrl": {
+              "id": "imageUrl",
+              "type": "string"
+            },
+            "thumbnailUrl": {
+              "id": "thumbnailUrl",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "createdAt",
+            "name",
+            "imageUrl",
+            "thumbnailUrl"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "ecardTemplates"
+  ]
+}

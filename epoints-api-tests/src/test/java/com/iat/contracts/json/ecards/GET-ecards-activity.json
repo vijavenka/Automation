@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "scope": {
+      "type": "string",
+      "enum": [
+        "DEPARTMENT",
+        "COMPANY",
+        "ALL"
+      ]
+    },
+    "ecards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "reasonId": {
+            "type": "string"
+          },
+          "templateUrl": {
+            "type": "string"
+          },
+          "pointsValue": {
+            "type": "integer"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "to": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "firstName",
+                "lastName",
+                "email"
+              ]
+            }
+          },
+          "from": {
+            "type": "object",
+            "properties": {
+              "firstName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "firstName",
+              "lastName",
+              "email"
+            ]
+          }
+        },
+        "required": [
+          "reasonId",
+          "templateUrl",
+          "createdAt",
+          "to",
+          "from"
+        ]
+      }
+    }
+  },
+  "required": [
+    "scope",
+    "ecards"
+  ]
+}

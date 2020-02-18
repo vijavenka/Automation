@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1176" lt="1169" ts="1373816657296" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5903" ng="1" na="1"/>
+<httpSample t="759" lt="755" ts="1373816658486" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="98" lt="98" ts="1373816659256" s="true" lb="3. Call for suggestion about keyword" rm="OK" tn="Virtual Users 1-1" by="186" ng="1" na="1"/>
+<httpSample t="100" lt="94" ts="1373816659367" s="true" lb="4. Call for search page" rm="OK" tn="Virtual Users 1-1" by="11084" ng="1" na="1"/>
+<httpSample t="111" lt="110" ts="1373816659478" s="true" lb="5. Return facets for given keyword" rm="OK" tn="Virtual Users 1-1" by="2683" ng="1" na="1"/>
+<httpSample t="126" lt="121" ts="1373816659599" s="true" lb="6. Return products for given keyword" rm="OK" tn="Virtual Users 1-1" by="11511" ng="1" na="1"/>
+<httpSample t="105" lt="102" ts="1373816659739" s="true" lb="7. Return facet values for products" rm="OK" tn="Virtual Users 1-1" by="2685" ng="1" na="1"/>
+<httpSample t="67" lt="67" ts="1373816659850" s="true" lb="8. Call for vouchers" rm="OK" tn="Virtual Users 1-1" by="282" ng="1" na="1"/>
+<httpSample t="66" lt="66" ts="1373816659924" s="true" lb="9. Call for daily deals" rm="OK" tn="Virtual Users 1-1" by="282" ng="1" na="1"/>
+<httpSample t="104" lt="104" ts="1373816659996" s="true" lb="10. Return vouchers for given product IDs" rm="OK" tn="Virtual Users 1-1" by="1211" ng="1" na="1"/>
+
+</testResults>

@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "auditId": {
+      "id": "/properties/auditId",
+      "type": "integer"
+    },
+    "criteriaName": {
+      "id": "/properties/criteriaName",
+      "type": "string"
+    },
+    "criteriaRule": {
+      "id": "/properties/criteriaRule",
+      "type": "string"
+    },
+    "id": {
+      "id": "/properties/id",
+      "type": "integer"
+    },
+    "points": {
+      "id": "/properties/points",
+      "type": "integer"
+    },
+    "tagKey": {
+      "id": "/properties/tagKey",
+      "type": "string"
+    }
+  },
+  "required": [
+    "tagKey",
+    "criteriaRule",
+    "criteriaName",
+    "auditId",
+    "points",
+    "id"
+  ],
+  "type": "object"
+}

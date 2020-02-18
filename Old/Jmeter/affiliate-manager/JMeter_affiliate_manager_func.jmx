@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="2.9 r1437961">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Affiliate manager clickout tests" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">content-type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="IP" elementType="Argument">
+            <stringProp name="Argument.name">IP</stringProp>
+            <stringProp name="Argument.value">localhost</stringProp>
+            <stringProp name="Argument.desc">Target IP or HOST for performance testing</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PORT" elementType="Argument">
+            <stringProp name="Argument.name">PORT</stringProp>
+            <stringProp name="Argument.value">8905</stringProp>
+            <stringProp name="Argument.desc">Port of service to call for clickout</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DEVICE_GEN" elementType="Argument">
+            <stringProp name="Argument.name">DEVICE_GEN</stringProp>
+            <stringProp name="Argument.value">Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="OFFER" elementType="Argument">
+            <stringProp name="Argument.name">OFFER</stringProp>
+            <stringProp name="Argument.value">3eec3079-b6e1-436f-b4c9-654310a41139</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="MySQL Configuration" enabled="true">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery">Select 1</stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="dataSource">MySQL</stringProp>
+        <stringProp name="dbUrl">jdbc:mysql://localhost:3306/affiliate_manager</stringProp>
+        <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password">testing1234</stringProp>
+        <stringProp name="poolMax">10</stringProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username">root</stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CLKS_S1|2|3|4|5|6|7" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">7</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1373955001000</longProp>
+        <longProp name="ThreadGroup.end_time">1373955001000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <stringProp name="TestPlan.comments">Tracking clickouts with different sets of parameters
+
+User_1 - S1 - Adding clickout through AM with PPC parameter provided
+User_2 - S2 - Adding clickout through AM with PPC parameter empty
+User_3 - S3 - Adding clickout through AM with no PPC parameter
+User_4 - S4 - Adding clickout through AM with isWebgainsClient parameter set to false
+User_5 - S5 - Adding clickout through AM with isWebgainsClient parameter set to true
+User_6 - S6 - Adding clickout through AM without OfferId but with MerchantId (required)
+User_7 - S7 - Adding clickout through AM with minimum information provided
+
+</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="-830829481">OFFERID</stringProp>
+            <stringProp name="-1374445892">OFFERID_REST</stringProp>
+            <stringProp name="655551846">OFFERID_DB</stringProp>
+            <stringProp name="-1782700506">USERID</stringProp>
+            <stringProp name="1868746317">USERID_REST</stringProp>
+            <stringProp name="-1160065737">USERID_DB</stringProp>
+            <stringProp name="2013139542">DEVICE</stringProp>
+            <stringProp name="639565853">DEVICE_REST</stringProp>
+            <stringProp name="1538831351">PUBLISHERID</stringProp>
+            <stringProp name="1436367644">PUBLISHERID_REST</stringProp>
+            <stringProp name="-1156046394">PUBLISHERID_DB</stringProp>
+            <stringProp name="1781624473">CATEGORYID</stringProp>
+            <stringProp name="200922554">CATEGORYID_REST</stringProp>
+            <stringProp name="-831075356">CATEGORYID_DB</stringProp>
+            <stringProp name="60061935">REFERURL</stringProp>
+            <stringProp name="2074988836">REFERURL_REST</stringProp>
+            <stringProp name="-1696163378">REFERURL_DB</stringProp>
+            <stringProp name="833137918">CATEGORY</stringProp>
+            <stringProp name="-810365323">CATEGORY_REST</stringProp>
+            <stringProp name="-604194977">CATEGORY_DB</stringProp>
+            <stringProp name="-60968484">PUBLISHER</stringProp>
+            <stringProp name="-1135336361">PUBLISHER_REST</stringProp>
+            <stringProp name="459152833">PUBLISHER_DB</stringProp>
+            <stringProp name="1430730728">REGPUBLISHER</stringProp>
+            <stringProp name="1256752587">REGPUBLISHER_REST</stringProp>
+            <stringProp name="-356234187">REGPUBLISHER_DB</stringProp>
+            <stringProp name="226521315">MERCHANTID</stringProp>
+            <stringProp name="167948720">MERCHANTID_REST</stringProp>
+            <stringProp name="902966618">MERCHANTID_DB</stringProp>
+            <stringProp name="1965775882">PPCPARAM</stringProp>
+            <stringProp name="570402537">PPCPARAM_REST</stringProp>
+            <stringProp name="550313171">PPCPARAM_DB</stringProp>
+            <stringProp name="-1084457686">ISWEBGAINS</stringProp>
+            <stringProp name="351680969">ISWEBGAINS_REST</stringProp>
+            <stringProp name="-334829645">ISWEBGAINS_DB</stringProp>
+            <stringProp name="-1356199853">MERCHANTNAME</stringProp>
+            <stringProp name="-1483132153">DEVICE_DB</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="-1606425026">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964506">customUserKey_S1</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317759">ivillageId_S1</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111716">categoryID_S1</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321234">referUrl_S1</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537779999">category_S1</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423494">iVillage_S1</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502795">Partner_S1</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1385368152">&quot;merchantId&quot;:&quot;${MERCHANTID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="35710071">ppcparameter_S1</stringProp>
+              <stringProp name="-479766008">&quot;ppcParameter&quot;:&quot;${PPCPARAM}&quot;</stringProp>
+              <stringProp name="2142413500">${PPCPARAM}</stringProp>
+              <stringProp name="97196323">false</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+            </collectionProp>
+            <collectionProp name="1794172232">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964507">customUserKey_S2</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317760">ivillageId_S2</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111717">categoryID_S2</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321233">referUrl_S2</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537780000">category_S2</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423493">iVillage_S2</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502794">Partner_S2</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1385368152">&quot;merchantId&quot;:&quot;${MERCHANTID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-479766008">&quot;ppcParameter&quot;:&quot;${PPCPARAM}&quot;</stringProp>
+              <stringProp name="96634189">empty</stringProp>
+              <stringProp name="97196323">false</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+            </collectionProp>
+            <collectionProp name="1186311746">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964508">customUserKey_S3</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317761">ivillageId_S3</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111718">categoryID_S3</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321232">referUrl_S3</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537780001">category_S3</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423492">iVillage_S3</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502793">Partner_S3</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="648047364">&quot;merchantId&quot;:&quot;${MERCHANTID}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="97196323">false</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+            </collectionProp>
+            <collectionProp name="-646603139">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964509">customUserKey_S4</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317762">ivillageId_S4</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111719">categoryID_S4</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321231">referUrl_S4</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537780002">category_S4</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423491">iVillage_S4</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502792">Partner_S4</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="97196323">false</stringProp>
+              <stringProp name="436050073">&quot;isWebgainsClient&quot;:&quot;${ISWEBGAINS}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+            </collectionProp>
+            <collectionProp name="264242530">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964510">customUserKey_S5</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317763">ivillageId_S5</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111720">categoryID_S5</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321230">referUrl_S5</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537780003">category_S5</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423490">iVillage_S5</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502791">Partner_S5</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="3569038">true</stringProp>
+              <stringProp name="436050073">&quot;isWebgainsClient&quot;:&quot;${ISWEBGAINS}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+            </collectionProp>
+            <collectionProp name="800898504">
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964511">customUserKey_S6</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317764">ivillageId_S6</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111721">categoryID_S6</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321229">referUrl_S6</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537780004">category_S6</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423489">iVillage_S6</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502790">Partner_S6</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="919223323">9cc91bff-2afd-4e72-bcfc-2a4ad9d82820</stringProp>
+              <stringProp name="648047364">&quot;merchantId&quot;:&quot;${MERCHANTID}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1964569124">Amazon</stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+            </collectionProp>
+            <collectionProp name="231742374">
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1657317765">ivillageId_S7</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="-470321228">referUrl_S7</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="-1039423488">iVillage_S7</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="919223323">9cc91bff-2afd-4e72-bcfc-2a4ad9d82820</stringProp>
+              <stringProp name="648047364">&quot;merchantId&quot;:&quot;${MERCHANTID}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="3392903">null</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1964569124">Amazon</stringProp>
+              <stringProp name="3392903">null</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Register Clickout" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+${OFFERID_REST}&#xd;
+${USERID_REST}&#xd;
+${DEVICE_REST}&#xd;
+${PUBLISHERID_REST}&#xd;
+${CATEGORYID_REST}&#xd;
+${REFERURL_REST}&#xd;
+${CATEGORY_REST}&#xd;
+${PUBLISHER_REST}&#xd;
+${REGPUBLISHER_REST}&#xd;
+${MERCHANTID_REST}&#xd;
+${PPCPARAM_REST}&#xd;
+${ISWEBGAINS_REST}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/clickout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">/clickout</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get url" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">responseUrl</stringProp>
+            <stringProp name="RegexExtractor.regex">(.*)</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default"></stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+            <stringProp name="Sample.scope">all</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get reference" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">reference</stringProp>
+            <stringProp name="RegexExtractor.regex">clickref=(.*)</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">0</stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+            <stringProp name="Sample.scope">all</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="check db" enabled="true">
+          <stringProp name="dataSource">MySQL</stringProp>
+          <stringProp name="queryType">Prepared Select Statement</stringProp>
+          <stringProp name="query">SELECT 
+   COALESCE(
+    CASE
+      WHEN ppcParameter=&quot;&quot; THEN &apos;empty&apos;
+    ELSE
+      ppcParameter
+    END, &apos;null&apos;) ppc, 
+   COALESCE(category, &apos;null&apos;) category,
+   publisher, 
+   publisherId, 
+   COALESCE(registrationPublisher, &apos;null&apos;) registrationPublisher,
+   COALESCE(userId, &apos;null&apos;) userId,
+   targetURL, 
+   reference,
+   createdDate,
+   clickoutStatus,
+   clickoutType,
+   COALESCE(device, &apos;null&apos;) device,
+   epoints,
+   merchant,
+   merchantId,
+   referURL,
+   COALESCE(categoryId, &apos;null&apos;) categoryId
+FROM clickout
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames">ppc,cat,pub,pubId,regPub,uId,targetUrl,ref,createdAt,clickStat,clickType,device,points,merchant,merchantId,referer,catId</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: category" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-4280491">${CATEGORY_DB}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">cat_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: categoryId" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-447614544">${CATEGORYID_DB}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">catId_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: clickoutStatus" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="433141802">UNKNOWN</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">clickStat_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: clickoutType" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="433141802">UNKNOWN</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">clickType_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: device" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-362130835">${DEVICE_DB}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">device_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: epoints" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="48">0</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">points_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: merchant" enabled="true">
+            <stringProp name="BeanShellAssertion.query">
+	String merchant = vars.get(&quot;MERCHANTNAME&quot;);
+	String merchantDb = vars.get(&quot;merchant_1&quot;);
+
+	if (merchant.length() != 0)
+	{
+	  if (merchant.equals(merchantDb))
+	    Failure = false;
+	  else
+	  {
+	    Failure = true;
+	    FailureMessage = &quot;merchant different (&quot; + merchant + &quot; not equal &quot; + merchantDb + &quot;)&quot;;
+	    print (FailureMessage);   // this goes to stdout
+	    log.warn(FailureMessage); // this goes to the JMeter log file
+	    break;
+	  }
+	}
+	</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: merchantID" enabled="true">
+            <stringProp name="BeanShellAssertion.query">
+	String merchant = vars.get(&quot;MERCHANTNAME&quot;);
+	String merchantId = vars.get(&quot;MERCHANTID&quot;);
+	String merchantIdDb = vars.get(&quot;merchantId_1&quot;);
+
+	if (merchant.length() != 0)
+	{
+	  if (merchantId.equals(merchantIdDb))
+	    Failure = false;
+	  else
+	  {
+	    Failure = true;
+	    FailureMessage = &quot;merchantId different (&quot; + merchantId + &quot; not equal &quot; + merchantIdDb + &quot;)&quot;;
+	    print (FailureMessage);   // this goes to stdout
+	    log.warn(FailureMessage); // this goes to the JMeter log file
+	    break;
+	  }
+	}
+	</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: publisher" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="775269944">${PUBLISHER}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">pub_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: publisherId" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2005026237">${PUBLISHERID}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">pubId_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: referUrl" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1100144009">${REFERURL}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">referer_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: reference" enabled="true">
+            <stringProp name="BeanShellAssertion.query">
+	String isWebgains = vars.get(&quot;ISWEBGAINS&quot;);
+	String refFromDb = vars.get(&quot;ref_1&quot;);
+	String reference = vars.get(&quot;reference&quot;);
+	
+	if (isWebgains.equals(&quot;false&quot;))
+	{
+	  if (reference.equals(refFromDb))
+	    Failure = false;
+	  else
+	    Failure = true;
+	    FailureMessage = &quot;clickref from response: (&quot; + reference + &quot;) not equal reference from db (&quot; + refFromDb + &quot;)&quot;;
+	    print (FailureMessage);   // this goes to stdout
+	    log.warn(FailureMessage); // this goes to the JMeter log file
+	    break;
+	}
+	else if (isWebgains.equals(&quot;true&quot;)) 
+	{
+	  Failure = false;
+	}
+	</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: registrationPublisher" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-739855937">${REGPUBLISHER_DB}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">regPub_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: targetUrl" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1309809882">${responseUrl}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">targetUrl_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: userId" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1062993469">${USERID_DB}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">uId_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: ppcparameter" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1425733729">${PPCPARAM_DB}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">ppc_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CLKS_S8|9|10|11" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">4</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <longProp name="ThreadGroup.start_time">1373955001000</longProp>
+        <longProp name="ThreadGroup.end_time">1373955001000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <stringProp name="TestPlan.comments">Tracking clickouts with different sets of parameters
+
+User_1 - S8 - Trying to add clickout through AM without OfferId or MerchantId
+User_2 - S9 - Trying to add clickout through AM without publisherId provided
+User_3 - S10 - Trying to add clickout through AM without publisher provided
+User_4 - S11 - Trying to add clickout through AM without referUrl provided
+</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="-830829481">OFFERID</stringProp>
+            <stringProp name="-1374445892">OFFERID_REST</stringProp>
+            <stringProp name="655551846">OFFERID_DB</stringProp>
+            <stringProp name="-1782700506">USERID</stringProp>
+            <stringProp name="1868746317">USERID_REST</stringProp>
+            <stringProp name="-1160065737">USERID_DB</stringProp>
+            <stringProp name="2013139542">DEVICE</stringProp>
+            <stringProp name="639565853">DEVICE_REST</stringProp>
+            <stringProp name="1538831351">PUBLISHERID</stringProp>
+            <stringProp name="1436367644">PUBLISHERID_REST</stringProp>
+            <stringProp name="-1156046394">PUBLISHERID_DB</stringProp>
+            <stringProp name="1781624473">CATEGORYID</stringProp>
+            <stringProp name="200922554">CATEGORYID_REST</stringProp>
+            <stringProp name="-831075356">CATEGORYID_DB</stringProp>
+            <stringProp name="60061935">REFERURL</stringProp>
+            <stringProp name="2074988836">REFERURL_REST</stringProp>
+            <stringProp name="-1696163378">REFERURL_DB</stringProp>
+            <stringProp name="833137918">CATEGORY</stringProp>
+            <stringProp name="-810365323">CATEGORY_REST</stringProp>
+            <stringProp name="-604194977">CATEGORY_DB</stringProp>
+            <stringProp name="-60968484">PUBLISHER</stringProp>
+            <stringProp name="-1135336361">PUBLISHER_REST</stringProp>
+            <stringProp name="459152833">PUBLISHER_DB</stringProp>
+            <stringProp name="1430730728">REGPUBLISHER</stringProp>
+            <stringProp name="1256752587">REGPUBLISHER_REST</stringProp>
+            <stringProp name="-356234187">REGPUBLISHER_DB</stringProp>
+            <stringProp name="226521315">MERCHANTID</stringProp>
+            <stringProp name="167948720">MERCHANTID_REST</stringProp>
+            <stringProp name="902966618">MERCHANTID_DB</stringProp>
+            <stringProp name="1965775882">PPCPARAM</stringProp>
+            <stringProp name="570402537">PPCPARAM_REST</stringProp>
+            <stringProp name="550313171">PPCPARAM_DB</stringProp>
+            <stringProp name="-1084457686">ISWEBGAINS</stringProp>
+            <stringProp name="351680969">ISWEBGAINS_REST</stringProp>
+            <stringProp name="-334829645">ISWEBGAINS_DB</stringProp>
+            <stringProp name="-1356199853">MERCHANTNAME</stringProp>
+            <stringProp name="-1483132153">DEVICE_DB</stringProp>
+            <stringProp name="527096619">RESPONSE_CODE</stringProp>
+            <stringProp name="-537176477">RESPONSE_MSG</stringProp>
+            <stringProp name="-990639727">REQUEST_MSG</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="1610763776">
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1498964513">customUserKey_S8</stringProp>
+              <stringProp name="-346274680">&quot;userId&quot;:&quot;${USERID}&quot;,</stringProp>
+              <stringProp name="-455685536">${USERID}</stringProp>
+              <stringProp name="1658936927">${DEVICE_GEN}</stringProp>
+              <stringProp name="-1318240664">&quot;device&quot;:&quot;${DEVICE}&quot;,</stringProp>
+              <stringProp name="1657317766">ivillageId_S8</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="317111723">categoryID_S8</stringProp>
+              <stringProp name="1887359080">&quot;categoryId&quot;:&quot;${CATEGORYID}&quot;,</stringProp>
+              <stringProp name="415482829">${CATEGORYID}</stringProp>
+              <stringProp name="-470321227">referUrl_S8</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1537780006">category_S8</stringProp>
+              <stringProp name="2119044904">&quot;category&quot;:&quot;${CATEGORY}&quot;,</stringProp>
+              <stringProp name="1390374984">${CATEGORY}</stringProp>
+              <stringProp name="-1039423487">iVillage_S8</stringProp>
+              <stringProp name="1882337522">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-2131502788">Partner_S8</stringProp>
+              <stringProp name="-2095802049">&quot;registrationPublisher&quot;:&quot;${REGPUBLISHER}&quot;,</stringProp>
+              <stringProp name="2081068574">${REGPUBLISHER}</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="35710078">ppcparameter_S8</stringProp>
+              <stringProp name="-479766008">&quot;ppcParameter&quot;:&quot;${PPCPARAM}&quot;</stringProp>
+              <stringProp name="2142413500">${PPCPARAM}</stringProp>
+              <stringProp name="97196323">false</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1251238960">${DEVICE}</stringProp>
+              <stringProp name="52469">500</stringProp>
+              <stringProp name="571259627">Server Error</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <collectionProp name="1759283494">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-470321226">referUrl_S9</stringProp>
+              <stringProp name="-959741080">&quot;referUrl&quot;:&quot;${REFERURL}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1039423486">iVillage_S9</stringProp>
+              <stringProp name="-1878942086">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="51508">400</stringProp>
+              <stringProp name="2117236020">Bad Request</stringProp>
+              <stringProp name="-290696102">&quot;publisherId&quot;:&quot;Field can not be empty&quot;</stringProp>
+            </collectionProp>
+            <collectionProp name="-981463038">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-162756975">ivillageId_S10</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1695056318">referUrl_S10</stringProp>
+              <stringProp name="-1000790716">&quot;referUrl&quot;:&quot;${REFERURL}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="51508">400</stringProp>
+              <stringProp name="2117236020">Bad Request</stringProp>
+              <stringProp name="1309617503">&quot;publisher&quot;:&quot;Field can not be empty&quot;</stringProp>
+            </collectionProp>
+            <collectionProp name="-215677588">
+              <stringProp name="-1861030568">${OFFER}</stringProp>
+              <stringProp name="-682302756">&quot;offerId&quot;:&quot;${OFFERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-162756975">ivillageId_S10</stringProp>
+              <stringProp name="1189252252">&quot;publisherId&quot;:&quot;${PUBLISHERID}&quot;,</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1039423486">iVillage_S9</stringProp>
+              <stringProp name="-1878942086">&quot;publisher&quot;:&quot;${PUBLISHER}&quot;</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="52469">500</stringProp>
+              <stringProp name="571259627">Server Error</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="check db - get latest id" enabled="true">
+          <stringProp name="dataSource">MySQL</stringProp>
+          <stringProp name="queryType">Prepared Select Statement</stringProp>
+          <stringProp name="query">SELECT 
+   id
+FROM clickout
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames">s_id</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Register Clickout" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+${OFFERID_REST}&#xd;
+${USERID_REST}&#xd;
+${DEVICE_REST}&#xd;
+${PUBLISHERID_REST}&#xd;
+${CATEGORYID_REST}&#xd;
+${REFERURL_REST}&#xd;
+${CATEGORY_REST}&#xd;
+${PUBLISHER_REST}&#xd;
+${REGPUBLISHER_REST}&#xd;
+${MERCHANTID_REST}&#xd;
+${PPCPARAM_REST}&#xd;
+${ISWEBGAINS_REST}&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${PORT}</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/clickout</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">/clickout</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response message" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response headers" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="900834147">${REQUEST_MSG}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="check db - get latest id" enabled="true">
+          <stringProp name="dataSource">MySQL</stringProp>
+          <stringProp name="queryType">Prepared Select Statement</stringProp>
+          <stringProp name="query">SELECT 
+   id
+FROM clickout
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="variableNames">e_id</stringProp>
+          <stringProp name="resultVariable"></stringProp>
+        </JDBCSampler>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: id" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="776974477">${s_id_1}</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">e_id_1</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

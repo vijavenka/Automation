@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "departments": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "favouritesCount": {
+      "type": "integer"
+    },
+    "merchants": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "deliveryDescription": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "epointsMultiplier": {
+            "type": "integer"
+          },
+          "favourite": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "imageUrl": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "leadGenerator": {
+            "type": "boolean"
+          },
+          "maximumCommission": {
+            "type": "integer"
+          },
+          "merchantDomain": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "networkCode": {
+            "type": "string"
+          },
+          "seoTitle": {
+            "type": "string"
+          },
+          "siteUrl": {
+            "type": "string"
+          },
+          "vouchersCount": {
+            "type": "integer"
+          },
+          "zone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "siteUrl",
+          "description",
+          "zone",
+          "favourite",
+          "name",
+          "networkCode",
+          "vouchersCount",
+          "epointsMultiplier",
+          "seoTitle",
+          "id",
+          "leadGenerator"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "prefixes": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "searchResultsCount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "prefixes",
+    "searchResultsCount",
+    "merchants",
+    "favouritesCount",
+    "departments"
+  ],
+  "type": "object"
+}

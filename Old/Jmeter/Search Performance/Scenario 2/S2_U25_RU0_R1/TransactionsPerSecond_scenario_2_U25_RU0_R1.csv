@@ -1,0 +1,250 @@
+1373817062846,1476,1. Call for main page,500,Server Error,Virtual Users 1-16,text,false,3586,25,25,1469
+1373817062864,1753,1. Call for main page,500,Server Error,Virtual Users 1-3,text,false,3586,25,25,1742
+1373817062853,2033,1. Call for main page,500,Server Error,Virtual Users 1-2,text,false,3585,25,25,2025
+1373817064489,530,2. Call for all categories,500,Server Error,Virtual Users 1-3,text,false,3486,25,25,522
+1373817062848,2397,1. Call for main page,500,Server Error,Virtual Users 1-13,text,false,3585,25,25,2383
+1373817062862,10831,1. Call for main page,200,OK,Virtual Users 1-24,text,true,5904,25,25,10828
+1373817062831,10949,1. Call for main page,200,OK,Virtual Users 1-4,text,true,5904,25,25,10947
+1373817062873,10949,1. Call for main page,200,OK,Virtual Users 1-10,text,true,5906,25,25,10946
+1373817073567,8617,2. Call for all categories,200,OK,Virtual Users 1-24,text,true,3441,25,25,8616
+1373817082191,186,3. Call for suggestion about keyword,200,OK,Virtual Users 1-24,text,true,186,25,25,186
+1373817082386,152,4. Call for search page,200,OK,Virtual Users 1-24,text,true,11084,25,25,145
+1373817062839,19883,1. Call for main page,200,OK,Virtual Users 1-5,text,true,5903,25,25,19881
+1373817065053,17548,3. Call for suggestion about keyword,200,OK,Virtual Users 1-3,text,true,186,25,25,17548
+1373817082545,112,5. Return facets for given keyword,200,OK,Virtual Users 1-24,text,true,2683,25,25,109
+1373817082607,74,4. Call for search page,200,OK,Virtual Users 1-3,text,true,11083,25,25,68
+1373817082685,104,5. Return facets for given keyword,200,OK,Virtual Users 1-3,text,true,2683,25,25,97
+1373817082662,155,6. Return products for given keyword,200,OK,Virtual Users 1-24,text,true,11511,25,25,133
+1373817082824,143,7. Return facet values for products,200,OK,Virtual Users 1-24,text,true,2685,25,25,141
+1373817082798,192,6. Return products for given keyword,200,OK,Virtual Users 1-3,text,true,11511,25,25,175
+1373817082977,69,8. Call for vouchers,200,OK,Virtual Users 1-24,text,true,282,25,25,69
+1373817082997,102,7. Return facet values for products,200,OK,Virtual Users 1-3,text,true,2685,25,25,100
+1373817083055,68,9. Call for daily deals,200,OK,Virtual Users 1-24,text,true,282,25,25,68
+1373817083106,71,8. Call for vouchers,200,OK,Virtual Users 1-3,text,true,282,25,25,71
+1373817083132,113,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-24,text,true,1211,25,25,112
+1373817083187,67,9. Call for daily deals,200,OK,Virtual Users 1-3,text,true,282,25,25,67
+1373817083265,96,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-3,text,true,1211,24,24,96
+1373817062879,22238,1. Call for main page,200,OK,Virtual Users 1-14,text,true,5903,23,23,22233
+1373817062850,24646,1. Call for main page,200,OK,Virtual Users 1-12,text,true,5904,23,23,24641
+1373817062880,24819,1. Call for main page,200,OK,Virtual Users 1-18,text,true,5905,23,23,24811
+1373817062886,27906,1. Call for main page,200,OK,Virtual Users 1-22,text,true,5903,23,23,27902
+1373817062881,29014,1. Call for main page,200,OK,Virtual Users 1-15,text,true,5904,23,23,29009
+1373817062888,43980,1. Call for main page,200,OK,Virtual Users 1-23,text,true,5906,23,23,43976
+1373817062884,44605,1. Call for main page,200,OK,Virtual Users 1-19,text,true,5903,23,23,44601
+1373817073689,41365,2. Call for all categories,200,OK,Virtual Users 1-10,text,true,3441,23,23,41363
+1373817114931,151,3. Call for suggestion about keyword,200,OK,Virtual Users 1-10,text,true,186,23,23,151
+1373817062841,52672,1. Call for main page,200,OK,Virtual Users 1-9,text,true,5904,23,23,52666
+1373817115086,177,4. Call for search page,200,OK,Virtual Users 1-10,text,true,11084,23,23,152
+1373817115269,103,5. Return facets for given keyword,200,OK,Virtual Users 1-10,text,true,2683,23,23,101
+1373817062863,52815,1. Call for main page,200,OK,Virtual Users 1-25,text,true,5903,23,23,52809
+1373817115382,131,6. Return products for given keyword,200,OK,Virtual Users 1-10,text,true,11511,23,23,120
+1373817115522,100,7. Return facet values for products,200,OK,Virtual Users 1-10,text,true,2685,23,23,99
+1373817115632,61,8. Call for vouchers,200,OK,Virtual Users 1-10,text,true,282,23,23,61
+1373817115701,61,9. Call for daily deals,200,OK,Virtual Users 1-10,text,true,282,23,23,61
+1373817115772,99,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-10,text,true,1211,23,23,99
+1373817062870,55702,1. Call for main page,200,OK,Virtual Users 1-7,text,true,5904,22,22,55698
+1373817107228,12160,2. Call for all categories,200,OK,Virtual Users 1-19,text,true,3441,22,22,12159
+1373817119400,97,3. Call for suggestion about keyword,200,OK,Virtual Users 1-19,text,true,186,22,22,97
+1373817119508,79,4. Call for search page,200,OK,Virtual Users 1-19,text,true,11083,22,22,70
+1373817119597,107,5. Return facets for given keyword,200,OK,Virtual Users 1-19,text,true,2683,22,22,106
+1373817119714,130,6. Return products for given keyword,200,OK,Virtual Users 1-19,text,true,11511,22,22,120
+1373817119854,106,7. Return facet values for products,200,OK,Virtual Users 1-19,text,true,2685,22,22,103
+1373817119971,65,8. Call for vouchers,200,OK,Virtual Users 1-19,text,true,282,22,22,65
+1373817120046,69,9. Call for daily deals,200,OK,Virtual Users 1-19,text,true,282,22,22,69
+1373817120125,126,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-19,text,true,1211,22,22,126
+1373817064198,59792,2. Call for all categories,500,Server Error,Virtual Users 1-16,text,false,3469,21,21,59781
+1373817123864,97,3. Call for suggestion about keyword,200,OK,Virtual Users 1-16,text,true,186,21,21,97
+1373817123972,76,4. Call for search page,200,OK,Virtual Users 1-16,text,true,11081,21,21,65
+1373817124058,102,5. Return facets for given keyword,200,OK,Virtual Users 1-16,text,true,2683,21,21,101
+1373817124170,164,6. Return products for given keyword,200,OK,Virtual Users 1-16,text,true,11511,21,21,117
+1373817064757,59732,2. Call for all categories,200,OK,Virtual Users 1-2,text,true,3441,21,21,59728
+1373817124205,100,7. Return facet values for products,200,OK,Virtual Users 1-16,text,true,2685,21,21,100
+1373817124225,93,3. Call for suggestion about keyword,200,OK,Virtual Users 1-2,text,true,186,21,21,93
+1373817124315,60,8. Call for vouchers,200,OK,Virtual Users 1-16,text,true,282,21,21,59
+1373817124329,74,4. Call for search page,200,OK,Virtual Users 1-2,text,true,11083,21,21,67
+1373817124383,58,9. Call for daily deals,200,OK,Virtual Users 1-16,text,true,282,21,21,58
+1373817124412,97,5. Return facets for given keyword,200,OK,Virtual Users 1-2,text,true,2683,21,21,97
+1373817124451,133,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-16,text,true,1211,21,21,133
+1373817124519,203,6. Return products for given keyword,200,OK,Virtual Users 1-2,text,true,11511,20,20,197
+1373817124733,100,7. Return facet values for products,200,OK,Virtual Users 1-2,text,true,2685,20,20,99
+1373817124843,61,8. Call for vouchers,200,OK,Virtual Users 1-2,text,true,282,20,20,61
+1373817065113,60098,2. Call for all categories,500,Server Error,Virtual Users 1-13,text,false,3470,20,20,60092
+1373817124914,81,9. Call for daily deals,200,OK,Virtual Users 1-2,text,true,282,20,20,81
+1373817124945,99,3. Call for suggestion about keyword,200,OK,Virtual Users 1-13,text,true,186,20,20,99
+1373817125005,122,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-2,text,true,1211,20,20,122
+1373817125053,89,4. Call for search page,200,OK,Virtual Users 1-13,text,true,11083,19,19,75
+1373817125147,100,5. Return facets for given keyword,200,OK,Virtual Users 1-13,text,true,2683,19,19,100
+1373817125251,127,6. Return products for given keyword,200,OK,Virtual Users 1-13,text,true,11511,19,19,117
+1373817125388,100,7. Return facet values for products,200,OK,Virtual Users 1-13,text,true,2685,19,19,99
+1373817125497,62,8. Call for vouchers,200,OK,Virtual Users 1-13,text,true,282,19,19,62
+1373817125570,66,9. Call for daily deals,200,OK,Virtual Users 1-13,text,true,282,19,19,65
+1373817125647,99,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-13,text,true,1211,19,19,99
+1373817082593,43674,2. Call for all categories,200,OK,Virtual Users 1-5,text,true,3441,18,18,43670
+1373817126001,109,3. Call for suggestion about keyword,200,OK,Virtual Users 1-5,text,true,186,18,18,109
+1373817126116,80,4. Call for search page,200,OK,Virtual Users 1-5,text,true,11082,18,18,72
+1373817126207,108,5. Return facets for given keyword,200,OK,Virtual Users 1-5,text,true,2683,18,18,108
+1373817126323,135,6. Return products for given keyword,200,OK,Virtual Users 1-5,text,true,11511,18,18,120
+1373817126466,106,7. Return facet values for products,200,OK,Virtual Users 1-5,text,true,2685,18,18,105
+1373817126581,65,8. Call for vouchers,200,OK,Virtual Users 1-5,text,true,282,18,18,65
+1373817126654,65,9. Call for daily deals,200,OK,Virtual Users 1-5,text,true,282,18,18,65
+1373817126727,126,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-5,text,true,1211,18,18,126
+1373817087575,57106,2. Call for all categories,200,OK,Virtual Users 1-18,text,true,3441,17,17,57102
+1373817144417,94,3. Call for suggestion about keyword,200,OK,Virtual Users 1-18,text,true,186,17,17,94
+1373817144520,79,4. Call for search page,200,OK,Virtual Users 1-18,text,true,11084,17,17,68
+1373817144609,106,5. Return facets for given keyword,200,OK,Virtual Users 1-18,text,true,2683,17,17,105
+1373817144720,132,6. Return products for given keyword,200,OK,Virtual Users 1-18,text,true,11511,17,17,118
+1373817144862,101,7. Return facet values for products,200,OK,Virtual Users 1-18,text,true,2685,17,17,100
+1373817144972,62,8. Call for vouchers,200,OK,Virtual Users 1-18,text,true,282,17,17,62
+1373817145044,62,9. Call for daily deals,200,OK,Virtual Users 1-18,text,true,282,17,17,62
+1373817145119,127,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-18,text,true,1211,17,17,126
+1373817062862,100135,1. Call for main page,200,OK,Virtual Users 1-20,text,true,5904,16,16,100129
+1373817084991,79700,2. Call for all categories,200,OK,Virtual Users 1-14,text,true,3441,16,16,79697
+1373817164283,96,3. Call for suggestion about keyword,200,OK,Virtual Users 1-14,text,true,186,16,16,96
+1373817164389,79,4. Call for search page,200,OK,Virtual Users 1-14,text,true,11082,16,16,70
+1373817164475,108,5. Return facets for given keyword,200,OK,Virtual Users 1-14,text,true,2683,16,16,107
+1373817164594,136,6. Return products for given keyword,200,OK,Virtual Users 1-14,text,true,11511,16,16,119
+1373817164740,103,7. Return facet values for products,200,OK,Virtual Users 1-14,text,true,2685,16,16,102
+1373817164856,64,8. Call for vouchers,200,OK,Virtual Users 1-14,text,true,282,16,16,64
+1373817164930,63,9. Call for daily deals,200,OK,Virtual Users 1-14,text,true,282,16,16,63
+1373817165004,100,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-14,text,true,1211,16,16,100
+1373817062860,119962,1. Call for main page,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-21,text,false,1845,15,15,0
+1373817062872,119951,1. Call for main page,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-11,text,false,1845,15,15,0
+1373817062836,119988,1. Call for main page,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-8,text,false,1845,15,15,0
+1373817062866,119961,1. Call for main page,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-6,text,false,1845,15,15,0
+1373817062831,119994,1. Call for main page,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-1,text,false,1845,15,15,0
+1373817062866,119961,1. Call for main page,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-17,text,false,1845,15,15,0
+1373817073648,120039,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-4,text,false,1845,15,15,0
+1373817193148,136,3. Call for suggestion about keyword,200,OK,Virtual Users 1-4,text,true,186,15,15,136
+1373817193295,76,4. Call for search page,200,OK,Virtual Users 1-4,text,true,11083,15,15,67
+1373817193381,105,5. Return facets for given keyword,200,OK,Virtual Users 1-4,text,true,2683,15,15,104
+1373817193495,161,6. Return products for given keyword,200,OK,Virtual Users 1-4,text,true,11511,15,15,156
+1373817193663,100,7. Return facet values for products,200,OK,Virtual Users 1-4,text,true,2685,15,15,97
+1373817193773,60,8. Call for vouchers,200,OK,Virtual Users 1-4,text,true,282,15,15,59
+1373817193843,59,9. Call for daily deals,200,OK,Virtual Users 1-4,text,true,282,15,15,59
+1373817193913,118,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-4,text,true,1211,15,15,118
+1373817087372,119315,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-12,text,false,1845,14,14,0
+1373817206149,291,3. Call for suggestion about keyword,200,OK,Virtual Users 1-12,text,true,186,14,14,291
+1373817206450,82,4. Call for search page,200,OK,Virtual Users 1-12,text,true,11083,14,14,74
+1373817206543,111,5. Return facets for given keyword,200,OK,Virtual Users 1-12,text,true,2683,14,14,110
+1373817206664,132,6. Return products for given keyword,200,OK,Virtual Users 1-12,text,true,11511,14,14,125
+1373817206804,110,7. Return facet values for products,200,OK,Virtual Users 1-12,text,true,2685,14,14,108
+1373817206923,66,8. Call for vouchers,200,OK,Virtual Users 1-12,text,true,282,14,14,66
+1373817206997,64,9. Call for daily deals,200,OK,Virtual Users 1-12,text,true,282,14,14,64
+1373817207070,124,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-12,text,true,1211,14,14,124
+1373817090667,120018,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-22,text,false,1845,13,13,0
+1373817210147,166,3. Call for suggestion about keyword,200,OK,Virtual Users 1-22,text,true,186,13,13,166
+1373817210324,98,4. Call for search page,200,OK,Virtual Users 1-22,text,true,11083,13,13,86
+1373817210433,105,5. Return facets for given keyword,200,OK,Virtual Users 1-22,text,true,2683,13,13,104
+1373817210549,121,6. Return products for given keyword,200,OK,Virtual Users 1-22,text,true,11511,13,13,118
+1373817210674,99,7. Return facet values for products,200,OK,Virtual Users 1-22,text,true,2685,13,13,98
+1373817210777,62,8. Call for vouchers,200,OK,Virtual Users 1-22,text,true,282,13,13,61
+1373817210842,60,9. Call for daily deals,200,OK,Virtual Users 1-22,text,true,282,13,13,60
+1373817210906,126,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-22,text,true,1211,13,13,126
+1373817091770,119915,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-15,text,false,1845,12,12,0
+1373817211140,181,3. Call for suggestion about keyword,200,OK,Virtual Users 1-15,text,true,186,12,12,181
+1373817211327,76,4. Call for search page,200,OK,Virtual Users 1-15,text,true,11084,12,12,68
+1373817211406,107,5. Return facets for given keyword,200,OK,Virtual Users 1-15,text,true,2683,12,12,105
+1373817211516,134,6. Return products for given keyword,200,OK,Virtual Users 1-15,text,true,11511,12,12,129
+1373817211654,103,7. Return facet values for products,200,OK,Virtual Users 1-15,text,true,2685,12,12,100
+1373817211760,61,8. Call for vouchers,200,OK,Virtual Users 1-15,text,true,282,12,12,61
+1373817211825,62,9. Call for daily deals,200,OK,Virtual Users 1-15,text,true,282,12,12,62
+1373817211891,125,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-15,text,true,1211,12,12,125
+1373817106608,119944,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-23,text,false,1845,11,11,0
+1373817226013,163,3. Call for suggestion about keyword,200,OK,Virtual Users 1-23,text,true,186,11,11,163
+1373817226186,81,4. Call for search page,200,OK,Virtual Users 1-23,text,true,11085,11,11,72
+1373817226274,113,5. Return facets for given keyword,200,OK,Virtual Users 1-23,text,true,2683,11,11,110
+1373817226398,161,6. Return products for given keyword,200,OK,Virtual Users 1-23,text,true,11511,11,11,129
+1373817226568,107,7. Return facet values for products,200,OK,Virtual Users 1-23,text,true,2685,11,11,104
+1373817226685,66,8. Call for vouchers,200,OK,Virtual Users 1-23,text,true,282,11,11,66
+1373817226762,66,9. Call for daily deals,200,OK,Virtual Users 1-23,text,true,282,11,11,66
+1373817226839,115,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-23,text,true,1211,11,11,115
+1373817115414,119136,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-25,text,false,1845,10,10,0
+1373817115254,119298,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-9,text,false,1845,10,10,0
+1373817234021,148,3. Call for suggestion about keyword,200,OK,Virtual Users 1-25,text,true,186,10,10,147
+1373817234021,155,3. Call for suggestion about keyword,200,OK,Virtual Users 1-9,text,true,186,10,10,155
+1373817234178,114,4. Call for search page,200,OK,Virtual Users 1-25,text,true,11082,10,10,106
+1373817234185,144,4. Call for search page,200,OK,Virtual Users 1-9,text,true,11085,10,10,108
+1373817234303,103,5. Return facets for given keyword,200,OK,Virtual Users 1-25,text,true,2683,10,10,100
+1373817234336,99,5. Return facets for given keyword,200,OK,Virtual Users 1-9,text,true,2683,10,10,98
+1373817234417,160,6. Return products for given keyword,200,OK,Virtual Users 1-25,text,true,11511,10,10,121
+1373817234445,205,6. Return products for given keyword,200,OK,Virtual Users 1-9,text,true,11511,10,10,163
+1373817234588,99,7. Return facet values for products,200,OK,Virtual Users 1-25,text,true,2685,10,10,98
+1373817234659,97,7. Return facet values for products,200,OK,Virtual Users 1-9,text,true,2685,10,10,96
+1373817234691,65,8. Call for vouchers,200,OK,Virtual Users 1-25,text,true,282,10,10,65
+1373817234773,66,9. Call for daily deals,200,OK,Virtual Users 1-25,text,true,282,10,10,66
+1373817234773,67,8. Call for vouchers,200,OK,Virtual Users 1-9,text,true,282,10,10,67
+1373817234848,66,9. Call for daily deals,200,OK,Virtual Users 1-9,text,true,282,10,10,66
+1373817234848,105,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-25,text,true,1211,10,10,104
+1373817234924,136,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-9,text,true,1211,9,9,136
+1373817118307,119240,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-7,text,false,1845,8,8,0
+1373817237006,148,3. Call for suggestion about keyword,200,OK,Virtual Users 1-7,text,true,186,8,8,148
+1373817237158,80,4. Call for search page,200,OK,Virtual Users 1-7,text,true,11083,8,8,72
+1373817237248,110,5. Return facets for given keyword,200,OK,Virtual Users 1-7,text,true,2683,8,8,106
+1373817237368,146,6. Return products for given keyword,200,OK,Virtual Users 1-7,text,true,11511,8,8,122
+1373817237519,100,7. Return facet values for products,200,OK,Virtual Users 1-7,text,true,2685,8,8,99
+1373817237629,62,8. Call for vouchers,200,OK,Virtual Users 1-7,text,true,282,8,8,62
+1373817237697,63,9. Call for daily deals,200,OK,Virtual Users 1-7,text,true,282,8,8,63
+1373817237764,123,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-7,text,true,1211,8,8,123
+1373817182307,90183,2. Call for all categories,200,OK,Virtual Users 1-17,text,true,3541,7,7,90180
+1373817272085,317,3. Call for suggestion about keyword,200,OK,Virtual Users 1-17,text,true,186,7,7,317
+1373817272408,69,4. Call for search page,200,OK,Virtual Users 1-17,text,true,11085,7,7,65
+1373817272481,104,5. Return facets for given keyword,200,OK,Virtual Users 1-17,text,true,2683,7,7,103
+1373817272593,125,6. Return products for given keyword,200,OK,Virtual Users 1-17,text,true,11511,7,7,115
+1373817272727,99,7. Return facet values for products,200,OK,Virtual Users 1-17,text,true,2685,7,7,99
+1373817272840,61,8. Call for vouchers,200,OK,Virtual Users 1-17,text,true,282,7,7,61
+1373817272906,57,9. Call for daily deals,200,OK,Virtual Users 1-17,text,true,282,7,7,57
+1373817272970,93,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-17,text,true,1211,7,7,93
+1373817162460,119809,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-20,text,false,1845,6,6,0
+1373817182302,119968,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-8,text,false,1845,6,6,0
+1373817182305,119965,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-6,text,false,1845,6,6,0
+1373817182292,119982,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-11,text,false,1845,6,6,0
+1373817182292,119981,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-21,text,false,1845,6,6,0
+1373817182307,119962,2. Call for all categories,Non HTTP response code: org.apache.http.NoHttpResponseException,Non HTTP response message: The target server failed to respond,Virtual Users 1-1,text,false,1845,6,6,0
+1373817281730,49453,3. Call for suggestion about keyword,200,OK,Virtual Users 1-20,text,true,186,6,6,49453
+1373817331048,109,4. Call for search page,200,OK,Virtual Users 1-20,text,true,11083,6,6,104
+1373817331158,124,5. Return facets for given keyword,200,OK,Virtual Users 1-20,text,true,2683,6,6,124
+1373817331284,184,6. Return products for given keyword,200,OK,Virtual Users 1-20,text,true,11511,6,6,178
+1373817331469,134,7. Return facet values for products,200,OK,Virtual Users 1-20,text,true,2685,6,6,133
+1373817331607,92,8. Call for vouchers,200,OK,Virtual Users 1-20,text,true,282,6,6,92
+1373817331704,60,9. Call for daily deals,200,OK,Virtual Users 1-20,text,true,282,6,6,60
+1373817331767,120,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-20,text,true,1211,6,6,120
+1373817301739,51472,3. Call for suggestion about keyword,200,OK,Virtual Users 1-6,text,true,287,5,5,51472
+1373817352937,112,4. Call for search page,200,OK,Virtual Users 1-6,text,true,11083,5,5,75
+1373817353053,129,5. Return facets for given keyword,200,OK,Virtual Users 1-6,text,true,2683,5,5,125
+1373817353186,163,6. Return products for given keyword,200,OK,Virtual Users 1-6,text,true,11511,5,5,138
+1373817353352,132,7. Return facet values for products,200,OK,Virtual Users 1-6,text,true,2685,5,5,119
+1373817301739,52036,3. Call for suggestion about keyword,200,OK,Virtual Users 1-8,text,true,286,5,5,52036
+1373817353487,89,8. Call for vouchers,200,OK,Virtual Users 1-6,text,true,282,5,5,89
+1373817353502,118,4. Call for search page,200,OK,Virtual Users 1-8,text,true,11083,5,5,81
+1373817353580,67,9. Call for daily deals,200,OK,Virtual Users 1-6,text,true,282,5,5,67
+1373817353623,105,5. Return facets for given keyword,200,OK,Virtual Users 1-8,text,true,2683,5,5,104
+1373817353651,139,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-6,text,true,1211,5,5,139
+1373817353730,143,6. Return products for given keyword,200,OK,Virtual Users 1-8,text,true,11511,4,4,138
+1373817353875,129,7. Return facet values for products,200,OK,Virtual Users 1-8,text,true,2685,4,4,128
+1373817354008,64,8. Call for vouchers,200,OK,Virtual Users 1-8,text,true,282,4,4,63
+1373817354075,62,9. Call for daily deals,200,OK,Virtual Users 1-8,text,true,282,4,4,62
+1373817301742,52735,3. Call for suggestion about keyword,200,OK,Virtual Users 1-1,text,true,286,4,4,52735
+1373817301741,52744,3. Call for suggestion about keyword,200,OK,Virtual Users 1-11,text,true,286,4,4,52744
+1373817301741,52752,3. Call for suggestion about keyword,200,OK,Virtual Users 1-21,text,true,287,4,4,52752
+1373817354140,147,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-8,text,true,1211,4,4,147
+1373817354203,124,4. Call for search page,200,OK,Virtual Users 1-1,text,true,11082,3,3,117
+1373817354219,208,4. Call for search page,200,OK,Virtual Users 1-21,text,true,11082,3,3,166
+1373817354210,221,4. Call for search page,200,OK,Virtual Users 1-11,text,true,11083,3,3,177
+1373817354330,118,5. Return facets for given keyword,200,OK,Virtual Users 1-1,text,true,2683,3,3,118
+1373817354434,146,5. Return facets for given keyword,200,OK,Virtual Users 1-11,text,true,2683,3,3,146
+1373817354429,155,5. Return facets for given keyword,200,OK,Virtual Users 1-21,text,true,2683,3,3,153
+1373817354452,188,6. Return products for given keyword,200,OK,Virtual Users 1-1,text,true,11511,3,3,185
+1373817354586,222,6. Return products for given keyword,200,OK,Virtual Users 1-11,text,true,11511,3,3,187
+1373817354643,178,7. Return facet values for products,200,OK,Virtual Users 1-1,text,true,2685,3,3,177
+1373817354587,279,6. Return products for given keyword,200,OK,Virtual Users 1-21,text,true,11511,3,3,243
+1373817354823,85,8. Call for vouchers,200,OK,Virtual Users 1-1,text,true,282,3,3,85
+1373817354810,110,7. Return facet values for products,200,OK,Virtual Users 1-11,text,true,2685,3,3,107
+1373817354869,108,7. Return facet values for products,200,OK,Virtual Users 1-21,text,true,2685,3,3,107
+1373817354911,71,9. Call for daily deals,200,OK,Virtual Users 1-1,text,true,282,3,3,71
+1373817354923,67,8. Call for vouchers,200,OK,Virtual Users 1-11,text,true,282,3,3,67
+1373817354979,125,8. Call for vouchers,200,OK,Virtual Users 1-21,text,true,282,3,3,125
+1373817354993,128,9. Call for daily deals,200,OK,Virtual Users 1-11,text,true,282,3,3,128
+1373817354984,185,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-1,text,true,1211,3,3,184
+1373817355108,65,9. Call for daily deals,200,OK,Virtual Users 1-21,text,true,282,2,2,65
+1373817355123,99,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-11,text,true,1211,2,2,99
+1373817355175,139,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-21,text,true,1211,1,1,139

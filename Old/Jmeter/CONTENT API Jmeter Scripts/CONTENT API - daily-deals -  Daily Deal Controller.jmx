@@ -1,0 +1,2414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13 r1665067">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="content API for Daily Deals" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">content-type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Environment Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="HTTP_PROXY_HOST" elementType="Argument">
+            <stringProp name="Argument.name">HTTP_PROXY_HOST</stringProp>
+            <stringProp name="Argument.value">test-proxy-qa-01.iatlimited.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HTTP_PROXY_PORT" elementType="Argument">
+            <stringProp name="Argument.name">HTTP_PROXY_PORT</stringProp>
+            <stringProp name="Argument.value">7000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HTTP_REQUEST_HOST" elementType="Argument">
+            <stringProp name="Argument.name">HTTP_REQUEST_HOST</stringProp>
+            <stringProp name="Argument.value">qa-content.epoints.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="HTTP_REQUEST_PORT" elementType="Argument">
+            <stringProp name="Argument.name">HTTP_REQUEST_PORT</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SOLR_HOST" elementType="Argument">
+            <stringProp name="Argument.name">SOLR_HOST</stringProp>
+            <stringProp name="Argument.value">test-proxy-qa-01.iatlimited.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SOLR_PORT" elementType="Argument">
+            <stringProp name="Argument.name">SOLR_PORT</stringProp>
+            <stringProp name="Argument.value">8992</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SOLR_PROXY_HOST" elementType="Argument">
+            <stringProp name="Argument.name">SOLR_PROXY_HOST</stringProp>
+            <stringProp name="Argument.value">10.10.30.1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SOLR_PROXY_PORT" elementType="Argument">
+            <stringProp name="Argument.name">SOLR_PROXY_PORT</stringProp>
+            <stringProp name="Argument.value">8080</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dateInEpochFormatNew" elementType="Argument">
+            <stringProp name="Argument.name">dateInEpochFormatNew</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Test for /daily deals - pagination {-page-} parameter - check if deals are not duplicated between pages" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1384413513000</longProp>
+        <longProp name="ThreadGroup.end_time">1384413513000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="527096619">RESPONSE_CODE</stringProp>
+            <stringProp name="-537176477">RESPONSE_MSG</stringProp>
+            <stringProp name="3433103">page</stringProp>
+            <stringProp name="3530753">size</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="1413717285">
+              <stringProp name="49586">200</stringProp>
+              <stringProp name="2524">OK</stringProp>
+              <stringProp name="48">0</stringProp>
+              <stringProp name="53">5</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">5</stringProp>
+        </LoopController>
+        <hashTree>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter1" enabled="true">
+            <stringProp name="CounterConfig.start">1</stringProp>
+            <stringProp name="CounterConfig.end">5</stringProp>
+            <stringProp name="CounterConfig.incr">1</stringProp>
+            <stringProp name="CounterConfig.name">currentIteration</stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">false</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get daily deals set from /daily-deals controller from current page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${currentIteration}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                </elementProp>
+                <elementProp name="size" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">5</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">size</stringProp>
+                </elementProp>
+                <elementProp name="end_user_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">00c15942786d3ceb3ad0629ec2a84493</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_id</stringProp>
+                </elementProp>
+                <elementProp name="end_user_secret" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">3d6b002f08af5d719611908364f673ed</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_secret</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${HTTP_REQUEST_HOST}</stringProp>
+            <stringProp name="HTTPSampler.port">${HTTP_REQUEST_PORT}</stringProp>
+            <stringProp name="HTTPSampler.proxyHost">${HTTP_PROXY_HOST}</stringProp>
+            <stringProp name="HTTPSampler.proxyPort">${HTTP_PROXY_PORT}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/daily-deals</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract daily deals items" enabled="true">
+              <stringProp name="VAR">api_deals</stringProp>
+              <stringProp name="JSONPATH">$.results</stringProp>
+              <stringProp name="DEFAULT"></stringProp>
+              <stringProp name="VARIABLE"></stringProp>
+              <stringProp name="SUBJECT">BODY</stringProp>
+            </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deals id" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">deal_idsCurrentPage</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_deals</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter2" enabled="true">
+            <stringProp name="CounterConfig.start">2</stringProp>
+            <stringProp name="CounterConfig.end">6</stringProp>
+            <stringProp name="CounterConfig.incr">1</stringProp>
+            <stringProp name="CounterConfig.name">nextIteration</stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">false</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get daily deals set from /daily-deals controller from next page and check if ids are not duplicated on different pages" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${nextIteration}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                </elementProp>
+                <elementProp name="size" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">5</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">size</stringProp>
+                </elementProp>
+                <elementProp name="end_user_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">00c15942786d3ceb3ad0629ec2a84493</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_id</stringProp>
+                </elementProp>
+                <elementProp name="end_user_secret" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">3d6b002f08af5d719611908364f673ed</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_secret</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${HTTP_REQUEST_HOST}</stringProp>
+            <stringProp name="HTTPSampler.port">${HTTP_REQUEST_PORT}</stringProp>
+            <stringProp name="HTTPSampler.proxyHost">${HTTP_PROXY_HOST}</stringProp>
+            <stringProp name="HTTPSampler.proxyPort">${HTTP_PROXY_PORT}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/daily-deals</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract deal items" enabled="true">
+              <stringProp name="VAR">api_dealsNext</stringProp>
+              <stringProp name="JSONPATH">$.results</stringProp>
+              <stringProp name="DEFAULT"></stringProp>
+              <stringProp name="VARIABLE"></stringProp>
+              <stringProp name="SUBJECT">BODY</stringProp>
+            </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals id" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">deal_idsNextPage</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealsNext</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Assert: compare data between pages and check if deals are duplicated" enabled="true">
+              <stringProp name="BeanShellAssertion.query">	
+	//check if voucher ids are not duplicated across pages
+	int i;
+	int j;
+	
+	for(i =1; i&lt;=${size}; i++)
+	{
+		for(j =1; j&lt;=${size}; j++)
+		{
+				if(vars.get(&quot;deal_idsCurrentPage_&quot;+i).equals(vars.get(&quot;deal_idsNextPage_&quot;+j)))
+			{
+				Failure = true;
+				FailureMessage = &quot;The same deal displayed on two pages, voucher id: &quot; +vars.get(&quot;deal_idsCurrentPage_&quot;+i) + &quot; Number of pages: &quot; +${currentIteration}+&quot; , &quot; + ${nextIteration};
+				print (FailureMessage); 
+				log.warn(FailureMessage); 
+				break;
+				
+			}else{
+				Failure = false;
+			}
+		}
+
+	}
+</stringProp>
+              <stringProp name="BeanShellAssertion.filename"></stringProp>
+              <stringProp name="BeanShellAssertion.parameters"></stringProp>
+              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+            </BeanShellAssertion>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Test for /daily deals - size {-size-} parameter - check if proper number of deals are displayed and if page number is correctly calculated" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1384413513000</longProp>
+        <longProp name="ThreadGroup.end_time">1384413513000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="page size - number of deals returned" enabled="true"/>
+        <hashTree>
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User parameters" enabled="true">
+            <collectionProp name="UserParameters.names">
+              <stringProp name="527096619">RESPONSE_CODE</stringProp>
+              <stringProp name="-537176477">RESPONSE_MSG</stringProp>
+              <stringProp name="859428656">pageSize</stringProp>
+            </collectionProp>
+            <collectionProp name="UserParameters.thread_values">
+              <collectionProp name="-330608699">
+                <stringProp name="49586">200</stringProp>
+                <stringProp name="2524">OK</stringProp>
+                <stringProp name="48625">100</stringProp>
+              </collectionProp>
+            </collectionProp>
+            <boolProp name="UserParameters.per_iteration">false</boolProp>
+          </UserParameters>
+          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="TestPlan.comments">Loop Controller</stringProp>
+            <stringProp name="LoopController.loops">50</stringProp>
+          </LoopController>
+          <hashTree>
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+              <stringProp name="CounterConfig.start">1</stringProp>
+              <stringProp name="CounterConfig.end">100</stringProp>
+              <stringProp name="CounterConfig.incr">1</stringProp>
+              <stringProp name="CounterConfig.name">currentLoopNumber</stringProp>
+              <stringProp name="CounterConfig.format"></stringProp>
+              <boolProp name="CounterConfig.per_user">false</boolProp>
+            </CounterConfig>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API: get deals - daily deal controller - number of items on page check - sample ${currentLoopNumber}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="size" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${currentLoopNumber}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">size</stringProp>
+                  </elementProp>
+                  <elementProp name="end_user_id" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">00c15942786d3ceb3ad0629ec2a84493</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">end_user_id</stringProp>
+                  </elementProp>
+                  <elementProp name="end_user_secret" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">3d6b002f08af5d719611908364f673ed</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">end_user_secret</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${HTTP_REQUEST_HOST}</stringProp>
+              <stringProp name="HTTPSampler.port">${HTTP_REQUEST_PORT}</stringProp>
+              <stringProp name="HTTPSampler.proxyHost">${HTTP_PROXY_HOST}</stringProp>
+              <stringProp name="HTTPSampler.proxyPort">${HTTP_PROXY_PORT}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/redemptions</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract daily deals items" enabled="true">
+                <stringProp name="VAR">api_dealtems</stringProp>
+                <stringProp name="JSONPATH">$.results</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+                <stringProp name="VARIABLE"></stringProp>
+                <stringProp name="SUBJECT">BODY</stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals id" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">api_id</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dealtems</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Assert: check number of deals displayed on single page" enabled="true">
+                <stringProp name="BeanShellAssertion.query">
+	Integer count_api = Integer.parseInt(vars.get(&quot;api_id_matchNr&quot;));
+
+	if(${currentLoopNumber} == count_api)
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Incorrect number of deals were displayed: &quot;+count_api+&quot;, should be: &quot;+${currentLoopNumber}+&quot;&quot;;
+		print (FailureMessage); 
+		log.warn(FailureMessage); 
+		break;
+	}
+</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+            </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>true</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>true</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>false</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <threadCounts>true</threadCounts>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Test for /daily deals - updated since {-updated since-} parameter - check if proper deals are displayed according to updated since parameter" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1384413513000</longProp>
+        <longProp name="ThreadGroup.end_time">1384413513000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="527096619">RESPONSE_CODE</stringProp>
+            <stringProp name="-537176477">RESPONSE_MSG</stringProp>
+            <stringProp name="859428656">pageSize</stringProp>
+            <stringProp name="95356483">date1</stringProp>
+            <stringProp name="95356484">date2</stringProp>
+            <stringProp name="95356485">date3</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="609160212">
+              <stringProp name="49586">200</stringProp>
+              <stringProp name="2524">OK</stringProp>
+              <stringProp name="48625">100</stringProp>
+              <stringProp name="1938964349">2014-06-24</stringProp>
+              <stringProp name="1938845185">2014-02-24</stringProp>
+              <stringProp name="1939023897">2014-08-11</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">3</stringProp>
+        </LoopController>
+        <hashTree>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+            <stringProp name="CounterConfig.start">1</stringProp>
+            <stringProp name="CounterConfig.end">3</stringProp>
+            <stringProp name="CounterConfig.incr">1</stringProp>
+            <stringProp name="CounterConfig.name">currentIteration</stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">false</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Convert reference point data to epoch format " enabled="true">
+            <stringProp name="BeanShellAssertion.query"> import java.text.SimpleDateFormat; 
+ import java.util.Date; 
+
+        SimpleDateFormat sdf  = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+        sdf.setTimeZone(TimeZone.getTimeZone( &quot;GMT&quot; ));
+        Date expDate = sdf.parse(vars.get(&quot;date&quot;+${currentIteration}));
+        long epochTime = expDate.getTime();
+        String epochTimeString = Long.toString(epochTime);
+    
+vars.put(&quot;dateInEpochFormatNew&quot;, epochTimeString);</stringProp>
+            <stringProp name="BeanShellAssertion.filename"></stringProp>
+            <stringProp name="BeanShellAssertion.parameters"></stringProp>
+            <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+          </BeanShellAssertion>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API: get deals - daily deal controller - extract id and last updated date" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="size" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${pageSize}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">size</stringProp>
+                </elementProp>
+                <elementProp name="end_user_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">00c15942786d3ceb3ad0629ec2a84493</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_id</stringProp>
+                </elementProp>
+                <elementProp name="end_user_secret" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">3d6b002f08af5d719611908364f673ed</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_secret</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${HTTP_REQUEST_HOST}</stringProp>
+            <stringProp name="HTTPSampler.port">${HTTP_REQUEST_PORT}</stringProp>
+            <stringProp name="HTTPSampler.proxyHost">${HTTP_PROXY_HOST}</stringProp>
+            <stringProp name="HTTPSampler.proxyPort">${HTTP_PROXY_PORT}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/daily-deals</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract daily deals items" enabled="true">
+              <stringProp name="VAR">api_dealtems</stringProp>
+              <stringProp name="JSONPATH">$.results</stringProp>
+              <stringProp name="DEFAULT"></stringProp>
+              <stringProp name="VARIABLE"></stringProp>
+              <stringProp name="SUBJECT">BODY</stringProp>
+            </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals id" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_id</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals last updated date" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_lastUpdatedDate</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+            <stringProp name="ForeachController.inputVal">api_id</stringProp>
+            <stringProp name="ForeachController.returnVal">id</stringProp>
+            <boolProp name="ForeachController.useSeparator">true</boolProp>
+          </ForeachController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get data of specified deal from SOLR and check if match last updated date criteria" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${SOLR_HOST}</stringProp>
+              <stringProp name="HTTPSampler.port">${SOLR_PORT}</stringProp>
+              <stringProp name="HTTPSampler.proxyHost">${SOLR_PROXY_HOST}</stringProp>
+              <stringProp name="HTTPSampler.proxyPort">${SOLR_PROXY_PORT}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/solr/offerings/select?q=*%3A*&amp;fq=s_consolidationGroupId%3A${id}&amp;wt=json&amp;indent=true</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract data of specified voucher from solr" enabled="true">
+                <stringProp name="VAR">solr_voucher</stringProp>
+                <stringProp name="JSONPATH">$</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+                <stringProp name="VARIABLE"></stringProp>
+                <stringProp name="SUBJECT">BODY</stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-firstAddedToIndexDate-} field" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">solr_voucherLastModifiedInIndexDate</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;lastModifiedInIndexDate&quot;:&quot;(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">solr_voucher</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Convert voucher data to epoch format and assert if voucher match updated-since criteria" enabled="true">
+                <stringProp name="BeanShellAssertion.query"> import java.text.SimpleDateFormat; 
+ import java.util.Date; 
+	
+        long previousDate = Long.parseLong(vars.get(&quot;dateInEpochFormatNew&quot;));
+
+        SimpleDateFormat sdf  = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+        sdf.setTimeZone(TimeZone.getTimeZone( &quot;GMT&quot; ));
+        Date expDate = sdf.parse(vars.get(&quot;solr_voucherLastModifiedInIndexDate_1&quot;));
+        long epochTime = expDate.getTime();
+        
+       	if( epochTime &gt; previousDate ||  epochTime == previousDate )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Error, current date should be smaller or equal &quot; + epochTime + &quot;  old should be smaller or equal &quot; + previousDate ;
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+                <boolProp name="ResultCollector.error_logging">false</boolProp>
+                <objProp>
+                  <name>saveConfig</name>
+                  <value class="SampleSaveConfiguration">
+                    <time>true</time>
+                    <latency>true</latency>
+                    <timestamp>true</timestamp>
+                    <success>true</success>
+                    <label>true</label>
+                    <code>true</code>
+                    <message>true</message>
+                    <threadName>true</threadName>
+                    <dataType>true</dataType>
+                    <encoding>false</encoding>
+                    <assertions>true</assertions>
+                    <subresults>true</subresults>
+                    <responseData>false</responseData>
+                    <samplerData>false</samplerData>
+                    <xml>false</xml>
+                    <fieldNames>false</fieldNames>
+                    <responseHeaders>false</responseHeaders>
+                    <requestHeaders>false</requestHeaders>
+                    <responseDataOnError>false</responseDataOnError>
+                    <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                    <assertionsResultsToSave>0</assertionsResultsToSave>
+                    <bytes>true</bytes>
+                    <threadCounts>true</threadCounts>
+                  </value>
+                </objProp>
+                <stringProp name="filename"></stringProp>
+              </ResultCollector>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TesTest for /daily deals - correctness of fields content" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1384413513000</longProp>
+        <longProp name="ThreadGroup.end_time">1384413513000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="527096619">RESPONSE_CODE</stringProp>
+            <stringProp name="-537176477">RESPONSE_MSG</stringProp>
+            <stringProp name="859428656">pageSize</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="2123811029">
+              <stringProp name="49586">200</stringProp>
+              <stringProp name="2524">OK</stringProp>
+              <stringProp name="49">1</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">100</stringProp>
+        </LoopController>
+        <hashTree>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+            <stringProp name="CounterConfig.start">1</stringProp>
+            <stringProp name="CounterConfig.end">100</stringProp>
+            <stringProp name="CounterConfig.incr">1</stringProp>
+            <stringProp name="CounterConfig.name">currentIteration</stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">false</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API: get deals - daily deal controller - extract fields of one deal from api" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="size" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${pageSize}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">size</stringProp>
+                </elementProp>
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${currentIteration}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                </elementProp>
+                <elementProp name="end_user_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">00c15942786d3ceb3ad0629ec2a84493</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_id</stringProp>
+                </elementProp>
+                <elementProp name="end_user_secret" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">3d6b002f08af5d719611908364f673ed</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">end_user_secret</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${HTTP_REQUEST_HOST}</stringProp>
+            <stringProp name="HTTPSampler.port">${HTTP_REQUEST_PORT}</stringProp>
+            <stringProp name="HTTPSampler.proxyHost">${HTTP_PROXY_HOST}</stringProp>
+            <stringProp name="HTTPSampler.proxyPort">${HTTP_PROXY_PORT}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/daily-deals</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract daily deals items" enabled="true">
+              <stringProp name="VAR">api_dealtems</stringProp>
+              <stringProp name="JSONPATH">$.results</stringProp>
+              <stringProp name="DEFAULT"></stringProp>
+              <stringProp name="VARIABLE"></stringProp>
+              <stringProp name="SUBJECT">BODY</stringProp>
+            </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals id" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_id</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals description" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_description</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;description&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals title" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_title</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;title&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals imageUrl" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_imageUrl</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;imageUrl&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals thumbnailUrl" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_thumbnailUrl</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;thumbnailUrl&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals price" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_price</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;price&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals deliveryPrice" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_deliveryPrice</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;deliveryPrice&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals percentSaving" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_percentSaving</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;percentSaving&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals merchantId" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_merchantId</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;merchantId&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals merchantName" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_merchantName</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;merchantName&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals validFrom" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_validFrom</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;validFrom&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals validTo" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_validTo</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;validTo&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals epointsEarned" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_epointsEarned</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;epointsEarned&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals productUrl" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_productUrl</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;productUrl&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: deals seoSlug" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">api_seoSlug</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;seoSlug&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">api_dealtems</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get data of specified deal data from SOLR and compare all fields with api" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${SOLR_HOST}</stringProp>
+            <stringProp name="HTTPSampler.port">${SOLR_PORT}</stringProp>
+            <stringProp name="HTTPSampler.proxyHost">${SOLR_PROXY_HOST}</stringProp>
+            <stringProp name="HTTPSampler.proxyPort">${SOLR_PROXY_PORT}</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="HTTPSampler.protocol"></stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/solr/offerings/select?q=*%3A*&amp;fq=s_consolidationGroupId%3A${api_id_1}&amp;wt=json&amp;indent=true</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.monitor">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract data of specified voucher from solr" enabled="true">
+              <stringProp name="VAR">solr_voucher</stringProp>
+              <stringProp name="JSONPATH">$</stringProp>
+              <stringProp name="DEFAULT"></stringProp>
+              <stringProp name="VARIABLE"></stringProp>
+              <stringProp name="SUBJECT">BODY</stringProp>
+            </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_consolidationGroupId-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_consolidationGroupId</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_consolidationGroupId&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_description-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_description</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_description&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_title-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_title</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_title&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_primaryImageUrl-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_primaryImageUrl</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_primaryImageUrl&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_thumbnailImageUrl-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_thumbnailImageUrl</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_thumbnailImageUrl&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-f_price-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_f_price</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;f_price&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-f_deliveryPrice-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_f_deliveryPrice</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;f_deliveryPrice&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-f_percentSaving-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_f_percentSaving</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;f_percentSaving&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_merchantId-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_merchantId</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_merchantId&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_merchantName-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_merchantName</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_merchantName&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-d_validFrom-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_d_validFrom</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;d_validFrom&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-d_validTo-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_d_validTo</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;d_validTo&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-i_epointsEarned-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_i_epointsEarned</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;i_epointsEarned&quot;:(.+?),</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_productUrl-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_productUrl</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_productUrl&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: voucher {-s_seoSlug-} field" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">solr_s_seoSlug</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;s_seoSlug&quot;:&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+              <stringProp name="Sample.scope">variable</stringProp>
+              <stringProp name="Scope.variable">solr_voucher</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Assert correctness of all fields" enabled="true">
+              <stringProp name="BeanShellAssertion.query">import java.text.SimpleDateFormat; 
+ import java.util.Date; 
+
+	if(   vars.get(&quot;api_id_1&quot;).equals(vars.get(&quot;solr_s_consolidationGroupId_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different ids, api: &quot;+vars.get(&quot;api_id_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_consolidationGroupId_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_description_1&quot;).contains(vars.get(&quot;solr_s_description_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different descriptions, api: &quot;+vars.get(&quot;api_description_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_description_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+
+	if(   vars.get(&quot;api_title_1&quot;).contains(vars.get(&quot;solr_s_title_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different titles, api: &quot;+vars.get(&quot;api_title_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_title_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_imageUrl_1&quot;).equals(vars.get(&quot;solr_s_primaryImageUrl_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different image urls, api: &quot;+vars.get(&quot;api_imageUrl_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_primaryImageUrl_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_thumbnailUrl_1&quot;).equals(vars.get(&quot;solr_s_thumbnailImageUrl_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different thumbnail urls, api: &quot;+vars.get(&quot;api_thumbnailUrl_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_thumbnailImageUrl_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_price_1&quot;).equals(vars.get(&quot;solr_f_price_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different prices, api: &quot;+vars.get(&quot;api_price_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_f_price_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+
+	if(   vars.get(&quot;api_deliveryPrice_1&quot;).equals(vars.get(&quot;solr_f_deliveryPrice_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different delivery prices, api: &quot;+vars.get(&quot;api_deliveryPrice_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_f_deliveryPrice_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_percentSaving_1&quot;).equals(vars.get(&quot;solr_f_percentSaving_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different percentage savings, api: &quot;+vars.get(&quot;api_percentSaving_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_f_percentSaving_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_merchantId_1&quot;).equals(vars.get(&quot;solr_s_merchantId_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different merchant ids, api: &quot;+vars.get(&quot;api_merchantId_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_merchantId_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_merchantName_1&quot;).equals(vars.get(&quot;solr_s_merchantName_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different merchant names, api: &quot;+vars.get(&quot;api_merchantName_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_merchantName_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_epointsEarned_1&quot;).equals(vars.get(&quot;solr_i_epointsEarned_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different epoints earned values, api: &quot;+vars.get(&quot;api_epointsEarned_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_i_epointsEarned_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_productUrl_1&quot;).equals(vars.get(&quot;solr_s_productUrl_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different product urls, api: &quot;+vars.get(&quot;api_productUrl_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_productUrl_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(   vars.get(&quot;api_seoSlug_1&quot;).equals(vars.get(&quot;solr_s_seoSlug_1&quot;))  )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		FailureMessage = &quot;Different sea slugs, api: &quot;+vars.get(&quot;api_seoSlug_1&quot;)+&quot; ,solr &quot;+vars.get(&quot;solr_s_seoSlug_1&quot;)+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	if(vars.get(&quot;api_validFrom_1&quot;).equals(&quot;null&quot;)){
+	}else{
+
+       		 SimpleDateFormat sdf  = new SimpleDateFormat(&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&quot;);
+       		 sdf.setTimeZone(TimeZone.getTimeZone( &quot;GMT&quot; ));
+       		 Date expDate = sdf.parse(vars.get(&quot;solr_d_validFrom_1&quot;));
+        		 long epochTime = expDate.getTime();
+
+		if(   Long.parseLong(vars.get(&quot;api_validFrom_1&quot;)) == epochTime  )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Different valid from dates, api: &quot;+vars.get(&quot;api_validFrom_1&quot;)+&quot; ,solr &quot;+epochTime+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+	}
+
+	if(vars.get(&quot;api_validTo_1&quot;).equals(&quot;null&quot;)){
+	}else{
+
+       		 SimpleDateFormat sdf  = new SimpleDateFormat(&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&quot;);
+       		 sdf.setTimeZone(TimeZone.getTimeZone( &quot;GMT&quot; ));
+       		 Date expDate = sdf.parse(vars.get(&quot;solr_d_validTo_1&quot;));
+        		 long epochTime = expDate.getTime();
+
+		if(   Long.parseLong(vars.get(&quot;api_validTo_1&quot;)) == epochTime  )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Different valid to dates, api: &quot;+vars.get(&quot;api_validTo_1&quot;)+&quot; ,solr &quot;+epochTime+&quot; , for deal id: &quot; +vars.get(&quot;api_id_1&quot;);
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+	}</stringProp>
+              <stringProp name="BeanShellAssertion.filename"></stringProp>
+              <stringProp name="BeanShellAssertion.parameters"></stringProp>
+              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+            </BeanShellAssertion>
+            <hashTree/>
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>true</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>true</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>false</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <threadCounts>true</threadCounts>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="DD-Multi Branches - contentAPI changes RD-3414 " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1384413513000</longProp>
+        <longProp name="ThreadGroup.end_time">1384413513000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User parameters" enabled="true">
+          <collectionProp name="UserParameters.names">
+            <stringProp name="527096619">RESPONSE_CODE</stringProp>
+            <stringProp name="-537176477">RESPONSE_MSG</stringProp>
+            <stringProp name="859428656">pageSize</stringProp>
+          </collectionProp>
+          <collectionProp name="UserParameters.thread_values">
+            <collectionProp name="-330608699">
+              <stringProp name="49586">200</stringProp>
+              <stringProp name="2524">OK</stringProp>
+              <stringProp name="48625">100</stringProp>
+            </collectionProp>
+          </collectionProp>
+          <boolProp name="UserParameters.per_iteration">false</boolProp>
+        </UserParameters>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Page size 1-100 DailyDealController" enabled="true"/>
+        <hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="TestPlan.comments">Loop Controller</stringProp>
+            <stringProp name="LoopController.loops">100</stringProp>
+          </LoopController>
+          <hashTree>
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter - page number" enabled="true">
+              <stringProp name="CounterConfig.start">0</stringProp>
+              <stringProp name="CounterConfig.end">99</stringProp>
+              <stringProp name="CounterConfig.incr">1</stringProp>
+              <stringProp name="CounterConfig.name">pageNumber</stringProp>
+              <stringProp name="CounterConfig.format"></stringProp>
+              <boolProp name="CounterConfig.per_user">false</boolProp>
+            </CounterConfig>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="API: get daily deals - sample ${pageNumber}" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="size" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">size</stringProp>
+                  </elementProp>
+                  <elementProp name="page" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${pageNumber}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">page</stringProp>
+                  </elementProp>
+                  <elementProp name="end_user_id" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">00c15942786d3ceb3ad0629ec2a84493</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">end_user_id</stringProp>
+                  </elementProp>
+                  <elementProp name="end_user_secret" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">3d6b002f08af5d719611908364f673ed</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">end_user_secret</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${HTTP_REQUEST_HOST}</stringProp>
+              <stringProp name="HTTPSampler.port">${HTTP_REQUEST_PORT}</stringProp>
+              <stringProp name="HTTPSampler.proxyHost">${HTTP_PROXY_HOST}</stringProp>
+              <stringProp name="HTTPSampler.proxyPort">${HTTP_PROXY_PORT}</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/daily-deals</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract redemption items" enabled="true">
+                <stringProp name="VAR">api_dailyDeals</stringProp>
+                <stringProp name="JSONPATH">$.results</stringProp>
+                <stringProp name="DEFAULT"></stringProp>
+                <stringProp name="VARIABLE"></stringProp>
+                <stringProp name="SUBJECT">BODY</stringProp>
+              </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal branch name" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_branchName</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;name&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal opening hours" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_openingHours</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;openHours&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal address" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_address</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;address&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal latitude" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_latitude</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;latitude&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal longitude" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_longitude</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;longitude&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal post code" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_postCode</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;postcode&quot;:&quot;(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal location" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">apiDD_location</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;location&quot;:&quot;(.+?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal consolidation group id" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">api_dailyDealsId</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                <stringProp name="Sample.scope">variable</stringProp>
+                <stringProp name="Scope.variable">api_dailyDeals</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+            </hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="ForeachController.inputVal">api_dailyDealsId</stringProp>
+              <stringProp name="ForeachController.returnVal">s_consolidationGroupId</stringProp>
+              <boolProp name="ForeachController.useSeparator">true</boolProp>
+            </ForeachController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SOLR: get specified daily deal from SOLR" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">${SOLR_HOST}</stringProp>
+                <stringProp name="HTTPSampler.port">${SOLR_PORT}</stringProp>
+                <stringProp name="HTTPSampler.proxyHost">${SOLR_PROXY_HOST}</stringProp>
+                <stringProp name="HTTPSampler.proxyPort">${SOLR_PROXY_PORT}</stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/solr/offerings/select?q=*%3A*&amp;fq=s_consolidationGroupId%3A${s_consolidationGroupId}&amp;wt=json&amp;indent=true</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <boolProp name="HTTPSampler.monitor">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1293956279">${RESPONSE_CODE}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response msg" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1205487363">${RESPONSE_MSG}</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                </ResponseAssertion>
+                <hashTree/>
+                <com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.gui.JSONPathExtractorGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor" testname="extract specified redemption item from solr" enabled="true">
+                  <stringProp name="VAR">solr_redemptionItem</stringProp>
+                  <stringProp name="JSONPATH">$</stringProp>
+                  <stringProp name="DEFAULT"></stringProp>
+                  <stringProp name="VARIABLE"></stringProp>
+                  <stringProp name="SUBJECT">BODY</stringProp>
+                </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal branch name" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_branchName</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_branchName&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal opening hours" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_openingHours</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_openHours&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal address" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_address</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_address&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal latitude" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_latitude</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_latitude&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal longitude" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_longitude</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_longitude&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal post code" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_postCode</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_postcode&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal location" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_location</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;s_location&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="extract: daily deal number - independent branches" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                  <stringProp name="RegexExtractor.refname">solarDD_numOfDDFound</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;numFound&quot;:(\d+?)}</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NOT FOUND</stringProp>
+                  <stringProp name="RegexExtractor.match_number">-1</stringProp>
+                  <stringProp name="Sample.scope">variable</stringProp>
+                  <stringProp name="Scope.variable">solr_redemptionItem</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Assert: compare data witch solr and they number" enabled="true">
+                  <stringProp name="TestPlan.comments">compare: id,title,pointsToPurchase, check number of elements: imageURL,brandName,url, for url check also if this is no deeplink</stringProp>
+                  <stringProp name="BeanShellAssertion.query">
+	// sprawdzenie istnienia pol branchy tez bardzo wazne
+	// checking if there is correct number of branch elements
+
+	if(   vars.get(&quot;apiDD_branchName_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;))       ||
+	      vars.get(&quot;apiDD_openingHours_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;))     ||
+	      vars.get(&quot;apiDD_branchAddress_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;))   ||
+	      vars.get(&quot;apiDD_branchLatitude_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;))    ||
+	      vars.get(&quot;apiDD_branchLongitude_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;))||
+	      vars.get(&quot;apiDD_postCode_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;)) 	 ||
+	      vars.get(&quot;apiDD_location_matchNr&quot;).equals(vars.get(&quot;solarDD_numOfDDFound_1&quot;))  	
+	 )
+	{
+		Failure = false;
+	}else{
+		Failure = true;
+		//FailureMessage = &quot;Incorrect number of elements returned by API. Each of branch elements should be -&quot; + vars.get(&quot;solarDD_numOfDDFound_1&quot;) + &quot;- for DD of s_consolidatedGroup_id -&quot; + vars.get(&quot;api_dailyDealsId_&quot; + ${pageElement}) + &quot;-&quot;;
+		print (FailureMessage);   // this goes to stdout
+		log.warn(FailureMessage); // this goes to the JMeter log file
+		break;
+	}
+
+	//checking correctness of each element independently
+	
+	Integer ddNumber = Integer.parseInt(vars.get(&quot;solarDD_numOfDDFound_1&quot;));
+	for( int i=1;i&lt;=Integer.parseInt(vars.get(&quot;solarDD_numOfDDFound_1&quot;));i++)
+	{
+		if(   vars.get(&quot;apiDD_branchName_&quot; +i).equals(vars.get(&quot;solarDD_branchName_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch name is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_branchName_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_branchName_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+
+		if(   vars.get(&quot;apiDD_openingHours_&quot; +i).equals(vars.get(&quot;solarDD_openingHours_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch opening hours is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_openingHours_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_openingHours_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+
+		if(   vars.get(&quot;apiDD_address_&quot; +i).equals(vars.get(&quot;solarDD_address_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch addresses is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_address_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_address_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+
+		if(   vars.get(&quot;apiDD_latitude_&quot; +i).equals(vars.get(&quot;solarDD_latitude_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch latitudes is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_latitude_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_latitude_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+
+		if(   vars.get(&quot;apiDD_longitude_&quot; +i).equals(vars.get(&quot;solarDD_longitude_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch longitudes is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_longitude_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_longitude_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+
+		if(   vars.get(&quot;apiDD_postCode_&quot; +i).equals(vars.get(&quot;solarDD_postCode_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch post codes is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_postCode_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_postCode_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+
+		if(   vars.get(&quot;apiDD_location_&quot; +i).equals(vars.get(&quot;solarDD_location_&quot;+(ddNumber-i+1) ))   )
+		{
+			Failure = false;
+		}else{
+			Failure = true;
+			FailureMessage = &quot;Branch locations is incorrect should be (SOLR) -&quot; + vars.get(&quot;solarDD_location_&quot;+i) + &quot;- but is (API) -&quot; + vars.get(&quot;apiDD_location_&quot;+(ddNumber-i+1)) + &quot;-&quot;+i;
+			print (FailureMessage);   // this goes to stdout
+			log.warn(FailureMessage); // this goes to the JMeter log file
+			break;
+		}
+	}
+	
+
+	</stringProp>
+                  <stringProp name="BeanShellAssertion.filename"></stringProp>
+                  <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                  <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+                </BeanShellAssertion>
+                <hashTree/>
+              </hashTree>
+              <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+                <boolProp name="displayJMeterProperties">false</boolProp>
+                <boolProp name="displayJMeterVariables">true</boolProp>
+                <boolProp name="displaySystemProperties">false</boolProp>
+              </DebugSampler>
+              <hashTree/>
+              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+                <boolProp name="ResultCollector.error_logging">false</boolProp>
+                <objProp>
+                  <name>saveConfig</name>
+                  <value class="SampleSaveConfiguration">
+                    <time>true</time>
+                    <latency>true</latency>
+                    <timestamp>true</timestamp>
+                    <success>true</success>
+                    <label>true</label>
+                    <code>true</code>
+                    <message>true</message>
+                    <threadName>true</threadName>
+                    <dataType>true</dataType>
+                    <encoding>false</encoding>
+                    <assertions>true</assertions>
+                    <subresults>true</subresults>
+                    <responseData>false</responseData>
+                    <samplerData>false</samplerData>
+                    <xml>false</xml>
+                    <fieldNames>false</fieldNames>
+                    <responseHeaders>false</responseHeaders>
+                    <requestHeaders>false</requestHeaders>
+                    <responseDataOnError>false</responseDataOnError>
+                    <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                    <assertionsResultsToSave>0</assertionsResultsToSave>
+                    <bytes>true</bytes>
+                    <threadCounts>true</threadCounts>
+                  </value>
+                </objProp>
+                <stringProp name="filename"></stringProp>
+              </ResultCollector>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

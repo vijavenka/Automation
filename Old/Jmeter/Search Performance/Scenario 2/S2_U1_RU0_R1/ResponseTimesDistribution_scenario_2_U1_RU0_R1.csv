@@ -1,0 +1,10 @@
+1373816657296,1176,1. Call for main page,200,OK,Virtual Users 1-1,text,true,5903,1,1,1169
+1373816658486,759,2. Call for all categories,200,OK,Virtual Users 1-1,text,true,3441,1,1,755
+1373816659256,98,3. Call for suggestion about keyword,200,OK,Virtual Users 1-1,text,true,186,1,1,98
+1373816659367,100,4. Call for search page,200,OK,Virtual Users 1-1,text,true,11084,1,1,94
+1373816659478,111,5. Return facets for given keyword,200,OK,Virtual Users 1-1,text,true,2683,1,1,110
+1373816659599,126,6. Return products for given keyword,200,OK,Virtual Users 1-1,text,true,11511,1,1,121
+1373816659739,105,7. Return facet values for products,200,OK,Virtual Users 1-1,text,true,2685,1,1,102
+1373816659850,67,8. Call for vouchers,200,OK,Virtual Users 1-1,text,true,282,1,1,67
+1373816659924,66,9. Call for daily deals,200,OK,Virtual Users 1-1,text,true,282,1,1,66
+1373816659996,104,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-1,text,true,1211,1,1,104

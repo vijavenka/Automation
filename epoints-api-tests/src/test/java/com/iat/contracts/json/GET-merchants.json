@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "templateUrl": {
+      "id": "templateUrl",
+      "type": "string"
+    },
+    "colors": {
+      "id": "colors",
+      "type": "object",
+      "properties": {
+        "primary": {
+          "id": "primary",
+          "type": "string"
+        },
+        "secondary": {
+          "id": "secondary",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "templateUrl",
+    "colors"
+  ]
+}

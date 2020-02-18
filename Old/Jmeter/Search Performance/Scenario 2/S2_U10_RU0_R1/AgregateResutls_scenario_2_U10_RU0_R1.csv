@@ -1,0 +1,100 @@
+1373816854679,4461,1. Call for main page,200,OK,Virtual Users 1-7,text,true,5904,4457
+1373816854675,4877,1. Call for main page,200,OK,Virtual Users 1-9,text,true,5903,4873
+1373816854688,5377,1. Call for main page,200,OK,Virtual Users 1-2,text,true,5904,5373
+1373816854685,5523,1. Call for main page,200,OK,Virtual Users 1-5,text,true,5905,5522
+1373816854687,5521,1. Call for main page,200,OK,Virtual Users 1-1,text,true,5904,5513
+1373816854676,5702,1. Call for main page,200,OK,Virtual Users 1-8,text,true,5903,5698
+1373816854683,6839,1. Call for main page,200,OK,Virtual Users 1-10,text,true,5903,6832
+1373816854666,6885,1. Call for main page,200,OK,Virtual Users 1-3,text,true,5904,6881
+1373816854687,7109,1. Call for main page,200,OK,Virtual Users 1-6,text,true,5905,7108
+1373816854683,7150,1. Call for main page,200,OK,Virtual Users 1-4,text,true,5904,7146
+1373816859152,4906,2. Call for all categories,200,OK,Virtual Users 1-7,text,true,3441,4903
+1373816859560,4505,2. Call for all categories,200,OK,Virtual Users 1-9,text,true,3441,4499
+1373816864072,183,3. Call for suggestion about keyword,200,OK,Virtual Users 1-9,text,true,186,183
+1373816864068,230,3. Call for suggestion about keyword,200,OK,Virtual Users 1-7,text,true,186,230
+1373816864263,72,4. Call for search page,200,OK,Virtual Users 1-9,text,true,11083,67
+1373816864302,75,4. Call for search page,200,OK,Virtual Users 1-7,text,true,11083,64
+1373816864341,101,5. Return facets for given keyword,200,OK,Virtual Users 1-9,text,true,2683,101
+1373816864382,99,5. Return facets for given keyword,200,OK,Virtual Users 1-7,text,true,2683,99
+1373816864491,211,6. Return products for given keyword,200,OK,Virtual Users 1-7,text,true,11511,186
+1373816864453,289,6. Return products for given keyword,200,OK,Virtual Users 1-9,text,true,11511,253
+1373816864708,101,7. Return facet values for products,200,OK,Virtual Users 1-7,text,true,2685,101
+1373816864746,96,7. Return facet values for products,200,OK,Virtual Users 1-9,text,true,2685,95
+1373816864821,60,8. Call for vouchers,200,OK,Virtual Users 1-7,text,true,282,60
+1373816864851,59,8. Call for vouchers,200,OK,Virtual Users 1-9,text,true,282,59
+1373816861835,3082,2. Call for all categories,200,OK,Virtual Users 1-4,text,true,3441,3081
+1373816864891,61,9. Call for daily deals,200,OK,Virtual Users 1-7,text,true,282,61
+1373816864917,58,9. Call for daily deals,200,OK,Virtual Users 1-9,text,true,282,58
+1373816864922,161,3. Call for suggestion about keyword,200,OK,Virtual Users 1-4,text,true,186,161
+1373816864956,132,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-7,text,true,1211,132
+1373816864978,136,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-9,text,true,1211,136
+1373816865095,78,4. Call for search page,200,OK,Virtual Users 1-4,text,true,11084,69
+1373816865185,104,5. Return facets for given keyword,200,OK,Virtual Users 1-4,text,true,2683,104
+1373816865301,137,6. Return products for given keyword,200,OK,Virtual Users 1-4,text,true,11511,121
+1373816865448,101,7. Return facet values for products,200,OK,Virtual Users 1-4,text,true,2685,101
+1373816861528,4057,2. Call for all categories,200,OK,Virtual Users 1-10,text,true,3441,4057
+1373816865560,63,8. Call for vouchers,200,OK,Virtual Users 1-4,text,true,282,63
+1373816865634,64,9. Call for daily deals,200,OK,Virtual Users 1-4,text,true,282,64
+1373816865597,178,3. Call for suggestion about keyword,200,OK,Virtual Users 1-10,text,true,186,178
+1373816865702,100,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-4,text,true,1211,100
+1373816865787,123,4. Call for search page,200,OK,Virtual Users 1-10,text,true,11083,70
+1373816865921,108,5. Return facets for given keyword,200,OK,Virtual Users 1-10,text,true,2683,108
+1373816866040,125,6. Return products for given keyword,200,OK,Virtual Users 1-10,text,true,11511,122
+1373816866175,106,7. Return facet values for products,200,OK,Virtual Users 1-10,text,true,2685,105
+1373816866292,66,8. Call for vouchers,200,OK,Virtual Users 1-10,text,true,282,65
+1373816866369,66,9. Call for daily deals,200,OK,Virtual Users 1-10,text,true,282,66
+1373816861800,4758,2. Call for all categories,200,OK,Virtual Users 1-6,text,true,3441,4755
+1373816866446,121,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-10,text,true,1211,121
+1373816866568,114,3. Call for suggestion about keyword,200,OK,Virtual Users 1-6,text,true,186,114
+1373816861561,5152,2. Call for all categories,200,OK,Virtual Users 1-3,text,true,3441,5148
+1373816860077,6662,2. Call for all categories,200,OK,Virtual Users 1-2,text,true,3441,6658
+1373816866691,81,4. Call for search page,200,OK,Virtual Users 1-6,text,true,11085,71
+1373816866724,114,3. Call for suggestion about keyword,200,OK,Virtual Users 1-3,text,true,186,114
+1373816866748,125,3. Call for suggestion about keyword,200,OK,Virtual Users 1-2,text,true,186,125
+1373816866778,107,5. Return facets for given keyword,200,OK,Virtual Users 1-6,text,true,2683,106
+1373816866848,77,4. Call for search page,200,OK,Virtual Users 1-3,text,true,11083,70
+1373816866884,84,4. Call for search page,200,OK,Virtual Users 1-2,text,true,11082,74
+1373816866896,178,6. Return products for given keyword,200,OK,Virtual Users 1-6,text,true,11511,132
+1373816866931,161,5. Return facets for given keyword,200,OK,Virtual Users 1-3,text,true,2683,156
+1373816866975,134,5. Return facets for given keyword,200,OK,Virtual Users 1-2,text,true,2683,130
+1373816860385,6740,2. Call for all categories,200,OK,Virtual Users 1-8,text,true,3441,6728
+1373816867083,134,7. Return facet values for products,200,OK,Virtual Users 1-6,text,true,2685,133
+1373816867101,192,6. Return products for given keyword,200,OK,Virtual Users 1-3,text,true,11511,163
+1373816867113,279,6. Return products for given keyword,200,OK,Virtual Users 1-2,text,true,11511,243
+1373816867129,270,3. Call for suggestion about keyword,200,OK,Virtual Users 1-8,text,true,186,270
+1373816867227,172,8. Call for vouchers,200,OK,Virtual Users 1-6,text,true,282,172
+1373816867304,111,7. Return facet values for products,200,OK,Virtual Users 1-3,text,true,2685,110
+1373816867413,68,9. Call for daily deals,200,OK,Virtual Users 1-6,text,true,282,68
+1373816867412,90,4. Call for search page,200,OK,Virtual Users 1-8,text,true,11083,82
+1373816867424,81,8. Call for vouchers,200,OK,Virtual Users 1-3,text,true,282,81
+1373816867404,111,7. Return facet values for products,200,OK,Virtual Users 1-2,text,true,2685,105
+1373816867528,87,8. Call for vouchers,200,OK,Virtual Users 1-2,text,true,282,87
+1373816867514,126,5. Return facets for given keyword,200,OK,Virtual Users 1-8,text,true,2683,125
+1373816867528,121,9. Call for daily deals,200,OK,Virtual Users 1-3,text,true,282,121
+1373816867501,153,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-6,text,true,1211,153
+1373816860214,7455,2. Call for all categories,200,OK,Virtual Users 1-1,text,true,3441,7449
+1373816867626,79,9. Call for daily deals,200,OK,Virtual Users 1-2,text,true,282,79
+1373816867648,149,6. Return products for given keyword,200,OK,Virtual Users 1-8,text,true,11511,140
+1373816867662,142,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-3,text,true,1211,142
+1373816867675,151,3. Call for suggestion about keyword,200,OK,Virtual Users 1-1,text,true,186,151
+1373816867709,160,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-2,text,true,1211,160
+1373816867831,126,4. Call for search page,200,OK,Virtual Users 1-1,text,true,11083,116
+1373816867816,147,7. Return facet values for products,200,OK,Virtual Users 1-8,text,true,2685,147
+1373816867975,65,8. Call for vouchers,200,OK,Virtual Users 1-8,text,true,282,64
+1373816867975,99,5. Return facets for given keyword,200,OK,Virtual Users 1-1,text,true,2683,97
+1373816868045,64,9. Call for daily deals,200,OK,Virtual Users 1-8,text,true,282,64
+1373816868079,129,6. Return products for given keyword,200,OK,Virtual Users 1-1,text,true,11511,114
+1373816868114,128,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-8,text,true,1211,128
+1373816868218,100,7. Return facet values for products,200,OK,Virtual Users 1-1,text,true,2685,99
+1373816860214,8146,2. Call for all categories,200,OK,Virtual Users 1-5,text,true,3441,8145
+1373816868329,60,8. Call for vouchers,200,OK,Virtual Users 1-1,text,true,282,59
+1373816868394,59,9. Call for daily deals,200,OK,Virtual Users 1-1,text,true,282,59
+1373816868369,91,3. Call for suggestion about keyword,200,OK,Virtual Users 1-5,text,true,186,91
+1373816868461,102,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-1,text,true,1211,102
+1373816868466,113,4. Call for search page,200,OK,Virtual Users 1-5,text,true,11084,106
+1373816868590,102,5. Return facets for given keyword,200,OK,Virtual Users 1-5,text,true,2683,101
+1373816868697,126,6. Return products for given keyword,200,OK,Virtual Users 1-5,text,true,11511,115
+1373816868829,103,7. Return facet values for products,200,OK,Virtual Users 1-5,text,true,2685,102
+1373816868943,61,8. Call for vouchers,200,OK,Virtual Users 1-5,text,true,282,61
+1373816869011,61,9. Call for daily deals,200,OK,Virtual Users 1-5,text,true,282,61
+1373816869082,104,10. Return vouchers for given product IDs,200,OK,Virtual Users 1-5,text,true,1211,104

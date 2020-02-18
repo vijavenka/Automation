@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "allCount": {
+      "id": "/properties/allCount",
+      "type": "integer"
+    },
+    "facetFilters": {
+      "id": "/properties/facetFilters",
+      "properties": {
+        "b_zoneUK": {
+          "id": "/properties/facetFilters/properties/b_zoneUK",
+          "items": {
+            "id": "/properties/facetFilters/properties/b_zoneUK/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "d_validFrom": {
+          "id": "/properties/facetFilters/properties/d_validFrom",
+          "items": {
+            "id": "/properties/facetFilters/properties/d_validFrom/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "d_validTo": {
+          "id": "/properties/facetFilters/properties/d_validTo",
+          "items": {
+            "id": "/properties/facetFilters/properties/d_validTo/items",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "s_merchantName": {
+          "id": "/properties/facetFilters/properties/s_merchantName",
+          "items": {
+            "id": "/properties/facetFilters/properties/s_merchantName/items",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "facets": {
+      "id": "/properties/facets",
+      "items": {},
+      "type": "array"
+    },
+    "pageSize": {
+      "id": "/properties/pageSize",
+      "type": "integer"
+    },
+    "pagesCount": {
+      "id": "/properties/pagesCount",
+      "type": "integer"
+    },
+    "results": {
+      "id": "/properties/results",
+      "items": {
+        "id": "/properties/results/items",
+        "properties": {
+          "brandName": {
+            "id": "/properties/results/items/properties/brandName",
+            "type": "null"
+          },
+          "description": {
+            "id": "/properties/results/items/properties/description",
+            "type": "string"
+          },
+          "encodedVoucherUrl": {
+            "id": "/properties/results/items/properties/encodedVoucherUrl",
+            "type": "string"
+          },
+          "epointsMultiplier": {
+            "id": "/properties/results/items/properties/epointsMultiplier",
+            "type": "integer"
+          },
+          "id": {
+            "id": "/properties/results/items/properties/id",
+            "type": "string"
+          },
+          "merchantDomain": {
+            "id": "/properties/results/items/properties/merchantDomain",
+            "type": "string"
+          },
+          "merchantId": {
+            "id": "/properties/results/items/properties/merchantId",
+            "type": "string"
+          },
+          "merchantImageUrl": {
+            "id": "/properties/results/items/properties/merchantImageUrl",
+            "type": "string"
+          },
+          "merchantName": {
+            "id": "/properties/results/items/properties/merchantName",
+            "type": "string"
+          },
+          "seoSlug": {
+            "id": "/properties/results/items/properties/seoSlug",
+            "type": "string"
+          },
+          "title": {
+            "id": "/properties/results/items/properties/title",
+            "type": "null"
+          },
+          "validFrom": {
+            "id": "/properties/results/items/properties/validFrom",
+            "type": "integer"
+          },
+          "validTo": {
+            "id": "/properties/results/items/properties/validTo",
+            "type": "integer"
+          },
+          "voucherCode": {
+            "id": "/properties/results/items/properties/voucherCode",
+            "type": "string"
+          },
+          "voucherUrl": {
+            "id": "/properties/results/items/properties/voucherUrl",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}

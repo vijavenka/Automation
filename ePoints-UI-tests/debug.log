@@ -1,0 +1,18 @@
+[0127/101723:ERROR:process_info.cc(330)] VirtualQueryEx: Access is denied. (0x5)
+[0127/101723:ERROR:process_info.cc(547)] ReadMemoryInfo failed
+[0127/101723:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0127/101723:ERROR:exception_snapshot_win.cc(87)] thread ID 0 not found in process
+[0127/101723:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
+[0127/101723:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0320/121429.727:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0320/121429.728:ERROR:exception_snapshot_win.cc(87)] thread ID 7240 not found in process
+[0320/121429.728:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0331/111618.646:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0331/111618.647:ERROR:exception_snapshot_win.cc(87)] thread ID 2748 not found in process
+[0331/111618.647:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0331/141917.476:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0331/141917.477:ERROR:exception_snapshot_win.cc(87)] thread ID 5324 not found in process
+[0331/141917.477:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0407/141250.222:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0407/141250.223:ERROR:exception_snapshot_win.cc(87)] thread ID 15460 not found in process
+[0407/141250.223:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

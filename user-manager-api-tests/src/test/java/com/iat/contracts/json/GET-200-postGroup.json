@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "groups": {
+      "items": {
+        "properties": {
+          "adminRole": {
+            "type": "null"
+          },
+          "birthDate": {
+            "type": "null"
+          },
+          "companyStartDate": {
+            "type": "null"
+          },
+          "createDate": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "deleteDate": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "departmentId": {
+            "type": "null"
+          },
+          "departmentName": {
+            "type": "null"
+          },
+          "email": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "empNumber": {
+            "type": "null"
+          },
+          "externalId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "externalIdType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "firstName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "gender": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "groupId": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "lastName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "managerEmail": {
+            "type": "null"
+          },
+          "managerName": {
+            "type": "null"
+          },
+          "partnerId": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "role": {
+            "type": "null"
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}

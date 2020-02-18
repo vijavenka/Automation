@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UsersDetailsFromSearch",
+  "description": "Object returned when /search/users/ used",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "id": "email",
+            "type": ["string", "null"]
+          },
+          "firstName": {
+            "id": "firstName",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lastName": {
+            "id": "lastName",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "registrationAt": {
+            "id": "type",
+            "type": ["integer", "null"]
+          },
+          "birthDate": {
+            "id": "birthDate",
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "pending": {
+            "id": "pending",
+            "type": "integer"
+          },
+          "confirmed": {
+            "id": "confirmed",
+            "type": "integer"
+          },
+          "uuid": {
+            "id": "uuid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "email",
+          "firstName",
+          "lastName",
+          "registrationAt",
+          "birthDate",
+          "pending",
+          "confirmed",
+          "uuid"
+        ]
+      }
+    },
+    "totalResults": {
+      "id": "totalResults",
+      "type": "integer"
+    },
+    "searchResultsCount": {
+      "id": "searchResultsCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "totalResults",
+    "searchResultsCount"
+  ]
+}

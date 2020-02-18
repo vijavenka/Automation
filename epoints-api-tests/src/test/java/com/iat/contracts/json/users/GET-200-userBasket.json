@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "productId": {
+              "type": "string"
+            },
+            "seoSlug": {
+              "type": "string"
+            },
+            "imageUrl": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "epoints": {
+              "type": "object",
+              "properties": {
+                "UK": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "UK"
+              ]
+            },
+            "categories": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "categoriesSeoSlugs": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "departmentSeoSlug": {
+              "type": "string"
+            },
+            "megaPixels": {
+              "type": "string"
+            },
+            "merchantName": {
+              "type": "string"
+            },
+            "epointsInPounds": {
+              "type": "number"
+            },
+            "descountedEpoints": {
+              "type": "integer"
+            },
+            "discountedPrice": {
+              "type": "number"
+            },
+            "discountedPriceInEpoints": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "number"
+            },
+            "rrp": {
+              "type": "number"
+            },
+            "saving": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "productId",
+            "seoSlug",
+            "imageUrl",
+            "title",
+            "quantity",
+            "epoints",
+            "categories",
+            "categoriesSeoSlugs",
+            "departmentSeoSlug",
+            "megaPixels",
+            "merchantName",
+            "epointsInPounds",
+            "descountedEpoints",
+            "discountedPrice",
+            "discountedPriceInEpoints",
+            "price",
+            "rrp",
+            "saving"
+          ]
+        }
+      ]
+    },
+    "epointsToBuy": {
+      "type": "integer"
+    },
+    "poundsToBuy": {
+      "type": "number"
+    },
+    "deliveryCost": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "merchantId": {
+              "type": "string"
+            },
+            "merchantName": {
+              "type": "string"
+            },
+            "deliveryCost": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "merchantId",
+            "merchantName",
+            "deliveryCost"
+          ]
+        }
+      ]
+    },
+    "totalDeliveryCost": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "items",
+    "epointsToBuy",
+    "poundsToBuy",
+    "deliveryCost",
+    "totalDeliveryCost"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "results": {
+      "id": "results",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "object",
+        "properties": {
+          "id": {
+            "id": "id",
+            "type": "string"
+          },
+          "employeeNumber": {
+            "id": "employeeNumber",
+            "type": "string"
+          },
+          "createdAt": {
+            "id": "createdAt",
+            "type": "string"
+          },
+          "user": {
+            "id": "user",
+            "type": "object",
+            "properties": {
+              "email": {
+                "id": "email",
+                "type": "string"
+              },
+              "name": {
+                "id": "name",
+                "type": "string"
+              }
+            },
+            "required": [
+              "email"
+            ]
+          },
+          "departmentName": {
+            "id": "departmentName",
+            "type": "string"
+          },
+          "manager": {
+            "id": "manager",
+            "type": "object",
+            "properties": {
+              "email": {
+                "id": "email",
+                "type": "string"
+              },
+              "name": {
+                "id": "name",
+                "type": "string"
+              },
+              "departmentName": {
+                "id": "departmentName",
+                "type": "string"
+              }
+            }
+          },
+          "roleName": {
+            "id": "roleName",
+            "type": "string"
+          },
+          "status": {
+            "id": "status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "createdAt",
+          "user",
+          "departmentName",
+          "roleName",
+          "status"
+        ]
+      }
+    },
+    "pageSize": {
+      "id": "pageSize",
+      "type": "integer"
+    },
+    "searchResultsCount": {
+      "id": "searchResultsCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "pageSize",
+    "searchResultsCount"
+  ]
+}

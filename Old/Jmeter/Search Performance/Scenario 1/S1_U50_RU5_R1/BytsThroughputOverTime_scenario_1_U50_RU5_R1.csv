@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="30138" lt="30128" ts="1373816107914" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-30" by="4031" ng="50" na="50"/>
+<httpSample t="30144" lt="30132" ts="1373816109619" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-47" by="4032" ng="50" na="50"/>
+<httpSample t="31778" lt="31764" ts="1373816109923" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-50" by="4032" ng="50" na="50"/>
+<httpSample t="31998" lt="31984" ts="1373816109822" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-49" by="4032" ng="50" na="50"/>
+<httpSample t="36155" lt="36142" ts="1373816106000" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-11" by="5902" ng="50" na="50"/>
+<httpSample t="34179" lt="34154" ts="1373816108115" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-32" by="4031" ng="50" na="50"/>
+<httpSample t="34089" lt="34066" ts="1373816108215" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-33" by="4032" ng="50" na="50"/>
+<httpSample t="34005" lt="33994" ts="1373816108315" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-34" by="4032" ng="50" na="50"/>
+<httpSample t="33818" lt="33807" ts="1373816108618" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-37" by="4032" ng="50" na="50"/>
+<httpSample t="32926" lt="32913" ts="1373816109719" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-48" by="4032" ng="50" na="50"/>
+<httpSample t="34249" lt="34231" ts="1373816108416" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-35" by="4031" ng="50" na="50"/>
+<httpSample t="33561" lt="33550" ts="1373816109119" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-42" by="4032" ng="50" na="50"/>
+<httpSample t="33197" lt="33189" ts="1373816109519" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-46" by="4031" ng="50" na="50"/>
+<httpSample t="34472" lt="34471" ts="1373816109320" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-44" by="4031" ng="50" na="50"/>
+<httpSample t="35055" lt="35044" ts="1373816108820" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-39" by="4031" ng="50" na="50"/>
+<httpSample t="36501" lt="34875" ts="1373816107510" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-26" by="5904" ng="50" na="50"/>
+<httpSample t="34634" lt="33261" ts="1373816109420" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-45" by="4031" ng="50" na="50"/>
+<httpSample t="35545" lt="35360" ts="1373816108517" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-36" by="4032" ng="50" na="50"/>
+<httpSample t="35336" lt="33719" ts="1373816108718" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-38" by="4032" ng="50" na="50"/>
+<httpSample t="36274" lt="34683" ts="1373816108007" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-31" by="4031" ng="50" na="50"/>
+<httpSample t="35501" lt="34030" ts="1373816108917" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-40" by="4032" ng="50" na="50"/>
+<httpSample t="35429" lt="33707" ts="1373816109018" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-41" by="4032" ng="50" na="50"/>
+<httpSample t="35314" lt="33825" ts="1373816109219" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-43" by="4033" ng="50" na="50"/>
+<httpSample t="24027" lt="24013" ts="1373816139638" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-47" by="3912" ng="50" na="50"/>
+<httpSample t="21542" lt="21522" ts="1373816142547" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-35" by="3912" ng="49" na="49"/>
+<httpSample t="21577" lt="21553" ts="1373816142522" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-48" by="3912" ng="48" na="48"/>
+<httpSample t="21528" lt="21517" ts="1373816142585" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-46" by="3912" ng="47" na="47"/>
+<httpSample t="20127" lt="19955" ts="1373816144286" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-40" by="3912" ng="46" na="46"/>
+<httpSample t="22287" lt="22277" ts="1373816142184" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-33" by="3912" ng="45" na="45"/>
+<httpSample t="20319" lt="20182" ts="1373816144153" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-31" by="3912" ng="45" na="45"/>
+<httpSample t="20951" lt="20951" ts="1373816143931" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-36" by="3912" ng="43" na="43"/>
+<httpSample t="23167" lt="23156" ts="1373816142549" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-42" by="3912" ng="42" na="42"/>
+<httpSample t="21335" lt="19933" ts="1373816144408" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-43" by="3912" ng="41" na="41"/>
+<httpSample t="23600" lt="23591" ts="1373816142189" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-34" by="3912" ng="40" na="40"/>
+<httpSample t="21935" lt="20796" ts="1373816143884" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-26" by="3897" ng="39" na="39"/>
+<httpSample t="21895" lt="20749" ts="1373816143931" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-45" by="3912" ng="39" na="39"/>
+<httpSample t="21933" lt="20764" ts="1373816143932" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-38" by="3912" ng="37" na="37"/>
+<httpSample t="23687" lt="22099" ts="1373816142182" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-32" by="3912" ng="37" na="37"/>
+<httpSample t="24526" lt="22752" ts="1373816141577" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-50" by="3912" ng="35" na="35"/>
+<httpSample t="24089" lt="23836" ts="1373816142025" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-11" by="3894" ng="34" na="34"/>
+<httpSample t="23823" lt="22329" ts="1373816142307" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-37" by="3912" ng="33" na="33"/>
+<httpSample t="23191" lt="23182" ts="1373816143666" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-44" by="3912" ng="32" na="32"/>
+<httpSample t="23232" lt="23218" ts="1373816143748" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-39" by="3912" ng="31" na="31"/>
+<httpSample t="22708" lt="22699" ts="1373816144315" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-41" by="3912" ng="30" na="30"/>
+<httpSample t="90098" lt="90071" ts="1373816105803" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-9" by="4032" ng="29" na="29"/>
+<httpSample t="90517" lt="90504" ts="1373816105400" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-5" by="4033" ng="29" na="29"/>
+<httpSample t="90945" lt="90922" ts="1373816105099" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-2" by="4032" ng="29" na="29"/>
+<httpSample t="90360" lt="90332" ts="1373816105697" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-8" by="4032" ng="29" na="29"/>
+<httpSample t="90464" lt="90451" ts="1373816105603" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-7" by="4032" ng="29" na="29"/>
+<httpSample t="90731" lt="90718" ts="1373816106105" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-12" by="4033" ng="29" na="29"/>
+<httpSample t="98134" lt="98121" ts="1373816105303" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-4" by="4033" ng="29" na="29"/>
+<httpSample t="96655" lt="96604" ts="1373816106809" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-19" by="4031" ng="29" na="29"/>
+<httpSample t="95886" lt="95876" ts="1373816107609" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-27" by="4031" ng="29" na="29"/>
+<httpSample t="97662" lt="97637" ts="1373816105899" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-10" by="4032" ng="29" na="29"/>
+<httpSample t="98375" lt="98349" ts="1373816105199" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-3" by="4031" ng="29" na="29"/>
+<httpSample t="97204" lt="97191" ts="1373816106407" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-15" by="4032" ng="29" na="29"/>
+<httpSample t="98205" lt="98179" ts="1373816105503" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-6" by="4033" ng="29" na="29"/>
+<httpSample t="96855" lt="96840" ts="1373816106907" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-20" by="4033" ng="29" na="29"/>
+<httpSample t="96372" lt="96357" ts="1373816107405" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-25" by="4031" ng="29" na="29"/>
+<httpSample t="97612" lt="97598" ts="1373816106206" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-13" by="4033" ng="29" na="29"/>
+<httpSample t="96181" lt="96120" ts="1373816107813" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-29" by="4031" ng="29" na="29"/>
+<httpSample t="97388" lt="97387" ts="1373816107010" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-21" by="4031" ng="29" na="29"/>
+<httpSample t="98101" lt="98100" ts="1373816106306" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-14" by="4032" ng="29" na="29"/>
+<httpSample t="98220" lt="98208" ts="1373816106607" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-17" by="4033" ng="29" na="29"/>
+<httpSample t="97636" lt="97635" ts="1373816107210" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-23" by="4031" ng="29" na="29"/>
+<httpSample t="97747" lt="97741" ts="1373816107106" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-22" by="4032" ng="29" na="29"/>
+<httpSample t="98152" lt="98099" ts="1373816106708" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-18" by="4031" ng="29" na="29"/>
+<httpSample t="97672" lt="97666" ts="1373816107311" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-24" by="4032" ng="29" na="29"/>
+<httpSample t="97380" lt="95941" ts="1373816107711" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-28" by="4033" ng="29" na="29"/>
+<httpSample t="100118" lt="99221" ts="1373816104990" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-1" by="4032" ng="29" na="29"/>
+<httpSample t="98626" lt="97561" ts="1373816106500" s="false" lb="1. Call for main page" rm="Server Error" tn="Virtual Users 1-16" by="4032" ng="29" na="29"/>
+<httpSample t="42495" lt="42478" ts="1373816195653" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-2" by="3932" ng="29" na="29"/>
+<httpSample t="35223" lt="35221" ts="1373816203083" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-27" by="3932" ng="28" na="28"/>
+<httpSample t="35267" lt="35266" ts="1373816203055" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-19" by="3932" ng="27" na="27"/>
+<httpSample t="42674" lt="42674" ts="1373816195660" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-8" by="3932" ng="26" na="26"/>
+<httpSample t="42856" lt="42856" ts="1373816195494" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-9" by="3932" ng="25" na="25"/>
+<httpSample t="42695" lt="42609" ts="1373816195659" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-7" by="3932" ng="25" na="25"/>
+<httpSample t="33973" lt="33723" ts="1373816204437" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-23" by="3932" ng="23" na="23"/>
+<httpSample t="34092" lt="34091" ts="1373816204449" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-18" by="3932" ng="22" na="22"/>
+<httpSample t="35202" lt="35175" ts="1373816203366" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-25" by="3932" ng="21" na="21"/>
+<httpSample t="35179" lt="35165" ts="1373816203407" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-13" by="3932" ng="20" na="20"/>
+<httpSample t="35321" lt="35321" ts="1373816203300" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-6" by="3932" ng="19" na="19"/>
+<httpSample t="34666" lt="34665" ts="1373816204002" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-14" by="3932" ng="18" na="18"/>
+<httpSample t="35179" lt="34982" ts="1373816203587" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-29" by="3932" ng="17" na="17"/>
+<httpSample t="34075" lt="34074" ts="1373816204701" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-1" by="3932" ng="17" na="17"/>
+<httpSample t="34349" lt="34134" ts="1373816204418" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-17" by="3932" ng="17" na="17"/>
+<httpSample t="35451" lt="34925" ts="1373816204002" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-21" by="3932" ng="14" na="14"/>
+<httpSample t="43971" lt="43971" ts="1373816195506" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-5" by="3932" ng="13" na="13"/>
+<httpSample t="36643" lt="35837" ts="1373816203030" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-4" by="3932" ng="12" na="12"/>
+<httpSample t="35123" lt="34188" ts="1373816204572" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-24" by="3932" ng="11" na="11"/>
+<httpSample t="43287" lt="42092" ts="1373816196429" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-12" by="3932" ng="10" na="10"/>
+<httpSample t="36546" lt="36546" ts="1373816203199" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-15" by="3932" ng="9" na="9"/>
+<httpSample t="36423" lt="35239" ts="1373816203356" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-20" by="3932" ng="8" na="8"/>
+<httpSample t="35226" lt="35226" ts="1373816204684" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-28" by="3932" ng="7" na="7"/>
+<httpSample t="36785" lt="35450" ts="1373816203151" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-10" by="3932" ng="6" na="6"/>
+<httpSample t="36961" lt="36960" ts="1373816203165" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-3" by="3932" ng="5" na="5"/>
+<httpSample t="36709" lt="36707" ts="1373816204442" s="false" lb="2. Call for all categories" rm="Server Error" tn="Virtual Users 1-22" by="3932" ng="4" na="4"/>
+<httpSample t="119086" lt="0" ts="1373816137930" s="false" lb="2. Call for all categories" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-30" by="1845" ng="3" na="3"/>
+<httpSample t="119300" lt="0" ts="1373816141693" s="false" lb="2. Call for all categories" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-49" by="1845" ng="2" na="2"/>
+<httpSample t="119989" lt="0" ts="1373816204718" s="false" lb="2. Call for all categories" rm="Non HTTP response message: The target server failed to respond" tn="Virtual Users 1-16" by="1845" ng="1" na="1"/>
+
+</testResults>

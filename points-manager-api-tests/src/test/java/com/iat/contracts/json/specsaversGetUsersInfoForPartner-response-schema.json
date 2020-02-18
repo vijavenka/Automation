@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get basic users info associated with partner",
+  "description": "Object returned basic users info associated with partner",
+  "type": "array",
+  "items": {
+    "id": "0",
+    "type": "object",
+    "properties": {
+      "userKey": {
+        "id": "userKey",
+        "type": "string"
+      },
+      "lastName": {
+        "id": "lastName",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "firstName": {
+        "id": "firstName",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "userKey",
+      "lastName",
+      "firstName"
+    ]
+  },
+  "required": [
+    "0"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "count": {
+      "id": "/properties/count",
+      "type": "integer"
+    },
+    "transactions": {
+      "additionalItems": false,
+      "id": "/properties/transactions",
+      "items": {
+        "additionalProperties": false,
+        "id": "/properties/transactions/items",
+        "properties": {
+          "balance": {
+            "id": "/properties/transactions/items/properties/balance",
+            "type": "integer"
+          },
+          "date": {
+            "id": "/properties/transactions/items/properties/date",
+            "type": "integer"
+          },
+          "earnedPoints": {
+            "id": "/properties/transactions/items/properties/earnedPoints",
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "imageUrl": {
+            "id": "/properties/transactions/items/properties/imageUrl",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "site": {
+            "additionalProperties": false,
+            "id": "/properties/transactions/items/properties/site",
+            "properties": {
+              "name": {
+                "id": "/properties/transactions/items/properties/site/properties/name",
+                "type": "string"
+              },
+              "url": {
+                "id": "/properties/transactions/items/properties/site/properties/url",
+                "type": "string"
+              }
+            },
+            "required": [
+              "url",
+              "name"
+            ],
+            "type": "object"
+          },
+          "spentPoints": {
+            "id": "/properties/transactions/items/properties/spentPoints",
+            "type": "integer"
+          },
+          "tagName": {
+            "id": "/properties/transactions/items/properties/tagName",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "id": "/properties/transactions/items/properties/title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "spentPoints",
+          "title",
+          "imageUrl",
+          "site",
+          "earnedPoints",
+          "tagName",
+          "date",
+          "balance"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "count",
+    "transactions"
+  ],
+  "type": "object"
+}

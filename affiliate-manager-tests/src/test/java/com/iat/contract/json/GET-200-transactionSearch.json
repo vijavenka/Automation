@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "searchResultsCount": {
+      "type": "integer"
+    },
+    "totalResults": {
+      "type": "integer"
+    },
+    "transactions": {
+      "items": {
+        "properties": {
+          "affiliateNetwork": {
+            "type": "string"
+          },
+          "clickoutStatus": {
+            "type": "string"
+          },
+          "clickoutType": {
+            "type": "string"
+          },
+          "createdDate": {
+            "type": "integer"
+          },
+          "device": {
+            "type": "string"
+          },
+          "epoints": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "merchant": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "referURL": {
+            "type": "string"
+          },
+          "zone": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}
