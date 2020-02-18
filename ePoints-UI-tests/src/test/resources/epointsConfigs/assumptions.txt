@@ -1,3 +1,0 @@
-Tests are based on configs stored on s3 Amazon S3/epoints-configs/blocks. This package contains those configs which allows
-test to be executed with positive result. QA config changes may result in tests fails. Please restore QA part of configs with
-those included in this package, remember also that only QA configs should be updated all tagged "/qa"
