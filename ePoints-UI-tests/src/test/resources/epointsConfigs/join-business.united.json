@@ -1,0 +1,60 @@
+{
+  "blocks": [
+    {
+      "title": "Shop as you normally would and you'll collect epoints in depot",
+      "title/qa": "Shop as you normally would and you'll collect epoints in depot",
+      "ui": {
+        "type": "text"
+      }
+    },
+    {
+      "title": "Leading participating brands include...",
+      "content": {
+        "brands": [
+          {
+            "id": "red-Bull",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/united-wholesale/Logos/red+bull.png"
+          },
+          {
+            "id": "Typhoo",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/united-wholesale/Logos/typhoo.png"
+          },
+          {
+            "id": "Flora",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/united-wholesale/Logos/flora.png"
+          },
+          {
+            "id": "Walkers",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/united-wholesale/Logos/walkers.png"
+          },
+          {
+            "id": "Carling",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/united-wholesale/Logos/carling.jpg"
+          },
+          {
+            "id": "Anakena",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/united-wholesale/Logos/anakena.jpg"
+          }
+        ]
+      },
+      "ui": {
+        "type": "brands"
+      }
+    },
+    {
+      "title": "..and use epoints to improve your store",
+      "ui": {
+        "type": "text"
+      }
+    },
+    {
+      "title": "",
+      "request": {
+        "url": "/rest/search/redemptionitems?businessId=united&page=0&pageSize=5"
+      },
+      "ui": {
+        "type": "special-offers"
+      }
+    }
+  ]
+}

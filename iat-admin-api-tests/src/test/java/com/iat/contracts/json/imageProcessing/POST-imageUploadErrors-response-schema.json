@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "POST image upload errors",
+  "description": "Object returned with /api/image POST request failed",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "id": "timestamp",
+      "type": "string"
+    },
+    "errors": {
+      "id": "errors",
+      "type": "array",
+      "items": {
+        "id": "errors",
+        "type": "object",
+        "properties": {
+          "message": {
+            "id": "message",
+            "type": "string"
+          },
+          "fieldName": {
+            "id": "fieldName",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "timestamp",
+    "errors"
+  ]
+}

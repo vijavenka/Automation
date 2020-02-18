@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "UserPointsLimits",
+  "description": "Object returned when /users/{user}/caps used",
+  "type": "object",
+  "properties": {
+    "userShortInfo": {
+      "id": "userShortInfo",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "id": "userId",
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId"
+      ]
+    },
+    "capLimits": {
+      "id": "capLimits",
+      "type": "array",
+      "items": {
+        "id": "capLimits",
+        "type": "object",
+        "properties": {
+          "tagKey": {
+            "id": "tagKey",
+            "type": "string"
+          },
+          "cap": {
+            "id": "cap",
+            "type": "integer"
+          },
+          "remain": {
+            "id": "remain",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "userShortInfo",
+    "capLimits"
+  ]
+}

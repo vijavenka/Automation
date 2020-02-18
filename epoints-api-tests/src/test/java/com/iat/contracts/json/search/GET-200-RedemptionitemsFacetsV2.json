@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "facets": {
+      "id": "/properties/facets",
+      "items": {
+        "id": "/properties/facets/items",
+        "properties": {
+          "maxValue": {
+            "id": "/properties/facets/items/properties/maxValue",
+            "type": "null"
+          },
+          "minValue": {
+            "id": "/properties/facets/items/properties/minValue",
+            "type": "null"
+          },
+          "name": {
+            "id": "/properties/facets/items/properties/name",
+            "type": "string"
+          },
+          "precision": {
+            "id": "/properties/facets/items/properties/precision",
+            "type": "integer"
+          },
+          "selected": {
+            "id": "/properties/facets/items/properties/selected",
+            "type": "null"
+          },
+          "seoSlug": {
+            "id": "/properties/facets/items/properties/seoSlug",
+            "type": "boolean"
+          },
+          "title": {
+            "id": "/properties/facets/items/properties/title",
+            "type": "string"
+          },
+          "titleCode": {
+            "id": "/properties/facets/items/properties/titleCode",
+            "type": "string"
+          },
+          "total": {
+            "id": "/properties/facets/items/properties/total",
+            "type": "integer"
+          },
+          "type": {
+            "id": "/properties/facets/items/properties/type",
+            "type": "string"
+          },
+          "values": {
+            "id": "/properties/facets/items/properties/values",
+            "items": {
+              "id": "/properties/facets/items/properties/values/items",
+              "items": {
+                "id": "/properties/facets/items/properties/values/items/items",
+                "type": [
+                  "string",
+                  "integer"
+                ]
+              },
+              "type": "array"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}

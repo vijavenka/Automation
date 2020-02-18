@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "User delivery address",
+  "description": "Object returned with save user delivery address",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lastName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "houseNumberOrName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "street": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "townOrCity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "county": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "postcode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "createdAt": {
+      "type": "integer"
+    },
+    "additionalInfo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "phoneNo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "houseNumberOrName",
+    "street",
+    "townOrCity",
+    "county",
+    "country",
+    "postcode",
+    "createdAt",
+    "additionalInfo",
+    "phoneNo"
+  ]
+}

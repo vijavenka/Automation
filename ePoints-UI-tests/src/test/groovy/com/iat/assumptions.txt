@@ -1,0 +1,3 @@
+first 5 accounts which can be searched using "emailfortest" on /my-account/ecards/create should have filled first and last name
+
+envVariables class has all elements which can be modified lik users, environment links etc.

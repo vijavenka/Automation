@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Get redemption order details by Id",
+  "description": "Object returned user redemption order details for specific id",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "county": {
+      "type": "string"
+    },
+    "postCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "merchantName": {
+      "type": "string"
+    },
+    "epoints": {
+      "type": "integer"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "totalPrice": {
+      "type": "number"
+    },
+    "totalEpoints": {
+      "type": "integer"
+    },
+    "fulfillStatus": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "street",
+    "city",
+    "county",
+    "postCode",
+    "country",
+    "telephone",
+    "merchantName",
+    "epoints",
+    "quantity",
+    "price",
+    "currency",
+    "totalPrice",
+    "totalEpoints",
+    "fulfillStatus"
+  ]
+}

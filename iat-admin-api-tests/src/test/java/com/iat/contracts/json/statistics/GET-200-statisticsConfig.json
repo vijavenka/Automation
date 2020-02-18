@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "array",
+  "items": {
+    "id": "0",
+    "type": "object",
+    "properties": {
+      "id": {
+        "id": "id",
+        "type": "string"
+      },
+      "label": {
+        "id": "label",
+        "type": "string"
+      },
+      "availableFilters": {
+        "id": "availableFilters",
+        "type": "array",
+        "items": {}
+      },
+      "availableAggregations": {
+        "id": "availableAggregations",
+        "type": "array",
+        "items": {
+          "id": "availableAggregations/4",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "id",
+              "type": "string"
+            },
+            "label": {
+              "id": "label",
+              "type": "string"
+            },
+            "domainType": {
+              "id": "domainType",
+              "type": "string"
+            },
+            "tags": {
+              "id": "tags",
+              "type": "array",
+              "items": {}
+            },
+            "header": {
+              "id": "header",
+              "type": "array",
+              "items": {
+                "id": "id",
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "id": "key",
+                    "type": "string"
+                  },
+                  "type": {
+                    "id": "type",
+                    "type": "string"
+                  },
+                  "id": {
+                    "id": "id",
+                    "type": "boolean"
+                  },
+                  "label": {
+                    "id": "label",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "pageable": {
+              "id": "pageable",
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "required": [
+      "id",
+      "label",
+      "availableFilters",
+      "availableAggregations"
+    ]
+  },
+  "required": [
+    "0"
+  ]
+}

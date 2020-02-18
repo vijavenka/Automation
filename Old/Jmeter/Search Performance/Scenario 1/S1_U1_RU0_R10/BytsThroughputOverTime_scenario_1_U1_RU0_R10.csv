@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2599" lt="2594" ts="1373813977786" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5904" ng="1" na="1"/>
+<httpSample t="1028" lt="1025" ts="1373813980391" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="1058" lt="1054" ts="1373813981424" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5902" ng="1" na="1"/>
+<httpSample t="952" lt="950" ts="1373813982487" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="841" lt="839" ts="1373813983454" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5903" ng="1" na="1"/>
+<httpSample t="871" lt="870" ts="1373813984305" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="908" lt="903" ts="1373813985186" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5903" ng="1" na="1"/>
+<httpSample t="2245" lt="2237" ts="1373813986103" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="2110" lt="2105" ts="1373813988357" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5903" ng="1" na="1"/>
+<httpSample t="2318" lt="2317" ts="1373813990469" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="2409" lt="2405" ts="1373813992796" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5905" ng="1" na="1"/>
+<httpSample t="2452" lt="2451" ts="1373813995214" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="2233" lt="2222" ts="1373813997674" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5904" ng="1" na="1"/>
+<httpSample t="2374" lt="2369" ts="1373813999915" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="2390" lt="2387" ts="1373814002298" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5905" ng="1" na="1"/>
+<httpSample t="2336" lt="2335" ts="1373814004563" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="2320" lt="2313" ts="1373814006907" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5904" ng="1" na="1"/>
+<httpSample t="1239" lt="1236" ts="1373814009236" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+<httpSample t="2393" lt="2390" ts="1373814010480" s="true" lb="1. Call for main page" rm="OK" tn="Virtual Users 1-1" by="5903" ng="1" na="1"/>
+<httpSample t="2121" lt="2117" ts="1373814012878" s="true" lb="2. Call for all categories" rm="OK" tn="Virtual Users 1-1" by="3441" ng="1" na="1"/>
+
+</testResults>

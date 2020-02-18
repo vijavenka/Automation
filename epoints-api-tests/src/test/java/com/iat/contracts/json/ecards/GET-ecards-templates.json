@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "ecardTemplates": {
+      "id": "http://jsonschema.net/ecardTemplates",
+      "type": "array",
+      "items": [
+        {
+          "id": "http://jsonschema.net/ecardTemplates/0",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "name",
+              "type": "string"
+            },
+            "imageUrl": {
+              "id": "imageUrl",
+              "type": "string"
+            },
+            "thumbnailUrl": {
+              "id": "thumbnailUrl",
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "imageUrl",
+            "thumbnailUrl"
+          ]
+        }
+      ],
+      "required": [
+        "0"
+      ]
+    }
+  },
+  "required": [
+    "ecardTemplates"
+  ]
+}

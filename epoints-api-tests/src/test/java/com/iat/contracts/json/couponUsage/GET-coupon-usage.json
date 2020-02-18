@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalItems": {
+      "type": "integer"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "integer"
+          },
+          "storeName": {
+            "type": "string"
+          },
+          "couponName": {
+            "type": "string"
+          },
+          "couponSaving": {
+            "type": "number"
+          },
+          "epointsEarned": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "date",
+          "storeName",
+          "couponName",
+          "couponSaving",
+          "epointsEarned"
+        ]
+      }
+    }
+  },
+  "required": [
+    "totalItems",
+    "results"
+  ]
+}

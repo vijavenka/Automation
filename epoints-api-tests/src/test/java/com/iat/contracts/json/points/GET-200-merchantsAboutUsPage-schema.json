@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "favourite": {
+      "additionalItems": false,
+      "id": "/properties/favourite",
+      "items": {},
+      "type": "array"
+    },
+    "popular": {
+      "additionalItems": false,
+      "id": "/properties/popular",
+      "items": {
+        "additionalProperties": false,
+        "id": "/properties/popular/items",
+        "properties": {
+          "daysToConfirmCommission": {
+            "id": "/properties/popular/items/properties/daysToConfirmCommission",
+            "type": "integer"
+          },
+          "description": {
+            "id": "/properties/popular/items/properties/description",
+            "type": "string"
+          },
+          "epointsMultiplier": {
+            "id": "/properties/popular/items/properties/epointsMultiplier",
+            "type": "integer"
+          },
+          "favourite": {
+            "id": "/properties/popular/items/properties/favourite",
+            "type": "boolean"
+          },
+          "id": {
+            "id": "/properties/popular/items/properties/id",
+            "type": "string"
+          },
+          "imageUrl": {
+            "id": "/properties/popular/items/properties/imageUrl",
+            "type": "string"
+          },
+          "leadGenerator": {
+            "id": "/properties/popular/items/properties/leadGenerator",
+            "type": "boolean"
+          },
+          "maximumCommission": {
+            "id": "/properties/popular/items/properties/maximumCommission",
+            "type": "integer"
+          },
+          "merchantDomain": {
+            "id": "/properties/popular/items/properties/merchantDomain",
+            "type": "string"
+          },
+          "name": {
+            "id": "/properties/popular/items/properties/name",
+            "type": "string"
+          },
+          "networkCode": {
+            "id": "/properties/popular/items/properties/networkCode",
+            "type": "string"
+          },
+          "seoTitle": {
+            "id": "/properties/popular/items/properties/seoTitle",
+            "type": "string"
+          },
+          "siteUrl": {
+            "id": "/properties/popular/items/properties/siteUrl",
+            "type": "string"
+          },
+          "termsAndConditions": {
+            "id": "/properties/popular/items/properties/termsAndConditions",
+            "type": "string"
+          },
+          "vouchersCount": {
+            "id": "/properties/popular/items/properties/vouchersCount",
+            "type": "integer"
+          },
+          "zone": {
+            "id": "/properties/popular/items/properties/zone",
+            "type": "string"
+          }
+        },
+        "required": [
+          "siteUrl",
+          "zone",
+          "favourite",
+          "imageUrl",
+          "networkCode",
+          "vouchersCount",
+          "epointsMultiplier",
+          "seoTitle",
+          "leadGenerator",
+          "id",
+          "name"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "recent": {
+      "additionalItems": false,
+      "id": "/properties/recent",
+      "items": {},
+      "type": "array"
+    }
+  },
+  "required": [
+    "favourite",
+    "popular",
+    "recent"
+  ],
+  "type": "object"
+}

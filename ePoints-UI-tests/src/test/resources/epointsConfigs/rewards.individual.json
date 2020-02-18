@@ -1,0 +1,535 @@
+{
+  "blocks": [
+    {
+      "region": "uk",
+      "content": {
+        "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Department+Images/Landing%2BPage-witch-final.jpg",
+        "seeMore": "/rewards/gifts-and-experiences/halloween"
+      },
+      "title": "Banner - hidden title",
+      "ui": {
+        "type": "banner"
+      }
+    },
+    {
+      "region": "uk",
+      "request": {
+        "seeMore": "/rewards/film-and-tv/box-sets?epoints=5000-19999",
+        "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C19999,s_categoryFromFeedExtractedSeoSlugs_multiVal:box-sets,s_departmentSeoSlug:film-and-tv&page=0&pageSize=5"
+      },
+      "title": "Watch The Best Film & TV Boxsets",
+      "ui": {
+        "type": "special-offers"
+      }
+    },
+    {
+      "region": "uk",
+      "request": {
+        "seeMore": "/rewards/gaming/games?epoints=5000-19999",
+        "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C19999,s_categoryFromFeedExtractedSeoSlugs_multiVal:games,s_departmentSeoSlug:gaming&page=0&pageSize=4"
+      },
+      "title": "Best Video Games",
+      "ui": {
+        "type": "list"
+      }
+    },
+    {
+      "region": "uk",
+      "request": {
+        "seeMore": "/rewards/health-and-beauty/fragrance?epoints=5000-19999",
+        "url": "/rest/search/redemptionitems?filters=i_epointsToPurchase:5000%7C19999,s_categoryFromFeedExtractedSeoSlugs_multiVal:fragrance,s_departmentSeoSlug:health-and-beauty&page=0&pageSize=4"
+      },
+      "title": "Designer Perfumes, Aftershaves and Gift Sets",
+      "ui": {
+        "type": "list"
+      }
+    },
+    {
+      "region": "uk",
+      "request": {
+        "seeMore": "/rewards/electronics/headphones",
+        "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:headphones,s_departmentSeoSlug:electronics&page=0&pageSize=4"
+      },
+      "title": "Explore Our Wide Range of Headphones & Earphones",
+      "ui": {
+        "type": "list"
+      }
+    },
+    {
+      "region": "uk",
+      "content": {
+        "departments": [
+          {
+            "categories": [
+              {
+                "id": "headphones",
+                "label": "Headphones"
+              },
+              {
+                "id": "audio-systems",
+                "label": "Audio Systems"
+              },
+              {
+                "id": "electric-shavers",
+                "label": "Electric Shavers"
+              },
+              {
+                "id": "cameras",
+                "label": "Cameras"
+              },
+              {
+                "id": "blenders",
+                "label": "Blenders"
+              },
+              {
+                "id": "vacuum-cleaners",
+                "label": "Vacuum Cleaners"
+              }
+            ],
+            "id": "electronics",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Electronics+Thumbnail.jpg",
+            "label": "Electronics"
+          },
+          {
+            "categories": [
+              {
+                "id": "box-sets",
+                "label": "Box Sets"
+              },
+              {
+                "id": "childrens-films",
+                "label": "Childrens Films"
+              },
+              {
+                "id": "comedy",
+                "label": "Comedy"
+              },
+              {
+                "id": "family",
+                "label": "Family"
+              },
+              {
+                "id": "romance",
+                "label": "Romance"
+              },
+              {
+                "id": "television-series",
+                "label": "Television Series"
+              }
+            ],
+            "id": "film-and-tv",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/TV+and+Film+Thumbnail.jpg",
+            "label": "Film & TV"
+          },
+          {
+            "categories": [
+              {
+                "id": "cosmetics",
+                "label": "Cosmetics"
+              },
+              {
+                "id": "fragrance",
+                "label": "Fragrance"
+              },
+              {
+                "id": "hair-appliances",
+                "label": "Hair Appliances"
+              },
+              {
+                "id": "shaving",
+                "label": "Shaving"
+              },
+              {
+                "id": "skincare",
+                "label": "Skincare"
+              },
+              {
+                "id": "vitamins-and-supplements",
+                "label": "Vitamins and Supplements"
+              }
+            ],
+            "id": "health-and-beauty",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Health+and+Beauty+Thumbnail.jpg",
+            "label": "Health & Beauty"
+          },
+          {
+            "categories": [
+              {
+                "id": "laptops-and-tablets",
+                "label": "Laptops and Tablets"
+              },
+              {
+                "id": "laptop-bags",
+                "label": "Laptop Bags"
+              },
+              {
+                "id": "mice",
+                "label": "Mice"
+              },
+              {
+                "id": "software",
+                "label": "Software"
+              },
+              {
+                "id": "headsets",
+                "label": "Headsets"
+              },
+              {
+                "id": "joysticks-and-gaming",
+                "label": "Joysticks and Gaming"
+              }
+            ],
+            "id": "computing",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Category+Thumbnails/Computing+thumbnail.jpg",
+            "label": "Computing"
+          }
+        ]
+      },
+      "title": "Popular Departments",
+      "ui": {
+        "type": "departments"
+      }
+    },
+    {
+      "region": "uk",
+      "content": {
+        "brands": [
+          {
+            "id": "Samsung",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Deaprtment+Brands/Electronics/Samsung.jpg",
+            "url": "/rewards/electronics?brand=Samsung"
+          },
+          {
+            "id": "Amazon",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+2+-+Amazon.png",
+            "url": "/rewards/computing?keyword=amazon&brand=Amazon"
+          },
+          {
+            "id": "Gift-Card",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+3+-+Gift+Cards.png",
+            "url": "/rewards/gifts-and-experiences/gift-cards"
+          },
+          {
+            "id": "Laptops-and-Tablets",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+4+-+Laptops.png",
+            "url": "/rewards/computing/laptops-and-tablets"
+          },
+          {
+            "id": "Apple",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+7+-+Apple.png",
+            "url": "/rewards/gifts-and-experiences/gift-cards?brand=Apple"
+          },
+          {
+            "id": "Playstation",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+6+-+Playstation.png",
+            "url": "/rewards/gaming/consoles?brand=Playstation%204"
+          }
+        ]
+      },
+      "title": "Popular",
+      "ui": {
+        "type": "brands"
+      }
+    },
+    {
+      "request": {
+        "limit": 4,
+        "storage": true
+      },
+      "title": "Recently viewed",
+      "type": "recently_viewed",
+      "ui": {
+        "type": "list"
+      }
+    },
+    {
+      "region": "nl",
+      "title": "KLEIN HUISHOUDELIJK",
+      "request": {
+        "url": "/rest/search/redemptionitems?filters=s_department:Klein+Huishoudelijk&page=0&pageSize=5",
+        "seeMore": "https://nl.epoints.com/rewards/klein-huishoudelijk"
+      },
+      "ui": {
+        "type": "special-offers"
+      }
+    }
+  ],
+  "blocks/qa": [
+    {
+      "region": "uk",
+      "content": {
+        "imageUrl": "https://st.depositphotos.com/1007965/1764/i/950/depositphotos_17642937-stock-photo-great-white-pelicans-in-lake.jpg",
+        "seeMore": "https://qa.epoints.com/faq"
+      },
+      "title": "Banner - hidden title",
+      "ui": {
+        "type": "banner"
+      }
+    },
+    {
+      "region": "uk",
+      "content": {
+        "departments": [
+          {
+            "categories": [
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              }
+            ],
+            "id": "toys-and-games",
+            "imageUrl": "http://cdn.pocket-lint.com/r/s/970x/assets/images/136055-gadgets-news-buyer-s-guide-best-8-gadgets-for-entertainment-at-home-this-christmas-image1-vtmahfa47y.jpg",
+            "label": "Toys, Games & Gadgets"
+          },
+          {
+            "categories": [
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              }
+            ],
+            "id": "toys-and-games",
+            "imageUrl": "http://cdn.pocket-lint.com/r/s/970x/assets/images/136055-gadgets-news-buyer-s-guide-best-8-gadgets-for-entertainment-at-home-this-christmas-image1-vtmahfa47y.jpg",
+            "label": "Toys, Games & Gadgets"
+          },
+          {
+            "categories": [
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              }
+            ],
+            "id": "toys-and-games",
+            "imageUrl": "http://cdn.pocket-lint.com/r/s/970x/assets/images/136055-gadgets-news-buyer-s-guide-best-8-gadgets-for-entertainment-at-home-this-christmas-image1-vtmahfa47y.jpg",
+            "label": "Toys, Games & Gadgets"
+          },
+          {
+            "categories": [
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              },
+              {
+                "id": "action-figures",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "label": "Outdoor Toys"
+              }
+            ],
+            "id": "toys-and-games",
+            "imageUrl": "http://cdn.pocket-lint.com/r/s/970x/assets/images/136055-gadgets-news-buyer-s-guide-best-8-gadgets-for-entertainment-at-home-this-christmas-image1-vtmahfa47y.jpg",
+            "label": "Toys, Games & Gadgets"
+          }
+        ]
+      },
+      "title": "Popular departments",
+      "ui": {
+        "type": "departments"
+      }
+    },
+    {
+      "request": {
+        "min": 3,
+        "url": "/rest/search/recently-redeemed?page=0&pageSize=4"
+      },
+      "title": "Recently redeemed",
+      "ui": {
+        "type": "list"
+      }
+    },
+    {
+      "region": "uk",
+      "request": {
+        "seeMore": "/contact-us",
+        "url": "/rest/search/redemptionitems?filters=s_categoryFromFeedExtractedSeoSlugs_multiVal:halloween,s_departmentSeoSlug:specials&page=1&pageSize=5"
+      },
+      "title": "Special offers",
+      "ui": {
+        "type": "special-offers"
+      }
+    },
+    {
+      "region": "uk",
+      "content": {
+        "brands": [
+          {
+            "id": "Gift-Card",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+3+-+Gift+Cards.png",
+            "url": "/rewards/gifts-and-experiences/gift-cards"
+          },
+          {
+            "id": "Laptops-and-Tablets",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+4+-+Laptops.png",
+            "url": "/rewards/computing/laptops-and-tablets"
+          },
+          {
+            "id": "Gift-Card",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+3+-+Gift+Cards.png",
+            "url": "/rewards/gifts-and-experiences/gift-cards"
+          },
+          {
+            "id": "Laptops-and-Tablets",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+4+-+Laptops.png",
+            "url": "/rewards/computing/laptops-and-tablets"
+          },
+          {
+            "id": "Gift-Card",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+3+-+Gift+Cards.png",
+            "url": "/rewards/gifts-and-experiences/gift-cards"
+          },
+          {
+            "id": "Laptops-and-Tablets",
+            "imageUrl": "https://s3-eu-west-1.amazonaws.com/iat-feeds-prod/Popular+Brands/Popular+-+4+-+Laptops.png",
+            "url": "/rewards/computing/laptops-and-tablets"
+          }
+        ]
+      },
+      "title": "Popular brands",
+      "ui": {
+        "type": "brands"
+      }
+    },
+    {
+      "region": "uk",
+      "content": {
+        "departments": [
+          {
+            "categories": [
+              {
+                "id": "action-figures",
+                "imageUrl": "http://img.365games.co.uk/collectables_and_hobbies/action_figures/big_bang_theory_3_34_inch_series_1_howard_xl.jpg",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "imageUrl": "https://i.pinimg.com/736x/f9/55/04/f955040793b82c7c1e04c72bd8d16304--kids-outdoor-toys-outdoor-fun.jpg",
+                "label": "Outdoor Toys"
+              }
+            ],
+            "id": "toys-and-games",
+            "label": "Toys, Games & Gadgets"
+          },
+          {
+            "categories": [
+              {
+                "id": "action-figures",
+                "imageUrl": "http://img.365games.co.uk/collectables_and_hobbies/action_figures/big_bang_theory_3_34_inch_series_1_howard_xl.jpg",
+                "label": "Action Figures"
+              },
+              {
+                "id": "outdoor-toys",
+                "imageUrl": "https://i.pinimg.com/736x/f9/55/04/f955040793b82c7c1e04c72bd8d16304--kids-outdoor-toys-outdoor-fun.jpg",
+                "label": "Outdoor Toys"
+              }
+            ],
+            "id": "toys-and-games",
+            "label": "Toys, Games & Gadgets"
+          }
+        ]
+      },
+      "title": "Popular categories",
+      "ui": {
+        "type": "categories"
+      }
+    },
+    {
+      "region": "uk",
+      "request": {
+        "min": 3,
+        "url": "/rest/search/recently-redeemed?page=0&pageSize=8"
+      },
+      "title": "Products block",
+      "ui": {
+        "type": "list"
+      },
+      "content": {
+        "seeMore": "/about"
+      }
+    },
+    {
+      "request": {
+        "limit": 4,
+        "storage": true
+      },
+      "title": "Recently viewed",
+      "type": "recently_viewed",
+      "ui": {
+        "type": "list"
+      }
+    }
+  ]
+}

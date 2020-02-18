@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalItems": false,
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "items": {
+    "additionalProperties": false,
+    "id": "/items",
+    "properties": {
+      "categories": {
+        "additionalItems": false,
+        "id": "/items/properties/categories",
+        "items": {
+          "additionalProperties": false,
+          "id": "/items/properties/categories/items",
+          "properties": {
+            "displayTitle": {
+              "id": "/items/properties/categories/items/properties/displayTitle",
+              "type": "string"
+            },
+            "seoTitle": {
+              "id": "/items/properties/categories/items/properties/seoTitle",
+              "type": "string"
+            },
+            "title": {
+              "id": "/items/properties/categories/items/properties/title",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "displayTitle",
+            "seoTitle"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "displayTitle": {
+        "id": "/items/properties/displayTitle",
+        "type": "string"
+      },
+      "id": {
+        "id": "/items/properties/id",
+        "type": "string"
+      },
+      "seoTitle": {
+        "id": "/items/properties/seoTitle",
+        "type": "string"
+      },
+      "title": {
+        "id": "/items/properties/title",
+        "type": "string"
+      }
+    },
+    "required": [
+      "title",
+      "displayTitle",
+      "id",
+      "seoTitle"
+    ],
+    "type": "object"
+  },
+  "type": "array"
+}

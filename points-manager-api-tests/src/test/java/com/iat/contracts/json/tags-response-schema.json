@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TagDetails",
+  "description": "Object returned when tags/ used",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "tagName": {
+          "id": "tagName",
+          "type": "string"
+        },
+        "cap": {
+          "id": "cap",
+          "type": "integer"
+        },
+        "frequency": {
+          "id": "frequency",
+          "type": "string"
+        },
+        "imageUrl": {
+          "id": "imageUrl",
+          "type": "null"
+        },
+        "description": {
+          "id": "description",
+          "type": "string"
+        },
+        "autoConfirm": {
+          "id": "autoConfirm",
+          "type": "null"
+        }
+      },
+      "required": [
+        "tagName",
+        "cap",
+        "frequency",
+        "imageUrl",
+        "description",
+        "autoConfirm"
+      ]
+    }
+  ]
+}

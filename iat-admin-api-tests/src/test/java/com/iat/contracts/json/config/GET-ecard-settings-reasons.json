@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "managerToUserMin": {
+      "id": "managerToUserMin",
+      "type": "integer"
+    },
+    "managerToUserMax": {
+      "id": "managerToUserMax",
+      "type": "integer"
+    },
+    "userToUserMin": {
+      "id": "userToUserMin",
+      "type": "integer"
+    },
+    "userToUserMax": {
+      "id": "userToUserMax",
+      "type": "integer"
+    }
+  }
+}

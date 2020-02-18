@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Check if points are available",
+  "description": "Object returned with /users/{userId}/points-availability transaction",
+  "type": "object",
+  "properties": {
+    "availability": {
+      "id": "availability",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "availability"
+  ]
+}

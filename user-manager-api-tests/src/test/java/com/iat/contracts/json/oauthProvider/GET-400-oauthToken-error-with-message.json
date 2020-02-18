@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "timestamp": {
+      "id": "/properties/timestamp",
+      "type": "integer"
+    },
+    "error": {
+      "id": "/properties/error",
+      "type": "string"
+    },
+    "message": {
+      "id": "/properties/message",
+      "type": "string"
+    },
+    "status": {
+      "id": "/properties/status",
+      "type": "integer"
+    },
+    "path": {
+      "id": "/properties/path",
+      "type": "string"
+    }
+  },
+  "required": [
+    "timestamp",
+    "status",
+    "message",
+    "error",
+    "path"
+  ],
+  "type": "object"
+}

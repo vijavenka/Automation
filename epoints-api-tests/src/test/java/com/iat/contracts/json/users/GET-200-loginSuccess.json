@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "subscriptionStatus": {
+      "type": "string"
+    },
+    "expiredMembershipType": {
+      "type": "string"
+    },
+    "activeMembershipType": {
+      "type": "string"
+    },
+    "registrationDate": {
+      "type": "integer"
+    },
+    "oneOffFeePaid": {
+      "type": "boolean"
+    },
+    "cancelClickedAtUpgradePopup": {
+      "type": "boolean"
+    },
+    "isGDPRAccepted": {
+      "type": "boolean"
+    },
+    "isManager": {
+      "type": "boolean"
+    },
+    "isBusinessUser": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "firstName",
+    "lastName",
+    "email",
+    "verified",
+    "subscriptionStatus",
+    "expiredMembershipType",
+    "activeMembershipType",
+    "registrationDate",
+    "oneOffFeePaid",
+    "cancelClickedAtUpgradePopup",
+    "isGDPRAccepted",
+    "isManager",
+    "isBusinessUser"
+  ]
+}

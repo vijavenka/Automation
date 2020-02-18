@@ -1,0 +1,2 @@
+main email with created account                      - emailwybitnietestowy@gmail.com
+envVariables class has all elements which can be modified lik users, environment links etc.

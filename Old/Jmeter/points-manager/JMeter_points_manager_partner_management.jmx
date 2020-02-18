@@ -1,0 +1,2395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="SERVER_URL" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_URL</stringProp>
+            <stringProp name="Argument.value">http://epoints-com-qa-elb.iatlimited.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="EMAIL_SENTTO_1" elementType="Argument">
+            <stringProp name="Argument.name">EMAIL_SENTTO_1</stringProp>
+            <stringProp name="Argument.value">iatesting1234@gmail.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="EMAIL_SENTTO_2" elementType="Argument">
+            <stringProp name="Argument.name">EMAIL_SENTTO_2</stringProp>
+            <stringProp name="Argument.value">iatesting5678@gmail.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FAR_IN_THE_PAST_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FAR_IN_THE_PAST_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.YEAR\, 1910); c.set(Calendar.MONTH\, 0); c.set(Calendar.DAY_OF_MONTH\, 1); c.set(Calendar.HOUR_OF_DAY\, 0); c.set(Calendar.MINUTE\, 0);  c.set(Calendar.SECOND\, 0); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FAR_IN_THE_FUTURE_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FAR_IN_THE_FUTURE_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.YEAR\, 2100); c.set(Calendar.MONTH\, 0); c.set(Calendar.DAY_OF_MONTH\, 1); c.set(Calendar.HOUR_OF_DAY\, 0); c.set(Calendar.MINUTE\, 0);  c.set(Calendar.SECOND\, 0); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_CURRENT_DATE_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_CURRENT_DATE_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(new Date()))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_CURRENT_DATE_EPOCH" elementType="Argument">
+            <stringProp name="Argument.name">DT_CURRENT_DATE_EPOCH</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(long epoch = new Date().getTime(); return epoch;)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_HOUR_OF_YESTERDAY_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_HOUR_OF_YESTERDAY_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 23); c.set(Calendar.MINUTE\, 59);  c.set(Calendar.SECOND\, 59);  c.add(Calendar.DATE\, -1); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_HOUR_OF_TODAY_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_HOUR_OF_TODAY_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 0); c.set(Calendar.MINUTE\, 0);  c.set(Calendar.SECOND\, 0);  new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_HOUR_OF_TODAY_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_HOUR_OF_TODAY_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 23); c.set(Calendar.MINUTE\, 59);  c.set(Calendar.SECOND\, 59);  new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_HOUR_OF_TOMORROW_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_HOUR_OF_TOMORROW_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 0); c.set(Calendar.MINUTE\, 0);  c.set(Calendar.SECOND\, 0);  c.add(Calendar.DATE\, 1); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_PREVIOUS_MONTH_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_PREVIOUS_MONTH_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(new Date(new Date().getYear()\, new Date().getMonth()-1\, Calendar.getInstance().getActualMaximum(Calendar.DAY_OF_MONTH)-1\, 23\, 59\, 59)))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_PREVIOUS_MONTH_EPOCH" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_PREVIOUS_MONTH_EPOCH</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Date d = new Date(); long epoch = new Date(new Date().getYear()\, new Date().getMonth()-1\, Calendar.getInstance().getActualMaximum(Calendar.DAY_OF_MONTH)-1\, 23\, 59\, 59).getTime(); return epoch)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_CURRENT_MONTH_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_CURRENT_MONTH_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(new Date(new Date().getYear()\, new Date().getMonth()\, 1\, 0\, 0\, 0)))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_CURRENT_MONTH_STR_SHORT" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_CURRENT_MONTH_STR_SHORT</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(new java.text.SimpleDateFormat(&quot;yyyy-MM-dd&quot;).format(new Date(new Date().getYear()\, new Date().getMonth()\, 1)))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_CURRENT_MONTH_EPOCH" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_CURRENT_MONTH_EPOCH</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Date d = new Date(); long epoch = new Date(d.getYear()\, d.getMonth()\, 1\, 0\, 0\, 0).getTime(); return epoch)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_CURRENT_MONTH_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_CURRENT_MONTH_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(new Date(new Date().getYear()\, new Date().getMonth()\, Calendar.getInstance().getActualMaximum(Calendar.DAY_OF_MONTH)\, 23\, 59\, 59)))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_CURRENT_MONTH_STR_SHORT" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_CURRENT_MONTH_STR_SHORT</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(new java.text.SimpleDateFormat(&quot;yyyy-MM-dd&quot;).format(new Date(new Date().getYear()\, new Date().getMonth()\, Calendar.getInstance().getActualMaximum(Calendar.DAY_OF_MONTH))))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_CURRENT_MONTH_EPOCH" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_CURRENT_MONTH_EPOCH</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Date d = new Date(); long epoch = new Date(d.getYear()\, d.getMonth()\, Calendar.getInstance().getActualMaximum(Calendar.DAY_OF_MONTH)\, 23\, 59\, 59).getTime(); return epoch)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_NEXT_MONTH_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_NEXT_MONTH_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Date d = new Date(); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(new Date(d.getYear()\, d.getMonth()+1\, 1\, 0\, 0\, 0)))}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_NEXT_MONTH_EPOCH" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_NEXT_MONTH_EPOCH</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Date d = new Date(); long epoch = new Date(d.getYear()\, d.getMonth()+1\, 1\, 0\, 0\, 0).getTime(); return epoch)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_PREVIOUS_WEEK_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_PREVIOUS_WEEK_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 23); c.set(Calendar.MINUTE\, 59);  c.set(Calendar.SECOND\, 59);  int dayOfWeek = c.get(Calendar.DAY_OF_WEEK); c.add(Calendar.DATE\, -1 * dayOfWeek); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_CURRENT_WEEK_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_CURRENT_WEEK_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 0); c.set(Calendar.MINUTE\, 0);  c.set(Calendar.SECOND\, 0);  int  dayOfWeek = c.get(Calendar.DAY_OF_WEEK);  if (dayOfWeek != Calendar.SUNDAY) {c.add(Calendar.DATE\, -1 * (dayOfWeek - 1));} new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_LAST_DAY_OF_CURRENT_WEEK_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_LAST_DAY_OF_CURRENT_WEEK_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 23); c.set(Calendar.MINUTE\, 59);  c.set(Calendar.SECOND\, 59);   c.set(Calendar.DAY_OF_WEEK\, Calendar.SATURDAY); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DT_FIRST_DAY_OF_NEXT_WEEK_STR" elementType="Argument">
+            <stringProp name="Argument.name">DT_FIRST_DAY_OF_NEXT_WEEK_STR</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(Calendar c = Calendar.getInstance(); c.set(Calendar.HOUR_OF_DAY\, 0); c.set(Calendar.MINUTE\, 0);  c.set(Calendar.SECOND\, 0);   c.set(Calendar.DAY_OF_WEEK\, Calendar.SATURDAY); c.add(Calendar.DATE\, 1); new java.text.SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format(c.getTime()) )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AUTH_PARTNER_KEY" elementType="Argument">
+            <stringProp name="Argument.name">AUTH_PARTNER_KEY</stringProp>
+            <stringProp name="Argument.value">affiliateKey</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AUTH_PARTNER_SECRET" elementType="Argument">
+            <stringProp name="Argument.name">AUTH_PARTNER_SECRET</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">localhost</stringProp>
+        <stringProp name="HTTPSampler.port">8913</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">content-type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">X-IAT-Security-Required</stringProp>
+            <stringProp name="Header.value">false</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="MySQL Configuration" enabled="true">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery">Select 1</stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="dataSource">MySQL</stringProp>
+        <stringProp name="dbUrl">jdbc:mysql://localhost:3306/points_manager</stringProp>
+        <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password"></stringProp>
+        <stringProp name="poolMax">10</stringProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username">root</stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="partner_management" enabled="true">
+        <stringProp name="TestPlan.comments">WS-CNM_ADD_PTR_C</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <longProp name="ThreadGroup.start_time">1393315546000</longProp>
+        <longProp name="ThreadGroup.end_time">1393315546000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="POSITIVE" enabled="true"/>
+        <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="PS1: Adding PARTNER record sending only required data" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">IAT ${AUTH_PARTNER_KEY}:${AUTH_PARTNER_SECRET}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PS1: REST: add PARTNER" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;name&quot;:&quot;sample_partner_name_S1&quot;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/clients</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49587">201</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1601759544">Created</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">1</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get name" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_name</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;name&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get shortName" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_shortName</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;shortName&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get apiKey" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_apiKey</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;apiKey&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get siteUrl" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_siteUrl</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;siteUrl&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get logoUrl" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_logoUrl</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;logoUrl&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get email" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_email</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get description" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_description</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;description&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: name" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="821450598">sample_partner_name_S1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_name</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: siteUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3392903">null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_siteUrl</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: logoUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3392903">null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_logoUrl</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: email" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3392903">null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_email</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: description" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3392903">null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_description</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS1: check PARTNER record" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id,
+  UNIX_TIMESTAMP(createdAt) *1000,
+  UNIX_TIMESTAMP(updatedAt) *1000,
+  currentTotal,
+  accessKey,
+  name,
+  paymentType,
+  shortName,
+  active,
+  COALESCE(siteUrl, 0) siteUrl,
+  COALESCE(description, 0) description,
+  COALESCE(logoUrl, 0) logoUrl,
+  version,
+  COALESCE(email, 0) email,
+  warningThreshold,
+  COALESCE(groupId, 0) groupId
+FROM partner
+WHERE
+  accessKey = ?</stringProp>
+              <stringProp name="queryArguments">${m_apiKey}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pId,e_pCreatedAt,e_pUpdatedAt,e_pCurrentTotal,e_pAccessKey,e_pName,e_pPaymentType,e_pShortName,e_pActive,e_pSiteUrl,e_pDesc,e_pLogoUrl,e_pVersion,e_pEmail,e_pWarningThreshold,e_pGroupId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: createdAt" enabled="true">
+                <stringProp name="BeanShellAssertion.query">Long dt_dbCreatedAt = Long.parseLong(vars.get(&quot;e_pCreatedAt_1&quot;));
+Long dt_current  = new Date().getTime();
+
+// range
+Long long_range  = 5000;
+
+if (dt_dbCreatedAt &lt;= dt_current + long_range &amp;&amp; dt_dbCreatedAt &gt;= dt_current - long_range)
+{
+	Failure = false;
+}
+else {
+	Failure = true;
+	FailureMessage = &quot;difference: &quot; + Math.abs(dt_current - dt_dbCreatedAt) + &quot;, should be no more than: &quot; + long_range;
+	print (FailureMessage);   // this goes to stdout
+	log.warn(FailureMessage); // this goes to the JMeter log file
+}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: updatedAt" enabled="true">
+                <stringProp name="BeanShellAssertion.query">Long dt_dbUpdatedAt = Long.parseLong(vars.get(&quot;e_pUpdatedAt_1&quot;));
+Long dt_current  = new Date().getTime();
+
+// range
+Long long_range  = 5000;
+
+if (dt_dbUpdatedAt &lt;= dt_current + long_range &amp;&amp; dt_dbUpdatedAt &gt;= dt_current - long_range)
+{
+	Failure = false;
+}
+else {
+	Failure = true;
+	FailureMessage = &quot;difference: &quot; + Math.abs(dt_current - dt_dbUpdatedAt) + &quot;, should be no more than: &quot; + long_range;
+	print (FailureMessage);   // this goes to stdout
+	log.warn(FailureMessage); // this goes to the JMeter log file
+}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: currentTotal" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pCurrentTotal_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: apiKey" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-848566673">${m_apiKey}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pAccessKey_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: name" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="821450598">sample_partner_name_S1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pName_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: paymentType" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1540924521">POST_PAY</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pPaymentType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: active" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3569038">true</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pActive_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: siteUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pSiteUrl_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: description" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pDesc_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: logoUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pLogoUrl_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: version" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pVersion_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: email" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pEmail_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: groupId" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pGroupId_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: warningThreshold" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pWarningThreshold_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS1: check PARTNER unique shortName" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  COUNT(shortName)
+FROM partner
+WHERE
+  shortName = ?</stringProp>
+              <stringProp name="queryArguments">${m_shortName}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pShortNameCount</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: count" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pShortNameCount_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS1: check PARTNER unique accessKey" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  COUNT(accessKey)
+FROM partner
+WHERE
+  accessKey = ?</stringProp>
+              <stringProp name="queryArguments">${m_apiKey}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pApiKeyCount</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: count" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pApiKeyCount_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS1: check REQUEST table" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id, 
+  UNIX_TIMESTAMP(createdAt) *1000 createdAt,
+  COALESCE(
+    CASE
+      WHEN apiAccessKey=&quot;&quot; THEN null
+    ELSE
+      apiAccessKey
+    END
+, 0) apiAccessKey, 
+  message, 
+  requestType, 
+  success, 
+  pointsId, 
+  COALESCE(
+    CASE
+      WHEN userId=&quot;&quot; THEN null
+    ELSE
+      userId
+    END
+, 0) userId, 
+  COALESCE(
+    CASE
+      WHEN idType=&quot;&quot; THEN null
+    ELSE
+      idType
+    END
+, 0) idType,
+  orderId
+FROM request
+ORDER BY createdAt DESC
+LIMIT 1</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_requestId, e_requestCreatedAt, e_partnerKey,e_requestMsg,e_requestType,e_requestSuccess,e_requestPointsId, e_requestUserId, e_requestUserIdType, e_requestOrderId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: request type" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1479465740">REGISTER_PARTNER</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: success" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3569038">true</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestSuccess_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cleanup" enabled="true"/>
+            <hashTree>
+              <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="cleanup: delete REQUEST record" enabled="true">
+                <stringProp name="dataSource">MySQL</stringProp>
+                <stringProp name="queryType">Prepared Update Statement</stringProp>
+                <stringProp name="query">DELETE FROM
+	request
+WHERE
+	id = ?;</stringProp>
+                <stringProp name="queryArguments">${e_requestId_1}</stringProp>
+                <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+                <stringProp name="variableNames"></stringProp>
+                <stringProp name="resultVariable"></stringProp>
+                <stringProp name="queryTimeout"></stringProp>
+              </JDBCSampler>
+              <hashTree/>
+              <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="cleanup: delete PARTNER record" enabled="true">
+                <stringProp name="dataSource">MySQL</stringProp>
+                <stringProp name="queryType">Prepared Update Statement</stringProp>
+                <stringProp name="query">DELETE FROM
+	partner
+WHERE
+	id = ?;</stringProp>
+                <stringProp name="queryArguments">${e_pId_1}</stringProp>
+                <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+                <stringProp name="variableNames"></stringProp>
+                <stringProp name="resultVariable"></stringProp>
+                <stringProp name="queryTimeout"></stringProp>
+              </JDBCSampler>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="PS2: Adding PARTNER record sending required and some additional data" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">IAT ${AUTH_PARTNER_KEY}:${AUTH_PARTNER_SECRET}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PS2: REST: add PARTNER" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;name&quot;:&quot;sample_partner_name_S2&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;siteUrl&quot;: &quot;http://partner_site.S2&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;logoUrl&quot;: &quot;http://partner.logo.url.S2&quot;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/clients</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49587">201</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1601759544">Created</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">1</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get name" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_name</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;name&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get shortName" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_shortName</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;shortName&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get apiKey" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_apiKey</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;apiKey&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get siteUrl" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_siteUrl</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;siteUrl&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get logoUrl" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_logoUrl</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;logoUrl&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get email" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_email</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get description" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_description</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;description&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: name" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="821450599">sample_partner_name_S2</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_name</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: siteUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="282700157">http://partner_site.S2</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_siteUrl</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: logoUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1145327945">http://partner.logo.url.S2</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_logoUrl</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: email" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3392903">null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_email</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: description" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3392903">null</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_description</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS2: check PARTNER record" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id,
+  UNIX_TIMESTAMP(createdAt) *1000,
+  UNIX_TIMESTAMP(updatedAt) *1000,
+  currentTotal,
+  accessKey,
+  name,
+  paymentType,
+  shortName,
+  active,
+  COALESCE(siteUrl, 0) siteUrl,
+  COALESCE(description, 0) description,
+  COALESCE(logoUrl, 0) logoUrl,
+  version,
+  COALESCE(email, 0) email,
+  warningThreshold,
+  COALESCE(groupId, 0) groupId
+FROM partner
+WHERE
+  accessKey = ?</stringProp>
+              <stringProp name="queryArguments">${m_apiKey}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pId,e_pCreatedAt,e_pUpdatedAt,e_pCurrentTotal,e_pAccessKey,e_pName,e_pPaymentType,e_pShortName,e_pActive,e_pSiteUrl,e_pDesc,e_pLogoUrl,e_pVersion,e_pEmail,e_pWarningThreshold,e_pGroupId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: createdAt" enabled="true">
+                <stringProp name="BeanShellAssertion.query">Long dt_dbCreatedAt = Long.parseLong(vars.get(&quot;e_pCreatedAt_1&quot;));
+Long dt_current  = new Date().getTime();
+
+// range
+Long long_range  = 5000;
+
+if (dt_dbCreatedAt &lt;= dt_current + long_range &amp;&amp; dt_dbCreatedAt &gt;= dt_current - long_range)
+{
+	Failure = false;
+}
+else {
+	Failure = true;
+	FailureMessage = &quot;difference: &quot; + Math.abs(dt_current - dt_dbCreatedAt) + &quot;, should be no more than: &quot; + long_range;
+	print (FailureMessage);   // this goes to stdout
+	log.warn(FailureMessage); // this goes to the JMeter log file
+}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: updatedAt" enabled="true">
+                <stringProp name="BeanShellAssertion.query">Long dt_dbUpdatedAt = Long.parseLong(vars.get(&quot;e_pUpdatedAt_1&quot;));
+Long dt_current  = new Date().getTime();
+
+// range
+Long long_range  = 5000;
+
+if (dt_dbUpdatedAt &lt;= dt_current + long_range &amp;&amp; dt_dbUpdatedAt &gt;= dt_current - long_range)
+{
+	Failure = false;
+}
+else {
+	Failure = true;
+	FailureMessage = &quot;difference: &quot; + Math.abs(dt_current - dt_dbUpdatedAt) + &quot;, should be no more than: &quot; + long_range;
+	print (FailureMessage);   // this goes to stdout
+	log.warn(FailureMessage); // this goes to the JMeter log file
+}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: currentTotal" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pCurrentTotal_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: apiKey" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-848566673">${m_apiKey}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pAccessKey_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: name" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="821450599">sample_partner_name_S2</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pName_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: paymentType" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1540924521">POST_PAY</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pPaymentType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: active" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3569038">true</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pActive_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: siteUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="282700157">http://partner_site.S2</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pSiteUrl_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: description" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pDesc_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: logoUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1145327945">http://partner.logo.url.S2</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pLogoUrl_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: version" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pVersion_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: email" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pEmail_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: groupId" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pGroupId_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: warningThreshold" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pWarningThreshold_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS2: check PARTNER unique shortName" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  COUNT(shortName)
+FROM partner
+WHERE
+  shortName = ?</stringProp>
+              <stringProp name="queryArguments">${m_shortName}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pShortNameCount</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: count" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pShortNameCount_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS2: check PARTNER unique accessKey" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  COUNT(accessKey)
+FROM partner
+WHERE
+  accessKey = ?</stringProp>
+              <stringProp name="queryArguments">${m_apiKey}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pApiKeyCount</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: count" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pApiKeyCount_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS2: check REQUEST table" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id, 
+  UNIX_TIMESTAMP(createdAt) *1000 createdAt,
+  COALESCE(
+    CASE
+      WHEN apiAccessKey=&quot;&quot; THEN null
+    ELSE
+      apiAccessKey
+    END
+, 0) apiAccessKey, 
+  message, 
+  requestType, 
+  success, 
+  pointsId, 
+  COALESCE(
+    CASE
+      WHEN userId=&quot;&quot; THEN null
+    ELSE
+      userId
+    END
+, 0) userId, 
+  COALESCE(
+    CASE
+      WHEN idType=&quot;&quot; THEN null
+    ELSE
+      idType
+    END
+, 0) idType,
+  orderId
+FROM request
+ORDER BY createdAt DESC
+LIMIT 1</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_requestId, e_requestCreatedAt, e_partnerKey,e_requestMsg,e_requestType,e_requestSuccess,e_requestPointsId, e_requestUserId, e_requestUserIdType, e_requestOrderId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: request type" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1479465740">REGISTER_PARTNER</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: success" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3569038">true</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestSuccess_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cleanup" enabled="true"/>
+            <hashTree>
+              <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="cleanup: delete REQUEST record" enabled="true">
+                <stringProp name="dataSource">MySQL</stringProp>
+                <stringProp name="queryType">Prepared Update Statement</stringProp>
+                <stringProp name="query">DELETE FROM
+	request
+WHERE
+	id = ?;</stringProp>
+                <stringProp name="queryArguments">${e_requestId_1}</stringProp>
+                <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+                <stringProp name="variableNames"></stringProp>
+                <stringProp name="resultVariable"></stringProp>
+                <stringProp name="queryTimeout"></stringProp>
+              </JDBCSampler>
+              <hashTree/>
+              <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="cleanup: delete PARTNER record" enabled="true">
+                <stringProp name="dataSource">MySQL</stringProp>
+                <stringProp name="queryType">Prepared Update Statement</stringProp>
+                <stringProp name="query">DELETE FROM
+	partner
+WHERE
+	id = ?;</stringProp>
+                <stringProp name="queryArguments">${e_pId_1}</stringProp>
+                <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+                <stringProp name="variableNames"></stringProp>
+                <stringProp name="resultVariable"></stringProp>
+                <stringProp name="queryTimeout"></stringProp>
+              </JDBCSampler>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="PS3: Adding PARTNER record sending full information to the system" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">IAT ${AUTH_PARTNER_KEY}:${AUTH_PARTNER_SECRET}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS3: get PARTNERSGROUP shortName" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+	shortName, id
+FROM 
+	partnersgroup
+ORDER BY 
+	RAND()
+LIMIT 1;</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">s_partnersGroupShort,s_partnersGroupId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PS3: REST: add PARTNER" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;name&quot;:&quot;sample_partner_name_S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;siteUrl&quot;: &quot;http://partner_site.S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;description&quot;: &quot;partner description S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;email&quot;: &quot;partner@email.S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;logoUrl&quot;: &quot;http://partner.logo.url.S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;group&quot;: &quot;${s_partnersGroupShort_1}&quot;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/clients</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49587">201</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1601759544">Created</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">1</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get name" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_name</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;name&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get shortName" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_shortName</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;shortName&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get apiKey" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_apiKey</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;apiKey&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get siteUrl" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_siteUrl</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;siteUrl&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get logoUrl" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_logoUrl</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;logoUrl&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get email" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_email</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="get description" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">m_description</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;description&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">null</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: name" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="821450600">sample_partner_name_S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_name</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: siteUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="282700158">http://partner_site.S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_siteUrl</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: logoUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1145327946">http://partner.logo.url.S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_logoUrl</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: email" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2010397258">partner@email.S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_email</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: description" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="175959868">partner description S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">m_description</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS3: check PARTNER record" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id,
+  UNIX_TIMESTAMP(createdAt) *1000,
+  UNIX_TIMESTAMP(updatedAt) *1000,
+  currentTotal,
+  accessKey,
+  name,
+  paymentType,
+  shortName,
+  active,
+  COALESCE(siteUrl, 0) siteUrl,
+  COALESCE(description, 0) description,
+  COALESCE(logoUrl, 0) logoUrl,
+  version,
+  COALESCE(email, 0) email,
+  warningThreshold,
+  COALESCE(groupId, 0) groupId
+FROM partner
+WHERE
+  accessKey = ?</stringProp>
+              <stringProp name="queryArguments">${m_apiKey}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pId,e_pCreatedAt,e_pUpdatedAt,e_pCurrentTotal,e_pAccessKey,e_pName,e_pPaymentType,e_pShortName,e_pActive,e_pSiteUrl,e_pDesc,e_pLogoUrl,e_pVersion,e_pEmail,e_pWarningThreshold,e_pGroupId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: createdAt" enabled="true">
+                <stringProp name="BeanShellAssertion.query">Long dt_dbCreatedAt = Long.parseLong(vars.get(&quot;e_pCreatedAt_1&quot;));
+Long dt_current  = new Date().getTime();
+
+// range
+Long long_range  = 5000;
+
+if (dt_dbCreatedAt &lt;= dt_current + long_range &amp;&amp; dt_dbCreatedAt &gt;= dt_current - long_range)
+{
+	Failure = false;
+}
+else {
+	Failure = true;
+	FailureMessage = &quot;difference: &quot; + Math.abs(dt_current - dt_dbCreatedAt) + &quot;, should be no more than: &quot; + long_range;
+	print (FailureMessage);   // this goes to stdout
+	log.warn(FailureMessage); // this goes to the JMeter log file
+}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BS Assert: updatedAt" enabled="true">
+                <stringProp name="BeanShellAssertion.query">Long dt_dbUpdatedAt = Long.parseLong(vars.get(&quot;e_pUpdatedAt_1&quot;));
+Long dt_current  = new Date().getTime();
+
+// range
+Long long_range  = 5000;
+
+if (dt_dbUpdatedAt &lt;= dt_current + long_range &amp;&amp; dt_dbUpdatedAt &gt;= dt_current - long_range)
+{
+	Failure = false;
+}
+else {
+	Failure = true;
+	FailureMessage = &quot;difference: &quot; + Math.abs(dt_current - dt_dbUpdatedAt) + &quot;, should be no more than: &quot; + long_range;
+	print (FailureMessage);   // this goes to stdout
+	log.warn(FailureMessage); // this goes to the JMeter log file
+}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: currentTotal" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pCurrentTotal_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: apiKey" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-848566673">${m_apiKey}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pAccessKey_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: name" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="821450600">sample_partner_name_S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pName_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: paymentType" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1540924521">POST_PAY</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pPaymentType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: active" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3569038">true</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pActive_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: siteUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="282700158">http://partner_site.S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pSiteUrl_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: description" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="175959868">partner description S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pDesc_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: logoUrl" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1145327946">http://partner.logo.url.S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pLogoUrl_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: email" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2010397258">partner@email.S3</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pEmail_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: version" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pVersion_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: groupId" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1269209727">${s_partnersGroupId_1}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pGroupId_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: warningThreshold" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="48">0</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pWarningThreshold_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS3: check PARTNER unique shortName" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  COUNT(shortName)
+FROM partner
+WHERE
+  shortName = ?</stringProp>
+              <stringProp name="queryArguments">${m_shortName}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pShortNameCount</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: count" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pShortNameCount_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS3: check PARTNER unique accessKey" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  COUNT(accessKey)
+FROM partner
+WHERE
+  accessKey = ?</stringProp>
+              <stringProp name="queryArguments">${m_apiKey}</stringProp>
+              <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+              <stringProp name="variableNames">e_pApiKeyCount</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: count" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49">1</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_pApiKeyCount_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="PS3: check REQUEST table" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id, 
+  UNIX_TIMESTAMP(createdAt) *1000 createdAt,
+  COALESCE(
+    CASE
+      WHEN apiAccessKey=&quot;&quot; THEN null
+    ELSE
+      apiAccessKey
+    END
+, 0) apiAccessKey, 
+  message, 
+  requestType, 
+  success, 
+  pointsId, 
+  COALESCE(
+    CASE
+      WHEN userId=&quot;&quot; THEN null
+    ELSE
+      userId
+    END
+, 0) userId, 
+  COALESCE(
+    CASE
+      WHEN idType=&quot;&quot; THEN null
+    ELSE
+      idType
+    END
+, 0) idType,
+  orderId
+FROM request
+ORDER BY createdAt DESC
+LIMIT 1</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_requestId, e_requestCreatedAt, e_partnerKey,e_requestMsg,e_requestType,e_requestSuccess,e_requestPointsId, e_requestUserId, e_requestUserIdType, e_requestOrderId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: request type" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1479465740">REGISTER_PARTNER</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: success" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="3569038">true</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestSuccess_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Cleanup" enabled="true"/>
+            <hashTree>
+              <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="cleanup: delete REQUEST record" enabled="true">
+                <stringProp name="dataSource">MySQL</stringProp>
+                <stringProp name="queryType">Prepared Update Statement</stringProp>
+                <stringProp name="query">DELETE FROM
+	request
+WHERE
+	id = ?;</stringProp>
+                <stringProp name="queryArguments">${e_requestId_1}</stringProp>
+                <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+                <stringProp name="variableNames"></stringProp>
+                <stringProp name="resultVariable"></stringProp>
+                <stringProp name="queryTimeout"></stringProp>
+              </JDBCSampler>
+              <hashTree/>
+              <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="cleanup: delete PARTNER record" enabled="true">
+                <stringProp name="dataSource">MySQL</stringProp>
+                <stringProp name="queryType">Prepared Update Statement</stringProp>
+                <stringProp name="query">DELETE FROM
+	partner
+WHERE
+	id = ?;</stringProp>
+                <stringProp name="queryArguments">${e_pId_1}</stringProp>
+                <stringProp name="queryArgumentsTypes">VARCHAR</stringProp>
+                <stringProp name="variableNames"></stringProp>
+                <stringProp name="resultVariable"></stringProp>
+                <stringProp name="queryTimeout"></stringProp>
+              </JDBCSampler>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="NEGATIVE" enabled="true"/>
+        <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="NS1: Trying to add PARTNER record not sending any information to the system" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">IAT ${AUTH_PARTNER_KEY}:${AUTH_PARTNER_SECRET}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="NS1: get PARTNER last id" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT id
+FROM partner
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">s_lastPartnerId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NS1: REST: add PARTNER" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/clients</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="51508">400</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="2117236020">Bad Request</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">1</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response headers" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1522868018">INVALID_ARGUMENTS</stringProp>
+                  <stringProp name="-1789194661">Cannot register partner without name</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="NS1: check PARTNER last id" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT id
+FROM partner
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_lastPartnerId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: id" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1219430311">${__javaScript(${s_lastPartnerId_1})}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_lastPartnerId_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="NS1: check request table" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id, 
+  UNIX_TIMESTAMP(createdAt) *1000 createdAt,
+  COALESCE(
+    CASE
+      WHEN apiAccessKey=&quot;&quot; THEN null
+    ELSE
+      apiAccessKey
+    END
+, 0) apiAccessKey, 
+  message, 
+  requestType, 
+  success, 
+  pointsId, 
+  COALESCE(
+    CASE
+      WHEN userId=&quot;&quot; THEN null
+    ELSE
+      userId
+    END
+, 0) userId, 
+  COALESCE(
+    CASE
+      WHEN idType=&quot;&quot; THEN null
+    ELSE
+      idType
+    END
+, 0) idType,
+  orderId
+FROM request
+ORDER BY id DESC
+LIMIT 1</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_requestId, e_requestCreatedAt, e_partnerKey,e_requestMsg,e_requestType,e_requestSuccess,e_requestPointsId, e_requestUserId, e_requestUserIdType, e_requestOrderId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1789194661">Cannot register partner without name</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestMsg_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: request type" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1479465740">REGISTER_PARTNER</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: success" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="97196323">false</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestSuccess_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="NS2: Trying to add PARTNER record sending non-existent group shortName" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">IAT ${AUTH_PARTNER_KEY}:${AUTH_PARTNER_SECRET}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="NS2: get PARTNER last id" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT id
+FROM partner
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">s_lastPartnerId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NS2: REST: add PARTNER" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;name&quot;:&quot;sample_partner_name_S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;siteUrl&quot;: &quot;http://partner_site.S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;description&quot;: &quot;partner description S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;email&quot;: &quot;partner@email.S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;logoUrl&quot;: &quot;http://partner.logo.url.S3&quot;,</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&quot;group&quot;: &quot;some_non_existent_group&quot;</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/clients</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <boolProp name="HTTPSampler.monitor">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response code" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="51512">404</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">true</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1786305461">Not Found</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">1</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: response headers" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1110384137">INVALID_GROUP</stringProp>
+                  <stringProp name="-1003188857">There is no group with shortName=some_non_existent_group</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="NS2: check PARTNER last id" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Prepared Select Statement</stringProp>
+              <stringProp name="query">SELECT id
+FROM partner
+ORDER BY id DESC
+LIMIT 1;</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_lastPartnerId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: id" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1219430311">${__javaScript(${s_lastPartnerId_1})}</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_lastPartnerId_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="NS2: check request table" enabled="true">
+              <stringProp name="dataSource">MySQL</stringProp>
+              <stringProp name="queryType">Select Statement</stringProp>
+              <stringProp name="query">SELECT 
+  id, 
+  UNIX_TIMESTAMP(createdAt) *1000 createdAt,
+  COALESCE(
+    CASE
+      WHEN apiAccessKey=&quot;&quot; THEN null
+    ELSE
+      apiAccessKey
+    END
+, 0) apiAccessKey, 
+  message, 
+  requestType, 
+  success, 
+  pointsId, 
+  COALESCE(
+    CASE
+      WHEN userId=&quot;&quot; THEN null
+    ELSE
+      userId
+    END
+, 0) userId, 
+  COALESCE(
+    CASE
+      WHEN idType=&quot;&quot; THEN null
+    ELSE
+      idType
+    END
+, 0) idType,
+  orderId
+FROM request
+ORDER BY id DESC
+LIMIT 1</stringProp>
+              <stringProp name="queryArguments"></stringProp>
+              <stringProp name="queryArgumentsTypes"></stringProp>
+              <stringProp name="variableNames">e_requestId, e_requestCreatedAt, e_partnerKey,e_requestMsg,e_requestType,e_requestSuccess,e_requestPointsId, e_requestUserId, e_requestUserIdType, e_requestOrderId</stringProp>
+              <stringProp name="resultVariable"></stringProp>
+              <stringProp name="queryTimeout"></stringProp>
+            </JDBCSampler>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: message" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1003188857">There is no group with shortName=some_non_existent_group</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestMsg_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: request type" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="1479465740">REGISTER_PARTNER</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestType_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert: success" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="97196323">false</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">8</intProp>
+                <stringProp name="Assertion.scope">variable</stringProp>
+                <stringProp name="Scope.variable">e_requestSuccess_1</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

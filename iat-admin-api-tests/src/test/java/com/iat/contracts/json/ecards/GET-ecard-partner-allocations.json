@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "results": {
+      "id": "results",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "id": "id",
+            "type": "integer"
+          },
+          "createdAt": {
+            "id": "createdAt",
+            "type": "string"
+          },
+          "partnerName": {
+            "id": "partnerName",
+            "type": "string"
+          },
+          "from": {
+            "id": "from",
+            "type": "string"
+          },
+          "to": {
+            "id": "to",
+            "type": "string"
+          },
+          "who": {
+            "id": "who",
+            "type": "string"
+          },
+          "description": {
+            "id": "description",
+            "type": "string"
+          },
+          "pointsAmount": {
+            "id": "pointsAmount",
+            "type": "integer"
+          },
+          "amount": {
+            "id": "amount",
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "createdAt",
+          "partnerName",
+          "from",
+          "to",
+          "who",
+          "description",
+          "pointsAmount",
+          "amount"
+        ]
+      },
+      "required": [
+        "0"
+      ]
+    },
+    "pageSize": {
+      "id": "pageSize",
+      "type": "integer"
+    },
+    "searchResultsCount": {
+      "id": "searchResultsCount",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "pageSize",
+    "searchResultsCount"
+  ]
+}
