@@ -127,3 +127,21 @@ Feature: Epoints API: Rewards -> search
       | businessId |
       | null       |
       | united     |
+
+  Scenario Outline: PD-939 API /rest/search/redemptionitems/facets/v2 has to include order of display
+    Given In epoints
+    When API /rest/search/redemptionitems/facets/v2 is called '<like>'
+    Then It has to return order of display
+
+    Examples:
+      | like |
+      | Merchant |
+      | Category |
+      | Brand |
+      | Type |
+      | Actor |
+      | Artist |
+      | Author |
+      | Colour |
+      | Size |
+      | Choose epoints range |
