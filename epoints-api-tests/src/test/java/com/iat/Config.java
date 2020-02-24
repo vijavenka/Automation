@@ -157,13 +157,13 @@ public class Config {
         String port = "";
         switch (testEnvironment) {
             case "qa":
-                port = "8989";
-                break;
-            case "stag":
                 port = "8983";
                 break;
+            case "stag":
+                port = "8989";
+                break;
         }
-        return "http://test-proxy-stag-01.iatlimited.com:" + port + "/solr/";
+        return "http://test-proxy-"+testEnvironment+"-01.iatlimited.com:" + port + "/solr/";
     }
 
     public static String getOauthProviderUrl() {
